@@ -18,8 +18,16 @@ The command will:
   - Each region defined in `regiones.csv` has at least one indicator in `indicadores_agendas.csv`.
   - Every indicator used in `indicadores_agendas.csv` appears in `metadatos_agendas.csv`.
 - Exit with:
-  - Code `0` when all tests pass.
-  - Non-zero code if any test fails or errors.
+  - Code `0` when all tests pass (including checks that end in **`warn`** — warnings are visible in the report but do not fail the CLI).
+  - Non-zero code if any test **fails** or **errors**.
+
+### Catalan CSV alignment
+
+Optional sheets `diccionario_cat.csv` and `metadatos_agendas_cat.csv` are validated in **`warn`** mode only: gaps vs Spanish sources are reported in `docs/csv-integrity/` but never fail `check:csv`. The transform step emits `[catalan]` lines to stdout (including a per-build summary); API responses use `METADATA_CAT` / `DICCIONARIO_CAT` with Spanish fallback via `COALESCE`.
+
+**Direction labels:** spreadsheet `formula` cells that contain direction sentinels (e.g. ↑ / ↓ Ascendente…) are normalized to `METADATA.direction` (`asc` / `desc`). Add new sentinels in `transform/src/transform/direction.ts` (`DIRECTION_MAP_ES` / `DIRECTION_MAP_CAT`) when the client introduces new strings.
+
+**Region grouping (`id_especial2`):** `regiones_cat.csv` is downloaded but not loaded into SQLite; Catalan labels for the closed enum will be handled by frontend i18n (separate change).
 
 ### Reports for GitHub Pages
 

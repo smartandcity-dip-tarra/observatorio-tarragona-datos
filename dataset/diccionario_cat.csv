@@ -1,0 +1,247 @@
+agenda,nivel,dimension,nombre,detalle
+AUE,1,1,"ORDENAR EL TERRITORI I FER UN ÚS RACIONAL DEL SÒL, CONSERVAR-LO I PROTEGIR-LO",
+AUE,1,2,EVITAR LA DISPERSIÓ URBANA I REVITALITZAR LA CIUTAT EXISTENT,
+AUE,1,3,PREVENIR I REDUIR ELS IMPACTES DEL CANVI CLIMÀTIC I MILLORAR LA RESILIÈNCIA,
+AUE,1,4,FER UNA GESTIÓ SOSTENIBLE DELS RECURSOS I AFAVORIR L'ECONOMIA CIRCULAR,
+AUE,1,5,AFAVORIR LA PROXIMITAT I LA MOBILITAT SOSTENIBLE,
+AUE,1,6,FOMENTAR LA COHESIÓ SOCIAL I CERCAR L'EQUITAT,
+AUE,1,7,IMPULSAR I AFAVORIR L'ECONOMIA URBANA,
+AUE,1,8,GARANTIR L'ACCÉS A L'HABITATGE,
+AUE,1,9,LIDERAR I FOMENTAR LA INNOVACIÓ DIGITAL,
+AUE,1,10,MILLORAR ELS INSTRUMENTS D'INTERVENCIÓ I LA GOVERNANÇA,
+AUE,2,1.1,Ordenar el sòl de manera compatible amb el seu entorn territorial,
+AUE,2,1.2,Conservar i millorar el patrimoni natural i cultural i protegir el paisatge,
+AUE,2,1.3,Millorar les infraestructures verdes i blaves i vincular-les amb el context natural,
+AUE,2,2.1,"Definir un model urbà que fomenti la compacitat, l'equilibri urbà i la dotació de serveis bàsics",
+AUE,2,2.2,Garantir la complexitat funcional i la diversitat d'usos,
+AUE,2,2.3,Garantir la qualitat i l'accessibilitat dels espais públics,
+AUE,2,2.4,Millorar el medi ambient urbà i reduir la contaminació,
+AUE,2,2.5,"Impulsar la regeneració, la renovació i la rehabilitació urbana",
+AUE,2,2.6,Millorar la qualitat i la sostenibilitat dels edificis,
+AUE,2,3.1,Adaptar el model territorial i urbà als efectes del canvi climàtic i avançar en la seva prevenció,
+AUE,2,3.2,Reduir les emissions de gasos d'efecte hivernacle,
+AUE,2,3.3,Millorar la resiliència davant el canvi climàtic,
+AUE,2,4.1,Ser més eficients energèticament i estalviar energia,
+AUE,2,4.2,Optimitzar i reduir el consum d'aigua,
+AUE,2,4.3,Fomentar el cicle dels materials,
+AUE,2,4.4,Afavorir l'economia circular,
+AUE,2,5.1,Afavorir la ciutat de proximitat,
+AUE,2,5.2,Potenciar modes de transport sostenibles,
+AUE,2,6.1,Reduir el risc de pobresa i exclusió social en entorns urbans desfavorits,
+AUE,2,6.2,"Cercar la igualtat d'oportunitats des d'una perspectiva de gènere, edat i capacitat",
+AUE,2,7.1,"Cercar la productivitat local, la generació d'ocupació i la dinamització i diversificació de l'activitat econòmica",
+AUE,2,7.2,Fomentar el turisme sostenible i de qualitat i els sectors clau de l'economia local,
+AUE,2,8.1,Fomentar l'existència d'un parc d'habitatge adequat a preu assequible,
+AUE,2,8.2,"Garantir l'accés a l'habitatge, especialment dels col·lectius més vulnerables",
+AUE,2,9.1,Afavorir la societat del coneixement i avançar cap al desenvolupament de les ciutats intel·ligents (Smart cities),
+AUE,2,9.2,Fomentar l'Administració electrònica i reduir la bretxa digital,
+AUE,2,10.1,"Assolir un marc normatiu i de planejament actualitzat, flexible i simplificat que millori, també, la gestió",
+AUE,2,10.2,"Assegurar la participació ciutadana, la transparència i afavorir la governança multinivell",
+AUE,2,10.3,Impulsar la capacitació local i millorar el finançament,
+AUE,2,10.4,"Dissenyar i posar en marxa campanyes de formació i sensibilització en matèria urbana, així com d'intercanvi i difusió de la informació",
+2030,1,1,FI DE LA POBRESA,
+2030,1,2,FAM ZERO,
+2030,1,3,SALUT I BENESTAR,
+2030,1,4,EDUCACIÓ DE QUALITAT,
+2030,1,5,IGUALTAT DE GÈNERE,
+2030,1,6,AIGUA NETA I SANEJAMENT,
+2030,1,7,ENERGIA ASSEQUIBLE I NO CONTAMINANT,
+2030,1,8,TREBALL DECENT I CREIXEMENT ECONÒMIC,
+2030,1,9,"INDÚSTRIA, INNOVACIÓ I INFRAESTRUCTURA",
+2030,1,10,REDUCCIÓ DE LES DESIGUALTATS,
+2030,1,11,CIUTATS I COMUNITATS SOSTENIBLES,
+2030,1,12,PRODUCCIÓ I CONSUM RESPONSABLES,
+2030,1,13,ACCIÓ PER AL CLIMA,
+2030,1,14,VIDA SUBMARINA,
+2030,1,15,VIDA I ECOSISTEMES TERRESTRES,
+2030,1,16,"PAU, JUSTÍCIA I INSTITUCIONS SÒLIDES",
+2030,1,17,ALIANCES PER ASSOLIR ELS OBJECTIUS,
+2030,2,1.1,Pobresa extrema,Eradicar la pobresa extrema.
+2030,2,1.2,Reduir la pobresa,Reduir almenys a la meitat la pobresa multidimensional.
+2030,2,1.3,Protecció social,Implementar sistemes de protecció social.
+2030,2,1.4,Accés a recursos,Garantir accés a recursos i serveis bàsics.
+2030,2,1.5,Resiliència de les persones pobres,Reduir la vulnerabilitat davant desastres.
+2030,2,1.a,Finançament contra la pobresa,Mobilitzar recursos contra la pobresa.
+2030,2,1.b,Polítiques contra la pobresa,Crear marcs polítics sòlids.
+2030,2,2.1,Fi de la fam,Garantir accés a alimentació suficient.
+2030,2,2.2,Malnutrició,Eliminar totes les formes de malnutrició.
+2030,2,2.3,Productivitat agrícola,Duplicar la productivitat de petits productors.
+2030,2,2.4,Agricultura sostenible,Assegurar sistemes agrícoles sostenibles.
+2030,2,2.5,Diversitat genètica,Protegir la diversitat genètica agrícola.
+2030,2,2.a,Inversió agrícola,Augmentar la inversió rural.
+2030,2,2.b,Comerç agrícola,Eliminar les distorsions comercials.
+2030,2,2.c,Preus dels aliments,Estabilitzar els mercats alimentaris.
+2030,2,3.1,Salut materna,Reduir la mortalitat materna.
+2030,2,3.2,Salut infantil,Eliminar les morts evitables infantils.
+2030,2,3.3,Epidèmies,Posar fi a les epidèmies principals.
+2030,2,3.4,Malalties cròniques,Reduir la mortalitat per malalties no transmissibles.
+2030,2,3.5,Addiccions,Prevenir l'abús de substàncies.
+2030,2,3.6,Accidents de trànsit,Reduir les morts per accidents viaris.
+2030,2,3.7,Salut sexual,Garantir l'accés a la salut reproductiva.
+2030,2,3.8,Cobertura sanitària,Assolir la cobertura sanitària universal.
+2030,2,3.9,Contaminació i salut,Reduir les morts per contaminació.
+2030,2,3.a,Control del tabac,Enfortir el control del tabac.
+2030,2,3.b,Medicaments,Accés a vacunes i medicaments essencials.
+2030,2,3.c,Personal sanitari,Augmentar el finançament i el personal sanitari.
+2030,2,3.d,Gestió de riscos sanitaris,Enfortir la gestió de riscos sanitaris.
+2030,2,4.1,Educació bàsica,Garantir educació primària i secundària gratuïta.
+2030,2,4.2,Educació infantil,Accés a atenció i educació primerenca.
+2030,2,4.3,Educació superior,Accés igualitari a educació tècnica i superior.
+2030,2,4.4,Habilitats per a l'ocupació,Augmentar les competències per a l'ocupació.
+2030,2,4.5,Igualtat educativa,Eliminar les desigualtats en educació.
+2030,2,4.6,Alfabetització,Garantir l'alfabetització juvenil i adulta.
+2030,2,4.7,Educació sostenible,Promoure l'educació per al desenvolupament sostenible.
+2030,2,4.a,Infraestructura escolar,Millorar les instal·lacions educatives.
+2030,2,4.b,Beques,Ampliar les beques internacionals.
+2030,2,4.c,Docents,Augmentar els docents qualificats.
+2030,2,5.1,Fi de la discriminació,Eliminar la discriminació contra les dones.
+2030,2,5.2,Violència de gènere,Eliminar la violència contra les dones i les nenes.
+2030,2,5.3,Pràctiques nocives,Eliminar el matrimoni infantil i la mutilació.
+2030,2,5.4,Treball de cures,Reconèixer el treball domèstic no remunerat.
+2030,2,5.5,Lideratge femení,Assegurar la participació en el lideratge.
+2030,2,5.6,Drets reproductius,Garantir els drets sexuals i reproductius.
+2030,2,5.a,Recursos econòmics,Igualtat en l'accés als recursos.
+2030,2,5.b,Tecnologia per a les dones,Accés femení a la tecnologia.
+2030,2,5.c,Polítiques d'igualtat,Adoptar polítiques d'igualtat de gènere.
+2030,2,6.1,Aigua potable,Garantir l'accés universal a aigua potable segura.
+2030,2,6.2,Sanejament,Assolir l'accés a sanejament i higiene adequats.
+2030,2,6.3,Qualitat de l'aigua,Reduir la contaminació i millorar la qualitat de l'aigua.
+2030,2,6.4,Ús eficient de l'aigua,Augmentar l'eficiència en l'ús de l'aigua.
+2030,2,6.5,Gestió hídrica,Implementar la gestió integrada dels recursos hídrics.
+2030,2,6.6,Ecosistemes aquàtics,Protegir i restaurar els ecosistemes relacionats amb l'aigua.
+2030,2,6.a,Cooperació en aigua,Ampliar la cooperació internacional en aigua i sanejament.
+2030,2,6.b,Participació local,Enfortir la participació comunitària en la gestió de l'aigua.
+2030,2,7.1,Accés a l'energia,Garantir l'accés a energia assequible i moderna.
+2030,2,7.2,Energies renovables,Augmentar la proporció d'energies renovables.
+2030,2,7.3,Eficiència energètica,Millorar l'eficiència energètica global.
+2030,2,7.a,Cooperació energètica,Promoure la cooperació en tecnologia energètica neta.
+2030,2,7.b,Infraestructura energètica,Expandir la infraestructura energètica sostenible.
+2030,2,8.1,Creixement econòmic,Mantenir el creixement econòmic sostenible.
+2030,2,8.2,Productivitat,Millorar la productivitat mitjançant la innovació.
+2030,2,8.3,Ocupació digna,Promoure l'ocupació plena i productiva.
+2030,2,8.4,Consum eficient,Millorar l'eficiència en consum i producció.
+2030,2,8.5,Treball decent,Assolir l'ocupació plena i la igualtat salarial.
+2030,2,8.6,Joves i ocupació,Reduir els joves sense feina ni formació.
+2030,2,8.7,Treball forçós,Eradicar el treball infantil i forçós.
+2030,2,8.8,Drets laborals,Protegir els drets laborals i els entorns segurs.
+2030,2,8.9,Desenvolupament turístic,Promoure el turisme sostenible i l'ocupació local.
+2030,2,8.10,Serveis financers,Ampliar l'accés als serveis financers.
+2030,2,8.a,Ajuda al comerç,Augmentar l'ajuda per al comerç en països en desenvolupament.
+2030,2,8.b,Estratègia juvenil,Desenvolupar una estratègia global d'ocupació juvenil.
+2030,2,9.1,Infraestructura resilient,Desenvolupar infraestructures sostenibles i resilients.
+2030,2,9.2,Industrialització sostenible,Promoure la industrialització inclusiva.
+2030,2,9.3,Accés al finançament,Facilitar l'accés al finançament per a pimes.
+2030,2,9.4,Tecnologia neta,Modernitzar la indústria amb tecnologies netes.
+2030,2,9.5,Recerca,Enfortir la recerca i la innovació.
+2030,2,9.a,Infraestructura per al desenvolupament,Donar suport a la infraestructura en països en desenvolupament.
+2030,2,9.b,Tecnologia industrial,Fomentar l'adopció de tecnologia industrial.
+2030,2,9.c,Accés a internet,Ampliar l'accés a les TIC i a internet.
+2030,2,10.1,Ingressos del 40% més pobre,Augmentar els ingressos del 40% més pobre.
+2030,2,10.2,Inclusió social,Promoure la inclusió social i econòmica.
+2030,2,10.3,Igualtat d'oportunitats,Garantir la igualtat d'oportunitats.
+2030,2,10.4,Polítiques redistributives,Adoptar polítiques fiscals i salarials equitatives.
+2030,2,10.5,Regulació financera,Millorar la regulació dels mercats financers.
+2030,2,10.6,Representació global,Millorar la representació dels països en desenvolupament.
+2030,2,10.7,Migració segura,Facilitar la migració segura i ordenada.
+2030,2,10.a,Tracte especial,Aplicar tracte especial als països en desenvolupament.
+2030,2,10.b,Fluxos financers,Fomentar els fluxos financers cap al desenvolupament.
+2030,2,10.c,Costos de les remeses,Reduir els costos d'enviament de remeses.
+2030,2,11.1,Habitatge digne,Garantir l'accés a habitatge i serveis bàsics segurs.
+2030,2,11.2,Transport segur,Proporcionar transport accessible i sostenible.
+2030,2,11.3,Urbanització sostenible,Promoure la planificació urbana inclusiva.
+2030,2,11.4,Patrimoni cultural,Protegir el patrimoni cultural i natural.
+2030,2,11.5,Desastres urbans,Reduir l'impacte de desastres a les ciutats.
+2030,2,11.6,Impacte ambiental urbà,Reduir l'impacte ambiental negatiu de les ciutats.
+2030,2,11.7,Espais verds,Garantir l'accés a espais públics segurs i verds.
+2030,2,11.a,Vincles territorials,Enfortir els vincles urbà-rurals.
+2030,2,11.b,Gestió de riscos,Implementar plans de gestió de desastres.
+2030,2,11.c,Construcció sostenible,Donar suport a la construcció sostenible en països vulnerables.
+2030,2,12.1,Marc de consum sostenible,Aplicar programes de consum i producció sostenibles.
+2030,2,12.2,Ús dels recursos,Gestionar els recursos naturals de forma sostenible.
+2030,2,12.3,Malbaratament alimentari,Reduir a la meitat el malbaratament alimentari.
+2030,2,12.4,Productes químics i residus,Gestionar els productes químics i els residus de forma responsable.
+2030,2,12.5,Reciclatge,Reduir la generació de residus mitjançant el reciclatge.
+2030,2,12.6,Empreses sostenibles,Fomentar les pràctiques empresarials sostenibles.
+2030,2,12.7,Compres públiques,Promoure la contractació pública sostenible.
+2030,2,12.8,Informació sostenible,Assegurar informació sobre estils de vida sostenibles.
+2030,2,12.a,Capacitat científica,Enfortir les capacitats científiques per a la sostenibilitat.
+2030,2,12.b,Turisme sostenible,Desenvolupar eines per al turisme sostenible.
+2030,2,12.c,Subvencions als combustibles fòssils,Racionalitzar les subvencions als combustibles fòssils.
+2030,2,13.1,Resiliència climàtica,Enfortir la resiliència davant els riscos climàtics.
+2030,2,13.2,Polítiques climàtiques,Integrar mesures climàtiques en les polítiques nacionals.
+2030,2,13.3,Educació climàtica,Millorar l'educació i la sensibilització climàtica.
+2030,2,13.a,Finançament climàtic,Mobilitzar finançament per a l'acció climàtica.
+2030,2,13.b,Capacitat d'adaptació,Enfortir les capacitats en països vulnerables.
+2030,2,14.1,Contaminació marina,Reduir la contaminació marina.
+2030,2,14.2,Ecosistemes marins,Protegir els ecosistemes marins i costaners.
+2030,2,14.3,Acidificació dels oceans,Reduir l'acidificació dels oceans.
+2030,2,14.4,Pesca sostenible,Regular la pesca i eliminar les pràctiques destructives.
+2030,2,14.5,Àrees marines protegides,Conservar les zones marines i costaneres.
+2030,2,14.6,Subvencions a la pesca,Eliminar les subvencions que fomenten la sobrepesca.
+2030,2,14.7,Economia blava,Augmentar els beneficis sostenibles per a petits estats insulars.
+2030,2,14.a,Recerca marina,Enfortir la recerca científica marina.
+2030,2,14.b,Pesca artesanal,Donar suport a la pesca artesanal sostenible.
+2030,2,14.c,Dret marítim,Aplicar el dret internacional del mar.
+2030,2,15.1,Ecosistemes terrestres,Conservar els ecosistemes terrestres i d'aigua dolça.
+2030,2,15.2,Boscos sostenibles,Gestionar els boscos i aturar la desforestació.
+2030,2,15.3,Degradació de terres,Restaurar les terres degradades.
+2030,2,15.4,Ecosistemes de muntanya,Conservar els ecosistemes de muntanya.
+2030,2,15.5,Biodiversitat,Aturar la pèrdua de biodiversitat.
+2030,2,15.6,Recursos genètics,Garantir l'accés just als recursos genètics.
+2030,2,15.7,Tràfic d'espècies,Combatre la caça furtiva i el tràfic il·legal.
+2030,2,15.8,Espècies invasores,Prevenir les espècies exòtiques invasores.
+2030,2,15.9,Biodiversitat en les polítiques,Integrar la biodiversitat en la planificació nacional.
+2030,2,15.a,Finançament d'ecosistemes,Mobilitzar recursos per a la conservació.
+2030,2,15.b,Gestió forestal,Finançar la gestió forestal sostenible.
+2030,2,15.c,Caça furtiva,Donar suport a la lluita contra la caça furtiva.
+2030,2,16.1,Reduir la violència,Reduir totes les formes de violència i la mortalitat relacionada.
+2030,2,16.2,Protecció de la infància,"Eliminar l'abús, l'explotació i la violència contra els infants."
+2030,2,16.3,Estat de dret,Promoure la justícia i la igualtat davant la llei.
+2030,2,16.4,Crim organitzat,Reduir els fluxos il·lícits i la delinqüència organitzada.
+2030,2,16.5,Corrupció,Reduir la corrupció i els suborns.
+2030,2,16.6,Institucions eficaces,Desenvolupar institucions transparents i responsables.
+2030,2,16.7,Decisions inclusives,Garantir la presa de decisions inclusiva.
+2030,2,16.8,Participació global,Enfortir la participació en la governança mundial.
+2030,2,16.9,Identitat legal,Garantir la identitat legal per a tothom.
+2030,2,16.10,Accés a la informació,Garantir l'accés públic a la informació.
+2030,2,16.a,Institucions nacionals,Enfortir les institucions per prevenir la violència.
+2030,2,16.b,No-discriminació,Promoure lleis i polítiques no discriminatòries.
+2030,2,17.10,Recaptació interna,Enfortir la mobilització de recursos interns.
+2030,2,17.2,Ajuda al desenvolupament,Complir els compromisos d'ajuda oficial.
+2030,2,17.3,Recursos financers,Mobilitzar recursos addicionals per al desenvolupament.
+2030,2,17.4,Sostenibilitat del deute,Donar suport a la gestió sostenible del deute.
+2030,2,17.5,Inversió sostenible,Promoure la inversió en els països menys avançats.
+2030,2,17.6,Cooperació tecnològica,Millorar la cooperació en ciència i tecnologia.
+2030,2,17.7,Transferència tecnològica,Facilitar la transferència de tecnologies sostenibles.
+2030,2,17.8,Banc de tecnologia,Posar en funcionament el banc de tecnologia.
+2030,2,17.9,Creació de capacitat,Donar suport al reforçament de capacitats.
+2030,2,17.1,Sistema de comerç,Promoure el sistema comercial multilateral.
+2030,2,17.11,Exportacions per al desenvolupament,Augmentar les exportacions dels països en desenvolupament.
+2030,2,17.12,Accés als mercats,Garantir l'accés preferencial als mercats.
+2030,2,17.13,Estabilitat macroeconòmica,Millorar l'estabilitat macroeconòmica mundial.
+2030,2,17.14,Coherència de polítiques,Augmentar la coherència de polítiques per al desenvolupament.
+2030,2,17.15,Sobirania en les polítiques,Respectar el lideratge nacional en les polítiques.
+2030,2,17.16,Aliances globals,Enfortir les aliances per al desenvolupament sostenible.
+2030,2,17.17,Aliances público-privades,Fomentar les aliances eficaces.
+2030,2,17.18,Dades desglossades,Millorar la disponibilitat de dades desglossades.
+2030,2,17.19,Mesura del progrés,Desenvolupar indicadors complementaris al PIB.
+TARRAGONA,1,1,"CONNECTADA, ORDENADA I EQUILIBRADA TERRITORIALMENT",
+TARRAGONA,1,2,"IGUAL, SOCIAL I INCLUSIVA",
+TARRAGONA,1,3,AMB IDENTITAT i PATRIMONI CULTURAL COMPARTIT,
+TARRAGONA,1,4,"INNOVADORA, COMPETITIVA I AMB UNA ECONOMIA DIVERSIFICADA",
+TARRAGONA,1,5,"RESILIENT, SOSTENIBLE I COMPROMESA AMB LA TRANSICIÓ ECOLÒGICA",
+TARRAGONA,1,6,"COOPERATIVA, BEN GOVERNADA I AMB SERVEIS COMPARTITS",
+TARRAGONA,2,1.1,Impulsar una planificació territorial metropolitana basada en dades i amb governança compartida,
+TARRAGONA,2,1.2,"Desenvolupar un sistema metropolità de mobilitat i connectivitat integrat, sostenible i accessible",
+TARRAGONA,2,1.3,Avançar cap a una metròpolis més intel·ligent i connectada,
+TARRAGONA,2,2.1,Enfortir la cohesió social. La igualtat i la inclusió en el conjunt del territori,
+TARRAGONA,2,2.2,Garantir el dret a l'habitatge assequible mitjançant una política coordinada,
+TARRAGONA,2,3.1,Preservar i posar en valor el patrimoni natural i cultural com a element compartit d'identitat metropolitana,
+TARRAGONA,2,3.2,Impulsar un model de patrimoni accessible i vinculat al desenvolupament del territori,
+TARRAGONA,2,4.1,Promoure la competitivitat de l'activitat econòmica metropolitana,
+TARRAGONA,2,4.2,Enfortir la gestió del talent per preservar el teixit productiu de proximitat,
+TARRAGONA,2,4.3,Promoure la sostenibilitat del model econòmic,
+TARRAGONA,2,5.1,Enfortir la resiliència climàtica i reduir la vulnerabilitat del territori davant de riscos ambientals,
+TARRAGONA,2,5.2,Impulsar una gestió eficient dels recursos naturals i avançar cap a una economia circular,
+TARRAGONA,2,6.1,"Consolidar una estructura de governança metropolitana estable, operativa i reconeguda",
+TARRAGONA,2,6.2,"Impulsar serveis compartits com a palanca d'eficiència, sostenibilitat i cohesió territorial",

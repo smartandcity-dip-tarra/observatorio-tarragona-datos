@@ -1,3 +1,7 @@
+/**
+ * Only `regiones.csv` is loaded. `regiones_cat.csv` exists in dataset/ but is intentionally ignored here —
+ * translate `id_especial2` via frontend i18n (planned change `catalan-frontend-i18n-keys`).
+ */
 import { readCsv, toNullable } from './csv-utils.js';
 
 export interface RegionRecord {

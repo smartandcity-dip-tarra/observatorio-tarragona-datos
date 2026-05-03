@@ -1,247 +1,247 @@
-agenda,nivel,dimension,nombre,detalle,logo
-AUE,1,1,"ORDENAR EL TERRITORIO Y HACER UN USO RACIONAL DEL SUELO, CONSERVARLO Y PROTEGERLO",,AUE1
-AUE,1,2,EVITAR LA DISPERSIÓN URBANA Y REVITALIZAR LA CIUDAD EXISTENTE,,AUE2
-AUE,1,3,PREVENIR Y REDUCIR LOS IMPACTOS DEL CAMBIO CLIMÁTICO Y MEJORAR LA RESILIENCIA,,AUE3
-AUE,1,4,HACER UNA GESTIÓN SOSTENIBLE DE LOS RECURSOS Y FAVORECER LA ECONOMÍA CIRCULAR,,AUE4
-AUE,1,5,FAVORECER LA PROXIMIDAD Y LA MOVILIDAD SOSTENIBLE,,AUE5
-AUE,1,6,FOMENTAR LA COHESIÓN SOCIAL Y BUSCAR LA EQUIDAD,,AUE6
-AUE,1,7,IMPULSAR Y FAVORECER LA ECONOMÍA URBANA,,AUE7
-AUE,1,8,GARANTIZAR EL ACCESO A LA VIVIENDA,,AUE8
-AUE,1,9,LIDERAR Y FOMENTAR LA INNOVACIÓN DIGITAL,,AUE9
-AUE,1,10,MEJORAR LOS INSTRUMENTOS DE INTERVENCIÓN Y LA GOBERNANZA,,AUE10
-AUE,2,1.1,Ordenar el suelo de manera compatible con su entorno territorial,,AUE1
-AUE,2,1.2,Conservar y mejorar el patrimonio natural y cultural y proteger el paisaje,,AUE1
-AUE,2,1.3,Mejorar las infraestructuras verdes y azules y vincularlas con el contexto natural,,AUE1
-AUE,2,2.1,"Definir un modelo urbano que fomente la compacidad, el equilibrio urbano y la dotación de servicios básicos",,AUE2
-AUE,2,2.2,Garantizar la complejidad funcional y diversidad de usos,,AUE2
-AUE,2,2.3,Garantizar la calidad y la accesibilidad de los espacios públicos,,AUE2
-AUE,2,2.4,Mejorar el medio ambiente urbano y reducir la contaminación,,AUE2
-AUE,2,2.5,"Impulsar la regeneración, renovación y rehabilitación urbana",,AUE2
-AUE,2,2.6,Mejorar la calidad y sostenibilidad de los edificios,,AUE2
-AUE,2,3.1,Adaptar el modelo territorial y urbano a los efectos del cambio climático y avanzar en su prevención,,AUE3
-AUE,2,3.2,Reducir las emisiones de gases de efecto invernadero,,AUE3
-AUE,2,3.3,Mejorar la resiliencia frente al cambio climático,,AUE3
-AUE,2,4.1,Ser más eficientes energéticamente y ahorrar energía,,AUE4
-AUE,2,4.2,Optimizar y reducir el consumo de agua,,AUE4
-AUE,2,4.3,Fomentar el ciclo de los materiales,,AUE4
-AUE,2,4.4,Favorecer la economía circular,,AUE4
-AUE,2,5.1,Favorecer la ciudad de proximidad,,AUE5
-AUE,2,5.2,Potenciar modos de transporte sostenibles,,AUE5
-AUE,2,6.1,Reducir el riesgo de pobreza y exclusión social en entornos urbanos desfavorecidos,,AUE6
-AUE,2,6.2,"Buscar la igualdad de oportunidades desde una perspectiva de género, edad y capacidad",,AUE6
-AUE,2,7.1,"Buscar la productividad local, la generación de empleo y la dinamización y diversificación de la actividad económica",,AUE7
-AUE,2,7.2,Fomentar el turismo sostenible y de calidad y los sectores clave de la economía local,,AUE7
-AUE,2,8.1,Fomentar la existencia de un parque de vivienda adecuado a precio asequible,,AUE8
-AUE,2,8.2,"Garantizar el acceso a la vivienda, especialmente de los colectivos más vulnerables",,AUE8
-AUE,2,9.1,Favorecer la sociedad del conocimiento y avanzar hacia el desarrollo de las ciudades inteligentes (Smart cities),,AUE9
-AUE,2,9.2,Fomentar la Administración electrónica y reducir la brecha digital,,AUE9
-AUE,2,10.1,"Lograr un marco normativo y de planeamiento actualizado, flexible y simplificado que mejore, también, la gestión",,AUE10
-AUE,2,10.2,"Asegurar la participación ciudadana, la transparencia y favorecer la gobernanza multinivel",,AUE10
-AUE,2,10.3,Impulsar la capacitación local y mejorar la financiación,,AUE10
-AUE,2,10.4,Diseñar y poner en marcha campañas de formación y sensibilización en materia urbana así como de intercambio y difusión de la información,,AUE10
-2030,1,1,FIN DE LA POBREZA,,1
-2030,1,2,HAMBRE CERO,,2
-2030,1,3,SALUD Y BIENESTAR,,3
-2030,1,4,EDUCACIÓN DE CALIDAD,,4
-2030,1,5,IGUALDAD DE GÉNERO,,5
-2030,1,6,AGUA LIMPIA Y SANEAMIENTO,,6
-2030,1,7,ENERGÍA ASEQUIBLE Y NO CONTAMINANTE,,7
-2030,1,8,TRABAJO DECENTE Y CRECIMIENTO ECONÓMICO,,8
-2030,1,9,"INDUSTRIA, INNOVACIÓN E INFRAESTRUCTURA",,9
-2030,1,10,REDUCCIÓN DE LAS DESIGUALDADES,,10
-2030,1,11,CIUDADES Y COMUNIDADES SOSTENIBLES,,11
-2030,1,12,PRODUCCIÓN Y CONSUMO RESPONSABLES,,12
-2030,1,13,ACCIÓN POR EL CLIMA,,13
-2030,1,14,VIDA SUBMARINA,,14
-2030,1,15,VIDA Y ECOSISTEMAS TERRESTRES,,15
-2030,1,16,"PAZ, JUSTICIA E INSTITUCIONES SÓLIDAS",,16
-2030,1,17,ALIANZAS PARA LOGRAR LOS OBJETIVOS,,17
-2030,2,1.1,Pobreza extrema,Erradicar la pobreza extrema.,1-1
-2030,2,1.2,Reducir pobreza,Reducir al menos a la mitad la pobreza multidimensional.,1-2
-2030,2,1.3,Protección social,Implementar sistemas de protección social.,1-3
-2030,2,1.4,Acceso recursos,Garantizar acceso a recursos y servicios básicos.,1-4
-2030,2,1.5,Resiliencia pobres,Reducir vulnerabilidad ante desastres.,1-5
-2030,2,1.a,Financiación pobreza,Movilizar recursos contra la pobreza.,1-a
-2030,2,1.b,Políticas pobreza,Crear marcos políticos sólidos.,1-b
-2030,2,2.1,Fin del hambre,Garantizar acceso a alimentación suficiente.,2-1
-2030,2,2.2,Malnutrición,Eliminar todas las formas de malnutrición.,2-2
-2030,2,2.3,Productividad agrícola,Duplicar productividad de pequeños productores.,2-3
-2030,2,2.4,Agricultura sostenible,Asegurar sistemas agrícolas sostenibles.,2-4
-2030,2,2.5,Diversidad genética,Proteger diversidad genética agrícola.,2-5
-2030,2,2.a,Inversión agrícola,Aumentar inversión rural.,2-a
-2030,2,2.b,Comercio agrícola,Eliminar distorsiones comerciales.,2-b
-2030,2,2.c,Precios alimentos,Estabilizar mercados alimentarios.,2-c
-2030,2,3.1,Salud materna,Reducir mortalidad materna.,3-1
-2030,2,3.2,Salud infantil,Eliminar muertes evitables infantiles.,3-2
-2030,2,3.3,Epidemias,Poner fin a epidemias principales.,3-3
-2030,2,3.4,Enfermedades crónicas,Reducir mortalidad por enfermedades no transmisibles.,3-4
-2030,2,3.5,Adicciones,Prevenir abuso de sustancias.,3-5
-2030,2,3.6,Accidentes tráfico,Reducir muertes por accidentes viales.,3-6
-2030,2,3.7,Salud sexual,Garantizar acceso a salud reproductiva.,3-7
-2030,2,3.8,Cobertura sanitaria,Lograr cobertura sanitaria universal.,3-8
-2030,2,3.9,Contaminación salud,Reducir muertes por contaminación.,3-9
-2030,2,3.a,Control tabaco,Fortalecer control del tabaco.,3-a
-2030,2,3.b,Medicamentos,Acceso a vacunas y medicamentos esenciales.,3-b
-2030,2,3.c,Personal sanitario,Aumentar financiación y personal sanitario.,3-c
-2030,2,3.d,Gestión riesgos sanitarios,Fortalecer gestión de riesgos sanitarios.,3-d
-2030,2,4.1,Educación básica,Garantizar educación primaria y secundaria gratuita.,4-1
-2030,2,4.2,Educación infantil,Acceso a atención y educación temprana.,4-2
-2030,2,4.3,Educación superior,Acceso igualitario a educación técnica y superior.,4-3
-2030,2,4.4,Habilidades empleo,Aumentar competencias para empleo.,4-4
-2030,2,4.5,Igualdad educativa,Eliminar desigualdades en educación.,4-5
-2030,2,4.6,Alfabetización,Garantizar alfabetización juvenil y adulta.,4-6
-2030,2,4.7,Educación sostenible,Promover educación para desarrollo sostenible.,4-7
-2030,2,4.a,Infraestructura escolar,Mejorar instalaciones educativas.,4-a
-2030,2,4.b,Becas,Ampliar becas internacionales.,4-b
-2030,2,4.c,Docentes,Aumentar docentes cualificados.,4-c
-2030,2,5.1,Fin discriminación,Eliminar discriminación contra mujeres.,5-1
-2030,2,5.2,Violencia género,Eliminar violencia contra mujeres y niñas.,5-2
-2030,2,5.3,Prácticas nocivas,Eliminar matrimonio infantil y mutilación.,5-3
-2030,2,5.4,Trabajo cuidados,Reconocer trabajo doméstico no remunerado.,5-4
-2030,2,5.5,Liderazgo femenino,Asegurar participación en liderazgo.,5-5
-2030,2,5.6,Derechos reproductivos,Garantizar derechos sexuales y reproductivos.,5-6
-2030,2,5.a,Recursos económicos,Igualdad en acceso a recursos.,5-a
-2030,2,5.b,Tecnología mujeres,Acceso femenino a tecnología.,5-b
-2030,2,5.c,Políticas igualdad,Adoptar políticas de igualdad de género.,5-c
-2030,2,6.1,Agua potable,Garantizar acceso universal a agua potable segura.,6-1
-2030,2,6.2,Saneamiento,Lograr acceso a saneamiento e higiene adecuados.,6-2
-2030,2,6.3,Calidad agua,Reducir contaminación y mejorar calidad del agua.,6-3
-2030,2,6.4,Uso eficiente agua,Aumentar eficiencia en uso del agua.,6-4
-2030,2,6.5,Gestión hídrica,Implementar gestión integrada de recursos hídricos.,6-5
-2030,2,6.6,Ecosistemas acuáticos,Proteger y restaurar ecosistemas relacionados con agua.,6-6
-2030,2,6.a,Cooperación agua,Ampliar cooperación internacional en agua y saneamiento.,6-a
-2030,2,6.b,Participación local,Fortalecer participación comunitaria en gestión del agua.,6-b
-2030,2,7.1,Acceso energía,Garantizar acceso a energía asequible y moderna.,7-1
-2030,2,7.2,Energías renovables,Aumentar proporción de energías renovables.,7-2
-2030,2,7.3,Eficiencia energética,Mejorar eficiencia energética global.,7-3
-2030,2,7.a,Cooperación energética,Promover cooperación en tecnología energética limpia.,7-a
-2030,2,7.b,Infraestructura energética,Expandir infraestructura energética sostenible.,7-b
-2030,2,8.1,Crecimiento económico,Mantener crecimiento económico sostenible.,8-1
-2030,2,8.2,Productividad,Mejorar productividad mediante innovación.,8-2
-2030,2,8.3,Empleo digno,Promover empleo pleno y productivo.,8-3
-2030,2,8.4,Consumo eficiente,Mejorar eficiencia en consumo y producción.,8-4
-2030,2,8.5,Trabajo decente,Lograr empleo pleno e igualdad salarial.,8-5
-2030,2,8.6,Jóvenes empleo,Reducir jóvenes sin empleo ni formación.,8-6
-2030,2,8.7,Trabajo forzoso,Erradicar trabajo infantil y forzoso.,8-7
-2030,2,8.8,Derechos laborales,Proteger derechos laborales y entornos seguros.,8-8
-2030,2,8.9,Desarrollo turístico,Promover turismo sostenible y empleo local.,8-9
-2030,2,8.10,Servicios financieros,Ampliar acceso a servicios financieros.,8-1
-2030,2,8.a,Ayuda comercio,Aumentar ayuda para comercio en países en desarrollo.,8-a
-2030,2,8.b,Estrategia juvenil,Desarrollar estrategia global de empleo juvenil.,8-b
-2030,2,9.1,Infraestructura resiliente,Desarrollar infraestructuras sostenibles y resilientes.,9-1
-2030,2,9.2,Industrialización sostenible,Promover industrialización inclusiva.,9-2
-2030,2,9.3,Acceso financiación,Facilitar acceso a financiación para pymes.,9-3
-2030,2,9.4,Tecnología limpia,Modernizar industria con tecnologías limpias.,9-4
-2030,2,9.5,Investigación,Fortalecer investigación e innovación.,9-5
-2030,2,9.a,Infraestructura desarrollo,Apoyar infraestructura en países en desarrollo.,9-a
-2030,2,9.b,Tecnología industrial,Fomentar adopción de tecnología industrial.,9-b
-2030,2,9.c,Acceso internet,Ampliar acceso a TIC e internet.,9-c
-2030,2,10.1,Ingresos 40% pobre,Aumentar ingresos del 40% más pobre.,10-1
-2030,2,10.2,Inclusión social,Promover inclusión social y económica.,10-2
-2030,2,10.3,Igualdad oportunidades,Garantizar igualdad de oportunidades.,10-3
-2030,2,10.4,Políticas redistributivas,Adoptar políticas fiscales y salariales equitativas.,10-4
-2030,2,10.5,Regulación financiera,Mejorar regulación de mercados financieros.,10-5
-2030,2,10.6,Representación global,Mejorar representación de países en desarrollo.,10-6
-2030,2,10.7,Migración segura,Facilitar migración segura y ordenada.,10-7
-2030,2,10.a,Trato especial,Aplicar trato especial a países en desarrollo.,10-a
-2030,2,10.b,Flujos financieros,Fomentar flujos financieros hacia desarrollo.,10-b
-2030,2,10.c,Costes remesas,Reducir costes de envío de remesas.,10-c
-2030,2,11.1,Vivienda digna,Garantizar acceso a vivienda y servicios básicos seguros.,11-1
-2030,2,11.2,Transporte seguro,Proporcionar transporte accesible y sostenible.,11-2
-2030,2,11.3,Urbanización sostenible,Promover planificación urbana inclusiva.,11-3
-2030,2,11.4,Patrimonio cultural,Proteger patrimonio cultural y natural.,11-4
-2030,2,11.5,Desastres urbanos,Reducir impacto de desastres en ciudades.,11-5
-2030,2,11.6,Impacto ambiental urbano,Reducir impacto ambiental negativo de ciudades.,11-6
-2030,2,11.7,Espacios verdes,Garantizar acceso a espacios públicos seguros y verdes.,11-7
-2030,2,11.a,Vínculos territoriales,Fortalecer vínculos urbano-rurales.,11-a
-2030,2,11.b,Gestión riesgos,Implementar planes de gestión de desastres.,11-b
-2030,2,11.c,Construcción sostenible,Apoyar construcción sostenible en países vulnerables.,11-c
-2030,2,12.1,Marco consumo sostenible,Aplicar programas de consumo y producción sostenibles.,12-1
-2030,2,12.2,Uso recursos,Gestionar recursos naturales de forma sostenible.,12-2
-2030,2,12.3,Desperdicio alimentos,Reducir a la mitad el desperdicio alimentario.,12-3
-2030,2,12.4,Químicos y residuos,Gestionar químicos y desechos responsablemente.,12-4
-2030,2,12.5,Reciclaje,Reducir generación de residuos mediante reciclaje.,12-5
-2030,2,12.6,Empresas sostenibles,Fomentar prácticas empresariales sostenibles.,12-6
-2030,2,12.7,Compras públicas,Promover contratación pública sostenible.,12-7
-2030,2,12.8,Información sostenible,Asegurar información sobre estilos de vida sostenibles.,12-8
-2030,2,12.a,Capacidad científica,Fortalecer capacidades científicas para sostenibilidad.,12-a
-2030,2,12.b,Turismo sostenible,Desarrollar herramientas para turismo sostenible.,12-b
-2030,2,12.c,Subsidios fósiles,Racionalizar subsidios a combustibles fósiles.,12-c
-2030,2,13.1,Resiliencia climática,Fortalecer resiliencia ante riesgos climáticos.,13-1
-2030,2,13.2,Políticas climáticas,Integrar medidas climáticas en políticas nacionales.,13-2
-2030,2,13.3,Educación climática,Mejorar educación y sensibilización climática.,13-3
-2030,2,13.a,Financiación climática,Movilizar financiación para acción climática.,13-a
-2030,2,13.b,Capacidad adaptación,Fortalecer capacidades en países vulnerables.,13-b
-2030,2,14.1,Contaminación marina,Reducir contaminación marina.,14-1
-2030,2,14.2,Ecosistemas marinos,Proteger ecosistemas marinos y costeros.,14-2
-2030,2,14.3,Acidificación océanos,Reducir acidificación de océanos.,14-3
-2030,2,14.4,Pesca sostenible,Regular pesca y eliminar prácticas destructivas.,14-4
-2030,2,14.5,Áreas marinas protegidas,Conservar zonas marinas y costeras.,14-5
-2030,2,14.6,Subsidios pesca,Eliminar subsidios que fomentan sobrepesca.,14-6
-2030,2,14.7,Economía azul,Aumentar beneficios sostenibles para pequeños estados insulares.,14-7
-2030,2,14.a,Investigación marina,Fortalecer investigación científica marina.,14-a
-2030,2,14.b,Pesca artesanal,Apoyar pesca artesanal sostenible.,14-b
-2030,2,14.c,Derecho marítimo,Aplicar derecho internacional del mar.,14-c
-2030,2,15.1,Ecosistemas terrestres,Conservar ecosistemas terrestres y de agua dulce.,15-1
-2030,2,15.2,Bosques sostenibles,Gestionar bosques y detener deforestación.,15-2
-2030,2,15.3,Degradación tierras,Restaurar tierras degradadas.,15-3
-2030,2,15.4,Ecosistemas montaña,Conservar ecosistemas de montaña.,15-4
-2030,2,15.5,Biodiversidad,Detener pérdida de biodiversidad.,15-5
-2030,2,15.6,Recursos genéticos,Garantizar acceso justo a recursos genéticos.,15-6
-2030,2,15.7,Tráfico especies,Combatir caza furtiva y tráfico ilegal.,15-7
-2030,2,15.8,Especies invasoras,Prevenir especies exóticas invasoras.,15-8
-2030,2,15.9,Biodiversidad políticas,Integrar biodiversidad en planificación nacional.,15-9
-2030,2,15.a,Financiación ecosistemas,Movilizar recursos para conservación.,15-a
-2030,2,15.b,Gestión forestal,Financiar gestión forestal sostenible.,15-b
-2030,2,15.c,Caza furtiva,Apoyar lucha contra caza furtiva.,15-c
-2030,2,16.1,Reducir violencia,Reducir todas las formas de violencia y mortalidad relacionada.,16-1
-2030,2,16.2,Protección infancia,"Eliminar abuso, explotación y violencia contra niños.",16-2
-2030,2,16.3,Estado de derecho,Promover justicia e igualdad ante la ley.,16-3
-2030,2,16.4,Crimen organizado,Reducir flujos ilícitos y delincuencia organizada.,16-4
-2030,2,16.5,Corrupción,Reducir corrupción y sobornos.,16-5
-2030,2,16.6,Instituciones eficaces,Desarrollar instituciones transparentes y responsables.,16-6
-2030,2,16.7,Decisiones inclusivas,Garantizar toma de decisiones inclusiva.,16-7
-2030,2,16.8,Participación global,Fortalecer participación en gobernanza mundial.,16-8
-2030,2,16.9,Identidad legal,Garantizar identidad legal para todos.,16-9
-2030,2,16.10,Acceso información,Garantizar acceso público a la información.,16-1
-2030,2,16.a,Instituciones nacionales,Fortalecer instituciones para prevenir violencia.,16-a
-2030,2,16.b,No discriminación,Promover leyes y políticas no discriminatorias.,16-b
-2030,2,17.10,Recaudación interna,Fortalecer movilización de recursos internos.,17-1
-2030,2,17.2,Ayuda desarrollo,Cumplir compromisos de ayuda oficial.,17-2
-2030,2,17.3,Recursos financieros,Movilizar recursos adicionales para desarrollo.,17-3
-2030,2,17.4,Sostenibilidad deuda,Apoyar gestión sostenible de la deuda.,17-4
-2030,2,17.5,Inversión sostenible,Promover inversión en países menos adelantados.,17-5
-2030,2,17.6,Cooperación tecnológica,Mejorar cooperación en ciencia y tecnología.,17-6
-2030,2,17.7,Transferencia tecnológica,Facilitar transferencia de tecnologías sostenibles.,17-7
-2030,2,17.8,Banco tecnología,Poner en funcionamiento banco de tecnología.,17-8
-2030,2,17.9,Creación capacidad,Apoyar fortalecimiento de capacidades.,17-9
-2030,2,17.1,Sistema comercio,Promover sistema comercial multilateral.,17-1
-2030,2,17.11,Exportaciones desarrollo,Aumentar exportaciones de países en desarrollo.,17-11
-2030,2,17.12,Acceso mercados,Garantizar acceso preferencial a mercados.,17-12
-2030,2,17.13,Estabilidad macroeconómica,Mejorar estabilidad macroeconómica mundial.,17-13
-2030,2,17.14,Coherencia políticas,Aumentar coherencia de políticas para desarrollo.,17-14
-2030,2,17.15,Soberanía políticas,Respetar liderazgo nacional en políticas.,17-15
-2030,2,17.16,Alianzas globales,Fortalecer alianzas para desarrollo sostenible.,17-16
-2030,2,17.17,Alianzas público-privadas,Fomentar alianzas eficaces.,17-17
-2030,2,17.18,Datos desglosados,Mejorar disponibilidad de datos desglosados.,17-18
-2030,2,17.19,Medición progreso,Desarrollar indicadores complementarios al PIB.,17-19
-TARRAGONA,1,1,"CONECTADA, ORDENADA Y EQUILIBRADA TERRITORIALMENTE",,
-TARRAGONA,1,2,"IGUAL, SOCIAL E INCLUSIVA",,
-TARRAGONA,1,3,CON IDENTIDAD y PATRIMONIO CULTURAL COMPARTIDO,,
-TARRAGONA,1,4,"INNOVADORA, COMPETITIVA Y CON UNA ECONOMÍA DIVERSIFICADA",,
-TARRAGONA,1,5,"RESILIENTE, SOSTENIBLE Y COMPROMETIDA CON LA TRANSICIÓN ECOLÓGICA",,
-TARRAGONA,1,6,"COOPERATIVA, BIEN GOBERNADA Y CON SERVICIOS COMPARTIDOS",,
-TARRAGONA,2,1.1,Impulsar una planificación territorial metropolitana basada en datos y con gobernanza compartida,,
-TARRAGONA,2,1.2,"Desarrollar un sistema metropolitano de movilidad y conectividad integrado, sostenible y accesible",,
-TARRAGONA,2,1.3,Avanzar hacia una metrópolis más inteligente y conectada,,
-TARRAGONA,2,2.1,Fortalecer la cohesión social. La igualdad y la inclusión en el conjunto del territorio,,
-TARRAGONA,2,2.2,Garantizar el derecho a la vivienda asequible mediante una política coordinada,,
-TARRAGONA,2,3.1,Preservar y poner en valor el patrimonio natural y cultural como elemento compartido de identidad metropolitana,,
-TARRAGONA,2,3.2,Impulsar un modelo de patrimonio accesible y vinculado al desarrollo del territorio,,
-TARRAGONA,2,4.1,Promover la competitividad de la actividad económica metropolitana,,
-TARRAGONA,2,4.2,Fortalecer la gestión del talento para preservar el tejido productivo de proximidad,,
-TARRAGONA,2,4.3,Promover la sostenibilidad de modelo económico,,
-TARRAGONA,2,5.1,Fortalecer la resiliencia climática y reducir la vulnerabilidad del territorio frente a riesgos ambientales,,
-TARRAGONA,2,5.2,Impulsar una gestión eficiente de los recursos naturales y avanzar hacia una economía circular,,
-TARRAGONA,2,6.1,"Consolidar una estructura de gobernanza metropolitana estable, operativa y reconocida",,
-TARRAGONA,2,6.2,"Impulsar servicios compartidos como palanca de eficiencia, sostenibilidad y cohesión territorial",,
+agenda,nivel,dimension,nombre,detalle
+AUE,1,1,"ORDENAR EL TERRITORIO Y HACER UN USO RACIONAL DEL SUELO, CONSERVARLO Y PROTEGERLO",
+AUE,1,2,EVITAR LA DISPERSIÓN URBANA Y REVITALIZAR LA CIUDAD EXISTENTE,
+AUE,1,3,PREVENIR Y REDUCIR LOS IMPACTOS DEL CAMBIO CLIMÁTICO Y MEJORAR LA RESILIENCIA,
+AUE,1,4,HACER UNA GESTIÓN SOSTENIBLE DE LOS RECURSOS Y FAVORECER LA ECONOMÍA CIRCULAR,
+AUE,1,5,FAVORECER LA PROXIMIDAD Y LA MOVILIDAD SOSTENIBLE,
+AUE,1,6,FOMENTAR LA COHESIÓN SOCIAL Y BUSCAR LA EQUIDAD,
+AUE,1,7,IMPULSAR Y FAVORECER LA ECONOMÍA URBANA,
+AUE,1,8,GARANTIZAR EL ACCESO A LA VIVIENDA,
+AUE,1,9,LIDERAR Y FOMENTAR LA INNOVACIÓN DIGITAL,
+AUE,1,10,MEJORAR LOS INSTRUMENTOS DE INTERVENCIÓN Y LA GOBERNANZA,
+AUE,2,1.1,Ordenar el suelo de manera compatible con su entorno territorial,
+AUE,2,1.2,Conservar y mejorar el patrimonio natural y cultural y proteger el paisaje,
+AUE,2,1.3,Mejorar las infraestructuras verdes y azules y vincularlas con el contexto natural,
+AUE,2,2.1,"Definir un modelo urbano que fomente la compacidad, el equilibrio urbano y la dotación de servicios básicos",
+AUE,2,2.2,Garantizar la complejidad funcional y diversidad de usos,
+AUE,2,2.3,Garantizar la calidad y la accesibilidad de los espacios públicos,
+AUE,2,2.4,Mejorar el medio ambiente urbano y reducir la contaminación,
+AUE,2,2.5,"Impulsar la regeneración, renovación y rehabilitación urbana",
+AUE,2,2.6,Mejorar la calidad y sostenibilidad de los edificios,
+AUE,2,3.1,Adaptar el modelo territorial y urbano a los efectos del cambio climático y avanzar en su prevención,
+AUE,2,3.2,Reducir las emisiones de gases de efecto invernadero,
+AUE,2,3.3,Mejorar la resiliencia frente al cambio climático,
+AUE,2,4.1,Ser más eficientes energéticamente y ahorrar energía,
+AUE,2,4.2,Optimizar y reducir el consumo de agua,
+AUE,2,4.3,Fomentar el ciclo de los materiales,
+AUE,2,4.4,Favorecer la economía circular,
+AUE,2,5.1,Favorecer la ciudad de proximidad,
+AUE,2,5.2,Potenciar modos de transporte sostenibles,
+AUE,2,6.1,Reducir el riesgo de pobreza y exclusión social en entornos urbanos desfavorecidos,
+AUE,2,6.2,"Buscar la igualdad de oportunidades desde una perspectiva de género, edad y capacidad",
+AUE,2,7.1,"Buscar la productividad local, la generación de empleo y la dinamización y diversificación de la actividad económica",
+AUE,2,7.2,Fomentar el turismo sostenible y de calidad y los sectores clave de la economía local,
+AUE,2,8.1,Fomentar la existencia de un parque de vivienda adecuado a precio asequible,
+AUE,2,8.2,"Garantizar el acceso a la vivienda, especialmente de los colectivos más vulnerables",
+AUE,2,9.1,Favorecer la sociedad del conocimiento y avanzar hacia el desarrollo de las ciudades inteligentes (Smart cities),
+AUE,2,9.2,Fomentar la Administración electrónica y reducir la brecha digital,
+AUE,2,10.1,"Lograr un marco normativo y de planeamiento actualizado, flexible y simplificado que mejore, también, la gestión",
+AUE,2,10.2,"Asegurar la participación ciudadana, la transparencia y favorecer la gobernanza multinivel",
+AUE,2,10.3,Impulsar la capacitación local y mejorar la financiación,
+AUE,2,10.4,Diseñar y poner en marcha campañas de formación y sensibilización en materia urbana así como de intercambio y difusión de la información,
+2030,1,1,FIN DE LA POBREZA,
+2030,1,2,HAMBRE CERO,
+2030,1,3,SALUD Y BIENESTAR,
+2030,1,4,EDUCACIÓN DE CALIDAD,
+2030,1,5,IGUALDAD DE GÉNERO,
+2030,1,6,AGUA LIMPIA Y SANEAMIENTO,
+2030,1,7,ENERGÍA ASEQUIBLE Y NO CONTAMINANTE,
+2030,1,8,TRABAJO DECENTE Y CRECIMIENTO ECONÓMICO,
+2030,1,9,"INDUSTRIA, INNOVACIÓN E INFRAESTRUCTURA",
+2030,1,10,REDUCCIÓN DE LAS DESIGUALDADES,
+2030,1,11,CIUDADES Y COMUNIDADES SOSTENIBLES,
+2030,1,12,PRODUCCIÓN Y CONSUMO RESPONSABLES,
+2030,1,13,ACCIÓN POR EL CLIMA,
+2030,1,14,VIDA SUBMARINA,
+2030,1,15,VIDA Y ECOSISTEMAS TERRESTRES,
+2030,1,16,"PAZ, JUSTICIA E INSTITUCIONES SÓLIDAS",
+2030,1,17,ALIANZAS PARA LOGRAR LOS OBJETIVOS,
+2030,2,1.1,Pobreza extrema,Erradicar la pobreza extrema.
+2030,2,1.2,Reducir pobreza,Reducir al menos a la mitad la pobreza multidimensional.
+2030,2,1.3,Protección social,Implementar sistemas de protección social.
+2030,2,1.4,Acceso recursos,Garantizar acceso a recursos y servicios básicos.
+2030,2,1.5,Resiliencia pobres,Reducir vulnerabilidad ante desastres.
+2030,2,1.a,Financiación pobreza,Movilizar recursos contra la pobreza.
+2030,2,1.b,Políticas pobreza,Crear marcos políticos sólidos.
+2030,2,2.1,Fin del hambre,Garantizar acceso a alimentación suficiente.
+2030,2,2.2,Malnutrición,Eliminar todas las formas de malnutrición.
+2030,2,2.3,Productividad agrícola,Duplicar productividad de pequeños productores.
+2030,2,2.4,Agricultura sostenible,Asegurar sistemas agrícolas sostenibles.
+2030,2,2.5,Diversidad genética,Proteger diversidad genética agrícola.
+2030,2,2.a,Inversión agrícola,Aumentar inversión rural.
+2030,2,2.b,Comercio agrícola,Eliminar distorsiones comerciales.
+2030,2,2.c,Precios alimentos,Estabilizar mercados alimentarios.
+2030,2,3.1,Salud materna,Reducir mortalidad materna.
+2030,2,3.2,Salud infantil,Eliminar muertes evitables infantiles.
+2030,2,3.3,Epidemias,Poner fin a epidemias principales.
+2030,2,3.4,Enfermedades crónicas,Reducir mortalidad por enfermedades no transmisibles.
+2030,2,3.5,Adicciones,Prevenir abuso de sustancias.
+2030,2,3.6,Accidentes tráfico,Reducir muertes por accidentes viales.
+2030,2,3.7,Salud sexual,Garantizar acceso a salud reproductiva.
+2030,2,3.8,Cobertura sanitaria,Lograr cobertura sanitaria universal.
+2030,2,3.9,Contaminación salud,Reducir muertes por contaminación.
+2030,2,3.a,Control tabaco,Fortalecer control del tabaco.
+2030,2,3.b,Medicamentos,Acceso a vacunas y medicamentos esenciales.
+2030,2,3.c,Personal sanitario,Aumentar financiación y personal sanitario.
+2030,2,3.d,Gestión riesgos sanitarios,Fortalecer gestión de riesgos sanitarios.
+2030,2,4.1,Educación básica,Garantizar educación primaria y secundaria gratuita.
+2030,2,4.2,Educación infantil,Acceso a atención y educación temprana.
+2030,2,4.3,Educación superior,Acceso igualitario a educación técnica y superior.
+2030,2,4.4,Habilidades empleo,Aumentar competencias para empleo.
+2030,2,4.5,Igualdad educativa,Eliminar desigualdades en educación.
+2030,2,4.6,Alfabetización,Garantizar alfabetización juvenil y adulta.
+2030,2,4.7,Educación sostenible,Promover educación para desarrollo sostenible.
+2030,2,4.a,Infraestructura escolar,Mejorar instalaciones educativas.
+2030,2,4.b,Becas,Ampliar becas internacionales.
+2030,2,4.c,Docentes,Aumentar docentes cualificados.
+2030,2,5.1,Fin discriminación,Eliminar discriminación contra mujeres.
+2030,2,5.2,Violencia género,Eliminar violencia contra mujeres y niñas.
+2030,2,5.3,Prácticas nocivas,Eliminar matrimonio infantil y mutilación.
+2030,2,5.4,Trabajo cuidados,Reconocer trabajo doméstico no remunerado.
+2030,2,5.5,Liderazgo femenino,Asegurar participación en liderazgo.
+2030,2,5.6,Derechos reproductivos,Garantizar derechos sexuales y reproductivos.
+2030,2,5.a,Recursos económicos,Igualdad en acceso a recursos.
+2030,2,5.b,Tecnología mujeres,Acceso femenino a tecnología.
+2030,2,5.c,Políticas igualdad,Adoptar políticas de igualdad de género.
+2030,2,6.1,Agua potable,Garantizar acceso universal a agua potable segura.
+2030,2,6.2,Saneamiento,Lograr acceso a saneamiento e higiene adecuados.
+2030,2,6.3,Calidad agua,Reducir contaminación y mejorar calidad del agua.
+2030,2,6.4,Uso eficiente agua,Aumentar eficiencia en uso del agua.
+2030,2,6.5,Gestión hídrica,Implementar gestión integrada de recursos hídricos.
+2030,2,6.6,Ecosistemas acuáticos,Proteger y restaurar ecosistemas relacionados con agua.
+2030,2,6.a,Cooperación agua,Ampliar cooperación internacional en agua y saneamiento.
+2030,2,6.b,Participación local,Fortalecer participación comunitaria en gestión del agua.
+2030,2,7.1,Acceso energía,Garantizar acceso a energía asequible y moderna.
+2030,2,7.2,Energías renovables,Aumentar proporción de energías renovables.
+2030,2,7.3,Eficiencia energética,Mejorar eficiencia energética global.
+2030,2,7.a,Cooperación energética,Promover cooperación en tecnología energética limpia.
+2030,2,7.b,Infraestructura energética,Expandir infraestructura energética sostenible.
+2030,2,8.1,Crecimiento económico,Mantener crecimiento económico sostenible.
+2030,2,8.2,Productividad,Mejorar productividad mediante innovación.
+2030,2,8.3,Empleo digno,Promover empleo pleno y productivo.
+2030,2,8.4,Consumo eficiente,Mejorar eficiencia en consumo y producción.
+2030,2,8.5,Trabajo decente,Lograr empleo pleno e igualdad salarial.
+2030,2,8.6,Jóvenes empleo,Reducir jóvenes sin empleo ni formación.
+2030,2,8.7,Trabajo forzoso,Erradicar trabajo infantil y forzoso.
+2030,2,8.8,Derechos laborales,Proteger derechos laborales y entornos seguros.
+2030,2,8.9,Desarrollo turístico,Promover turismo sostenible y empleo local.
+2030,2,8.10,Servicios financieros,Ampliar acceso a servicios financieros.
+2030,2,8.a,Ayuda comercio,Aumentar ayuda para comercio en países en desarrollo.
+2030,2,8.b,Estrategia juvenil,Desarrollar estrategia global de empleo juvenil.
+2030,2,9.1,Infraestructura resiliente,Desarrollar infraestructuras sostenibles y resilientes.
+2030,2,9.2,Industrialización sostenible,Promover industrialización inclusiva.
+2030,2,9.3,Acceso financiación,Facilitar acceso a financiación para pymes.
+2030,2,9.4,Tecnología limpia,Modernizar industria con tecnologías limpias.
+2030,2,9.5,Investigación,Fortalecer investigación e innovación.
+2030,2,9.a,Infraestructura desarrollo,Apoyar infraestructura en países en desarrollo.
+2030,2,9.b,Tecnología industrial,Fomentar adopción de tecnología industrial.
+2030,2,9.c,Acceso internet,Ampliar acceso a TIC e internet.
+2030,2,10.1,Ingresos 40% pobre,Aumentar ingresos del 40% más pobre.
+2030,2,10.2,Inclusión social,Promover inclusión social y económica.
+2030,2,10.3,Igualdad oportunidades,Garantizar igualdad de oportunidades.
+2030,2,10.4,Políticas redistributivas,Adoptar políticas fiscales y salariales equitativas.
+2030,2,10.5,Regulación financiera,Mejorar regulación de mercados financieros.
+2030,2,10.6,Representación global,Mejorar representación de países en desarrollo.
+2030,2,10.7,Migración segura,Facilitar migración segura y ordenada.
+2030,2,10.a,Trato especial,Aplicar trato especial a países en desarrollo.
+2030,2,10.b,Flujos financieros,Fomentar flujos financieros hacia desarrollo.
+2030,2,10.c,Costes remesas,Reducir costes de envío de remesas.
+2030,2,11.1,Vivienda digna,Garantizar acceso a vivienda y servicios básicos seguros.
+2030,2,11.2,Transporte seguro,Proporcionar transporte accesible y sostenible.
+2030,2,11.3,Urbanización sostenible,Promover planificación urbana inclusiva.
+2030,2,11.4,Patrimonio cultural,Proteger patrimonio cultural y natural.
+2030,2,11.5,Desastres urbanos,Reducir impacto de desastres en ciudades.
+2030,2,11.6,Impacto ambiental urbano,Reducir impacto ambiental negativo de ciudades.
+2030,2,11.7,Espacios verdes,Garantizar acceso a espacios públicos seguros y verdes.
+2030,2,11.a,Vínculos territoriales,Fortalecer vínculos urbano-rurales.
+2030,2,11.b,Gestión riesgos,Implementar planes de gestión de desastres.
+2030,2,11.c,Construcción sostenible,Apoyar construcción sostenible en países vulnerables.
+2030,2,12.1,Marco consumo sostenible,Aplicar programas de consumo y producción sostenibles.
+2030,2,12.2,Uso recursos,Gestionar recursos naturales de forma sostenible.
+2030,2,12.3,Desperdicio alimentos,Reducir a la mitad el desperdicio alimentario.
+2030,2,12.4,Químicos y residuos,Gestionar químicos y desechos responsablemente.
+2030,2,12.5,Reciclaje,Reducir generación de residuos mediante reciclaje.
+2030,2,12.6,Empresas sostenibles,Fomentar prácticas empresariales sostenibles.
+2030,2,12.7,Compras públicas,Promover contratación pública sostenible.
+2030,2,12.8,Información sostenible,Asegurar información sobre estilos de vida sostenibles.
+2030,2,12.a,Capacidad científica,Fortalecer capacidades científicas para sostenibilidad.
+2030,2,12.b,Turismo sostenible,Desarrollar herramientas para turismo sostenible.
+2030,2,12.c,Subsidios fósiles,Racionalizar subsidios a combustibles fósiles.
+2030,2,13.1,Resiliencia climática,Fortalecer resiliencia ante riesgos climáticos.
+2030,2,13.2,Políticas climáticas,Integrar medidas climáticas en políticas nacionales.
+2030,2,13.3,Educación climática,Mejorar educación y sensibilización climática.
+2030,2,13.a,Financiación climática,Movilizar financiación para acción climática.
+2030,2,13.b,Capacidad adaptación,Fortalecer capacidades en países vulnerables.
+2030,2,14.1,Contaminación marina,Reducir contaminación marina.
+2030,2,14.2,Ecosistemas marinos,Proteger ecosistemas marinos y costeros.
+2030,2,14.3,Acidificación océanos,Reducir acidificación de océanos.
+2030,2,14.4,Pesca sostenible,Regular pesca y eliminar prácticas destructivas.
+2030,2,14.5,Áreas marinas protegidas,Conservar zonas marinas y costeras.
+2030,2,14.6,Subsidios pesca,Eliminar subsidios que fomentan sobrepesca.
+2030,2,14.7,Economía azul,Aumentar beneficios sostenibles para pequeños estados insulares.
+2030,2,14.a,Investigación marina,Fortalecer investigación científica marina.
+2030,2,14.b,Pesca artesanal,Apoyar pesca artesanal sostenible.
+2030,2,14.c,Derecho marítimo,Aplicar derecho internacional del mar.
+2030,2,15.1,Ecosistemas terrestres,Conservar ecosistemas terrestres y de agua dulce.
+2030,2,15.2,Bosques sostenibles,Gestionar bosques y detener deforestación.
+2030,2,15.3,Degradación tierras,Restaurar tierras degradadas.
+2030,2,15.4,Ecosistemas montaña,Conservar ecosistemas de montaña.
+2030,2,15.5,Biodiversidad,Detener pérdida de biodiversidad.
+2030,2,15.6,Recursos genéticos,Garantizar acceso justo a recursos genéticos.
+2030,2,15.7,Tráfico especies,Combatir caza furtiva y tráfico ilegal.
+2030,2,15.8,Especies invasoras,Prevenir especies exóticas invasoras.
+2030,2,15.9,Biodiversidad políticas,Integrar biodiversidad en planificación nacional.
+2030,2,15.a,Financiación ecosistemas,Movilizar recursos para conservación.
+2030,2,15.b,Gestión forestal,Financiar gestión forestal sostenible.
+2030,2,15.c,Caza furtiva,Apoyar lucha contra caza furtiva.
+2030,2,16.1,Reducir violencia,Reducir todas las formas de violencia y mortalidad relacionada.
+2030,2,16.2,Protección infancia,"Eliminar abuso, explotación y violencia contra niños."
+2030,2,16.3,Estado de derecho,Promover justicia e igualdad ante la ley.
+2030,2,16.4,Crimen organizado,Reducir flujos ilícitos y delincuencia organizada.
+2030,2,16.5,Corrupción,Reducir corrupción y sobornos.
+2030,2,16.6,Instituciones eficaces,Desarrollar instituciones transparentes y responsables.
+2030,2,16.7,Decisiones inclusivas,Garantizar toma de decisiones inclusiva.
+2030,2,16.8,Participación global,Fortalecer participación en gobernanza mundial.
+2030,2,16.9,Identidad legal,Garantizar identidad legal para todos.
+2030,2,16.10,Acceso información,Garantizar acceso público a la información.
+2030,2,16.a,Instituciones nacionales,Fortalecer instituciones para prevenir violencia.
+2030,2,16.b,No discriminación,Promover leyes y políticas no discriminatorias.
+2030,2,17.10,Recaudación interna,Fortalecer movilización de recursos internos.
+2030,2,17.2,Ayuda desarrollo,Cumplir compromisos de ayuda oficial.
+2030,2,17.3,Recursos financieros,Movilizar recursos adicionales para desarrollo.
+2030,2,17.4,Sostenibilidad deuda,Apoyar gestión sostenible de la deuda.
+2030,2,17.5,Inversión sostenible,Promover inversión en países menos adelantados.
+2030,2,17.6,Cooperación tecnológica,Mejorar cooperación en ciencia y tecnología.
+2030,2,17.7,Transferencia tecnológica,Facilitar transferencia de tecnologías sostenibles.
+2030,2,17.8,Banco tecnología,Poner en funcionamiento banco de tecnología.
+2030,2,17.9,Creación capacidad,Apoyar fortalecimiento de capacidades.
+2030,2,17.1,Sistema comercio,Promover sistema comercial multilateral.
+2030,2,17.11,Exportaciones desarrollo,Aumentar exportaciones de países en desarrollo.
+2030,2,17.12,Acceso mercados,Garantizar acceso preferencial a mercados.
+2030,2,17.13,Estabilidad macroeconómica,Mejorar estabilidad macroeconómica mundial.
+2030,2,17.14,Coherencia políticas,Aumentar coherencia de políticas para desarrollo.
+2030,2,17.15,Soberanía políticas,Respetar liderazgo nacional en políticas.
+2030,2,17.16,Alianzas globales,Fortalecer alianzas para desarrollo sostenible.
+2030,2,17.17,Alianzas público-privadas,Fomentar alianzas eficaces.
+2030,2,17.18,Datos desglosados,Mejorar disponibilidad de datos desglosados.
+2030,2,17.19,Medición progreso,Desarrollar indicadores complementarios al PIB.
+TARRAGONA,1,1,"CONECTADA, ORDENADA Y EQUILIBRADA TERRITORIALMENTE",
+TARRAGONA,1,2,"IGUAL, SOCIAL E INCLUSIVA",
+TARRAGONA,1,3,CON IDENTIDAD y PATRIMONIO CULTURAL COMPARTIDO,
+TARRAGONA,1,4,"INNOVADORA, COMPETITIVA Y CON UNA ECONOMÍA DIVERSIFICADA",
+TARRAGONA,1,5,"RESILIENTE, SOSTENIBLE Y COMPROMETIDA CON LA TRANSICIÓN ECOLÓGICA",
+TARRAGONA,1,6,"COOPERATIVA, BIEN GOBERNADA Y CON SERVICIOS COMPARTIDOS",
+TARRAGONA,2,1.1,Impulsar una planificación territorial metropolitana basada en datos y con gobernanza compartida,
+TARRAGONA,2,1.2,"Desarrollar un sistema metropolitano de movilidad y conectividad integrado, sostenible y accesible",
+TARRAGONA,2,1.3,Avanzar hacia una metrópolis más inteligente y conectada,
+TARRAGONA,2,2.1,Fortalecer la cohesión social. La igualdad y la inclusión en el conjunto del territorio,
+TARRAGONA,2,2.2,Garantizar el derecho a la vivienda asequible mediante una política coordinada,
+TARRAGONA,2,3.1,Preservar y poner en valor el patrimonio natural y cultural como elemento compartido de identidad metropolitana,
+TARRAGONA,2,3.2,Impulsar un modelo de patrimonio accesible y vinculado al desarrollo del territorio,
+TARRAGONA,2,4.1,Promover la competitividad de la actividad económica metropolitana,
+TARRAGONA,2,4.2,Fortalecer la gestión del talento para preservar el tejido productivo de proximidad,
+TARRAGONA,2,4.3,Promover la sostenibilidad de modelo económico,
+TARRAGONA,2,5.1,Fortalecer la resiliencia climática y reducir la vulnerabilidad del territorio frente a riesgos ambientales,
+TARRAGONA,2,5.2,Impulsar una gestión eficiente de los recursos naturales y avanzar hacia una economía circular,
+TARRAGONA,2,6.1,"Consolidar una estructura de gobernanza metropolitana estable, operativa y reconocida",
+TARRAGONA,2,6.2,"Impulsar servicios compartidos como palanca de eficiencia, sostenibilidad y cohesión territorial",

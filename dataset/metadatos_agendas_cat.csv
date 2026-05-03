@@ -1,0 +1,162 @@
+indicador,clase,nombre,detalle,unidad,formula
+D-1,Descriptiu AUE,Variació de la població en els darrers deu anys disponibles,,%,
+D-2-a,Descriptiu AUE,Superfície de cobertura artificial per municipi,,%,
+D-2-b,Descriptiu AUE,Superfície de conreus per municipi,,%,
+D-2-d,Descriptiu AUE,Superfície de zona forestal i deveses per municipi,,%,
+D-3-a,Descriptiu AUE,Superfície municipal destinada a explotacions agràries i forestals,,%,
+D-3-b,Descriptiu AUE,Superfície destinada a explotacions agràries i forestals respecte al sòl urbà i urbanitzable delimitat de la ciutat,,%,
+D-4,Descriptiu AUE,Superfície municipal de sòl no urbanitzable,,%,
+D-5,Descriptiu AUE,Superfície de zones verdes per cada 1.000 habitants,,m2/Hab,
+D-6,Descriptiu AUE,Densitat Urbana,Nombre d'habitants per hectàrea de superfície de sòl urbà,hab/ha,
+D-7,Descriptiu AUE,Superfície de sòl urbà mixt discontinu sobre sòl urbà mixt total,,%,
+D-8,Descriptiu AUE,Densitat d'habitatge per superfície de sòl urbà,,Viv/Hab,
+D-9,Descriptiu AUE,Compacitat urbana,Superfície construïda total per superfície de sòl,%,
+D-10-a,Descriptiu AUE,Superfície construïda d'ús residencial per superfície de sòl,,%,
+D-10-b,Descriptiu AUE,Superfície construïda d'ús residencial respecte al total de superfície construïda,,%,
+D-ST-1,Descriptiu AUE,Densitat d'habitatges previstos a les àrees de sòl de desenvolupament,,Viv/Hab,
+D-ST-2,Descriptiu AUE,Percentatge d'àrees de sòl de desenvolupament respecte al total del sòl urbà,,%,
+D-ST-3,Descriptiu AUE,Sòl urbanitzable delimitat respecte al total del sòl urbà,,%,
+D-ST-4,Descriptiu AUE,Percentatge d'àrees de sòl en desenvolupament d'ús residencial respecte al total de sòl urbà,,%,
+D-ST-5,Descriptiu AUE,Percentatge d'àrees de sòl en desenvolupament d'ús activitats econòmiques (industrial o terciari) respecte al total de sòl urbà,,%,
+D-14,Descriptiu AUE,Percentatge del parc edificatori per municipi amb una antiguitat anterior a l'any 2000,,%,
+D-17-a,Descriptiu AUE,Superfície d'infraestructures de transport,,ha,
+D-17-b,Descriptiu AUE,Percentatge de superfície d'infraestructures de transport respecte al terme municipal,,%,
+D-18-a,Descriptiu AUE,Vehicles domiciliats per cada 1.000 habitants,,x 1.000,
+D-18-b,Descriptiu AUE,Percentatge de turismes,,%,
+D-18-c,Descriptiu AUE,Percentatge de motocicletes,,%,
+D-18-d,Descriptiu AUE,Antiguitat del parc de vehicles,,%,
+D-22-a,Descriptiu AUE,Índex d'envelliment de la població,,%,
+D-22-b,Descriptiu AUE,Índex de senectut de la població,,%,
+D-23,Descriptiu AUE,Percentatge de població estrangera,,%,
+D-24-a,Descriptiu AUE,Índex de dependència total,,%,
+D-24-b,Descriptiu AUE,Índex de dependència infantil,,%,
+D-24-c,Descriptiu AUE,Índex de dependència de gent gran,,%,
+D-26-a,Descriptiu AUE,Treballadors en el sector agrícola,,%,
+D-26-b,Descriptiu AUE,Treballadors en el sector indústria,,%,
+D-26-c,Descriptiu AUE,Treballadors en el sector construcció,,%,
+D-26-d,Descriptiu AUE,Treballadors en el sector serveis,,%,
+D-27-a,Descriptiu AUE,Establiments en el sector agrícola,,%,
+D-27-b,Descriptiu AUE,Establiments en el sector indústria,,%,
+D-27-c,Descriptiu AUE,Establiments en el sector construcció,,%,
+D-27-d,Descriptiu AUE,Establiments en el sector serveis,,%,
+D-28-a,Descriptiu AUE,Percentatge d'aturats total,,%,
+D-28-b,Descriptiu AUE,Percentatge d'aturats entre 25 i 44 anys,,%,
+D-28-c,Descriptiu AUE,Proporció d'atur femení,,%,
+D-29,Descriptiu AUE,Nombre d'habitatges per cada 1.000 habitants,,x 1.000,
+D-32,Descriptiu AUE,Variació del nombre de llars en els darrers deu anys,,%,
+D-33,Descriptiu AUE,Creixement del parc d'habitatge en els darrers deu anys,,%,
+D-34-a,Descriptiu AUE,Percentatge d'habitatge secundari,,%,
+D-35,Descriptiu AUE,Percentatge d'habitatge buit,,%,
+D-ST-6,Descriptiu AUE,Percentatge d'habitatges previstos a àrees de desenvolupament respecte al parc d'habitatge existent,,%,
+D-ST-7,Descriptiu AUE,Nombre d'habitatges previstos a les àrees de desenvolupament per cada 1.000 habitants,,x 1.000,
+D-37,Descriptiu AUE,FIGURA DE PLANEJAMENT URBANÍSTIC VIGENT AL MUNICIPI,,,
+D-38,Descriptiu AUE,DATA DE LA FIGURA DE PLANEJAMENT URBANÍSTIC VIGENT AL MUNICIPI,,,
+D-30-a,Descriptiu AUE,Nombre d'edificis amb un habitatge,,%,
+D-30-b,Descriptiu AUE,Nombre d'edificis amb 2 o més habitatges,,%,
+D-34-b,Descriptiu AUE,Percentatge d'habitatge turístic,,%,
+D-36,Descriptiu AUE,Accessibilitat a l'habitatge,Preu mitjà dels habitatges respecte de la renda mitjana familiar,%,
+1,Agenda 2030,Percentatge de població amb ingressos inferiors al 40% de la mediana,Proporció de persones els ingressos de les quals estan per sota del 40% de la renda mediana nacional. Indicador de pobresa severa que mesura la fracció de la població en situació d'exclusió econòmica greu.,%,↓ Descendent (menys = millor)
+3,Agenda 2030,Renda mediana,Valor central de la distribució d'ingressos equivalents de les llars: el 50% de la població té ingressos superiors i el 50% inferiors. S'utilitza com a referència per a llindars de pobresa relativa.,€,↑ Ascendent (més = millor)
+2,Agenda 2030 i AUE,Taxa de pobresa,Proporció de persones amb ingressos per unitat de consum per sota del 60% de la mediana nacional (escala OCDE modificada). Indicador estàndard europeu de pobresa relativa (AROPE).,%,↓ Descendent (menys = millor)
+210,Agenda 2030,Taxa de pobresa infantil,Percentatge de menors de 18 anys que viuen en llars amb ingressos per sota del llindar de pobresa relativa (60% de la mediana nacional).,%,↓ Descendent (menys = millor)
+5,Agenda 2030,Renda Garantida de Ciutadania per 10.000 habitants,Nombre de persones beneficiàries de la Renda Garantida de Ciutadania (RGC) per cada 10.000 habitants del municipi.,x10.000 hab,↑ Ascendent (més = millor)
+7,Agenda 2030,Proporció de persones amb discapacitat que perceben una pensió,Percentatge de persones amb grau de discapacitat reconegut que perceben una pensió no contributiva o contributiva per discapacitat.,%,↑ Ascendent (més = millor)
+8,Agenda 2030,Nombre de refugis climàtics,"Nombre d'equipaments municipals habilitats com a refugis climàtics d'accés lliure per a la ciutadania, per cada 10.000 habitants.",x10.000 hab,↑ Ascendent (més = millor)
+9,Agenda 2030 i AUE,Superfície agrícola ecològica (percentatge sobre el total agrícola),Percentatge de la superfície agrícola útil del municipi destinada a producció ecològica certificada.,ha,↑ Ascendent (més = millor)
+10,Agenda 2030,Terres agrícoles per 100 habitants,"Superfície de terres agrícoles disponible per cada 100 habitants del municipi, com a indicador de la capacitat productiva agrícola local.",ha x100 hab,↑ Ascendent (més = millor)
+12,Agenda 2030,Percentatge d'hectàrees d'explotacions de petita escala,Proporció de la superfície agrícola total ocupada per explotacions de petita escala. Es defineix explotació de petita escala com aquella situada per sota del percentil 40 de la superfície neta per explotació calculat a nivell de Catalunya per any.,%,↑ Ascendent (més = millor)
+13,Agenda 2030,Percentatge d'explotacions de petita escala,Proporció del nombre total d'explotacions agràries del municipi que es classifiquen com a explotacions de petita escala (per sota del percentil 40 de superfície neta per explotació a nivell de Catalunya).,%,↑ Ascendent (més = millor)
+212,Agenda 2030,Taxa d'ocupació en el sector agrícola,Percentatge de treballadors afiliats a la Seguretat Social en el sector agrícola (CNAE 01–03) respecte a la població activa del municipi.,%,↑ Ascendent (més = millor)
+81,Agenda 2030 i AUE,Nombre d'operadors de producció ecològica,Nombre d'operadors inscrits al Consell Català de la Producció Agrària Ecològica (CCPAE) per cada 10.000 habitants del municipi.,x10.000 hab,↑ Ascendent (més = millor)
+219,Agenda 2030,Mortalitat infantil,Nombre de defuncions de menors d'un any per cada 1.000 nascuts vius al municipi.,x1.000 nascuts,↓ Descendent (menys = millor)
+218,Agenda 2030,Defuncions per hepatitis vírica,Taxa de mortalitat per hepatitis vírica (CIE-10: B15–B19) per 100.000 habitants.,x100.000 hab,↓ Descendent (menys = millor)
+224,Agenda 2030,Defuncions per tuberculosi,Taxa de mortalitat per tuberculosi (CIE-10: A15–A19 i B90) per 100.000 habitants.,x100.000 hab,↓ Descendent (menys = millor)
+226,Agenda 2030,Defuncions per sida i VIH,Taxa de mortalitat per sida i malalties relacionades amb el VIH (CIE-10: B20–B24 i R75) per 100.000 habitants.,x100.000 hab,↓ Descendent (menys = millor)
+217,Agenda 2030,Defuncions per malalties infeccioses del sistema respiratori,Taxa de mortalitat per malalties infeccioses de les vies respiratòries (CIE-10: J09–J18) per 100.000 habitants.,x100.000 hab,↓ Descendent (menys = millor)
+220,Agenda 2030,Defuncions per malalties no transmissibles,"Taxa de mortalitat per malalties no transmissibles (cardiovasculars, càncers, diabetis, malalties respiratòries cròniques) per 100.000 habitants.",x100.000 hab,↓ Descendent (menys = millor)
+221,Agenda 2030,Defuncions prematures (menors de 65 anys),Taxa de mortalitat per totes les causes en persones menors de 65 anys per 100.000 habitants del mateix grup d'edat.,x100.000 hab,↓ Descendent (menys = millor)
+222,Agenda 2030,Defuncions per suïcidi,Taxa de mortalitat per lesions autoinfligides intencionalment (CIE-10: X60–X84) per 100.000 habitants.,x100.000 hab,↓ Descendent (menys = millor)
+225,Agenda 2030,Defuncions per tumors del sistema respiratori,Taxa de mortalitat per tumors malignes del sistema respiratori (CIE-10: C33–C34) per 100.000 habitants.,x100.000 hab,↓ Descendent (menys = millor)
+216,Agenda 2030,Defuncions per abús d'alcohol i drogues,Taxa de mortalitat per trastorns mentals i del comportament deguts a l'ús de substàncies psicoactives (CIE-10: F10–F19) per 100.000 habitants.,x100.000 hab,↓ Descendent (menys = millor)
+16,Agenda 2030,Taxa de mortalitat per accidents de trànsit,"Taxa de mortalitat per accidents de vehicles de motor registrats al municipi, per 100.000 habitants.",x100.000 hab,↓ Descendent (menys = millor)
+227,Agenda 2030,Fecunditat adolescent,Nombre de nascuts vius de mares d'entre 15 i 19 anys per 1.000 dones del mateix grup d'edat.,x1.000 dones,↓ Descendent (menys = millor)
+231,Agenda 2030,Població amb nivell educatiu màxim d'educació secundària,Percentatge de la població de 25 a 64 anys amb nivell educatiu màxim d'educació secundària obligatòria.,%,↓ Descendent (menys = millor)
+229,Agenda 2030,Accés als serveis d'educació preescolar,Nombre de places d'educació infantil de primer cicle (0–3 anys) disponibles per cada 100 infants del municipi.,%,↑ Ascendent (més = millor)
+232,Agenda 2030,Població amb nivell educatiu màxim de segon cicle de secundària,Percentatge de la població de 25 a 64 anys amb nivell educatiu màxim de batxillerat o cicles formatius de grau mitjà.,%,↑ Ascendent (més = millor)
+230,Agenda 2030,Població matriculada en estudis superiors,Percentatge de la població de 18 a 24 anys matriculada en estudis universitaris o de grau superior.,x1.000 hab,↑ Ascendent (més = millor)
+233,Agenda 2030,Població amb nivell d'educació terciària o superior,Percentatge de la població de 25 a 64 anys amb titulació universitària o equivalent.,%,↑ Ascendent (més = millor)
+24,Agenda 2030,Índex de paritat en activitats educatives,Ràtio entre la taxa d'accés a l'educació terciària de dones i la d'homes al municipi.,Ràtio,↑ Ascendent (més = millor)
+25,Agenda 2030,Taxa d'alumnes per professor,Nombre mitjà d'alumnes per docent en centres educatius de titularitat pública del municipi.,Ràtio,↓ Descendent (menys = millor)
+26,Agenda 2030 i AUE,Diferència de taxa d'atur entre dones i homes,Diferència en punts percentuals entre la taxa d'atur femenina i la masculina al municipi.,p. %,↓ Descendent (menys = millor)
+27,Agenda 2030,Percentatge de càrrecs electes ocupats per dones,Proporció de regidors i regidores de sexe femení en el consistori municipal.,%,↑ Ascendent (més = millor)
+28,Agenda 2030 i AUE,Taxa d'atur en dones,Percentatge de dones en edat activa (16–64 anys) en situació de desocupació registrada sobre el total de dones actives del municipi.,%,↓ Descendent (menys = millor)
+29,Agenda 2030 i AUE,Taxa d'ocupació en dones,Percentatge de dones d'entre 16 i 64 anys afiliades a la Seguretat Social respecte al total de dones en edat activa del municipi.,%,↑ Ascendent (més = millor)
+30,Agenda 2030,Preu de l'aigua (€/m³),"Preu de l'aigua (en €/m³) incloent el preu del subministrament, el cànon de l'aigua i el clavegueram.",€/m³,↓ Descendent (menys = millor)
+31,Agenda 2030 i AUE,Consum d'aigua per habitant,Volum d'aigua consumida total per habitant i any al municipi.,l/hab*dia,↓ Descendent (menys = millor)
+32,Agenda 2030,Percentatge de la renda de les llars destinat a energia,"Despesa en electricitat, gas i altres combustibles sobre la renda disponible de les llars a nivell municipal. Indicador de vulnerabilitat energètica que reflecteix la proporció de renda que les llars destinen a cobrir necessitats energètiques bàsiques.",%,↓ Descendent (menys = millor)
+34,Agenda 2030 i AUE,Consum d'energia a les llars,Consum final d'energia elèctrica total per habitant al municipi.,kwh/hab,↓ Descendent (menys = millor)
+35,Agenda 2030,Producte interior brut per habitant,"Valor total de béns i serveis produïts al municipi per habitant, en euros corrents.",€,↑ Ascendent (més = millor)
+245,Agenda 2030 i AUE,Índex de dependència per sector d'ocupació,"Índex sintètic que mesura el grau de dependència d'un municipi respecte d'un o pocs sectors d'ocupació, combinant la desviació de la seva estructura productiva en relació amb el patró regional i la intensitat de concentració en el sector dominant.",Índex,↓ Descendent (menys = millor)
+36,Agenda 2030,Taxa d'ocupació,Percentatge de la població de 16 a 64 anys afiliada a la Seguretat Social respecte al total de persones en edat activa del municipi.,%,↑ Ascendent (més = millor)
+38,Agenda 2030,Taxa d'atur,Percentatge de la població activa del municipi en situació de desocupació registrada.,%,↓ Descendent (menys = millor)
+39,Agenda 2030,Percentatge de contractació pública adjudicada a PIMES,Proporció de l'import total de contractes públics adjudicats a petites i mitjanes empreses al municipi.,%,↑ Ascendent (més = millor)
+40,Agenda 2030,Percentatge de persones en atur majors de 45 anys,Percentatge de persones en atur majors de 45 anys sobre el total d'aturats registrats al municipi.,%,↓ Descendent (menys = millor)
+41,Agenda 2030,Percentatge de persones en atur menors de 25 anys,Percentatge de persones en atur menors de 25 anys sobre el total d'aturats registrats al municipi.,%,↓ Descendent (menys = millor)
+246,Agenda 2030,Temporalitat laboral,Percentatge de contractes de treball registrats de caràcter temporal sobre el total de contractes registrats al municipi.,%,↓ Descendent (menys = millor)
+42,Agenda 2030 i AUE,Pressió turística,"Nombre de places d'allotjament turístic (hotels, càmpings, apartaments, HUT, cases rurals) per habitant del municipi.",Places/habitant,↑ Ascendent (més = millor)
+43,Agenda 2030,Percentatge d'ocupació en el sector industrial,Proporció de treballadors afiliats a la Seguretat Social en el sector industrial (CNAE 10–33) respecte a la població en edat activa del municipi.,%,↑ Ascendent (més = millor)
+44,Agenda 2030,Empreses de coneixement per 10.000 habitants,"Nombre d'empreses de sectors de coneixement intensiu (CNAE: 62, 63, 69, 70, 71, 72, 73, 74) per 10.000 habitants del municipi.",x10.000 hab,↑ Ascendent (més = millor)
+186,Agenda 2030 i AUE,Patents per càpita,Nombre de sol·licituds de patents nacionals amb inventors domiciliats al municipi per 10.000 habitants.,patents/100.000 hab,↑ Ascendent (més = millor)
+45,Agenda 2030 i AUE,Cobertura d'internet,Percentatge d'habitatges del municipi amb accés a banda ampla (≥ 30 Mbps) o ultraràpida (≥ 100 Mbps).,%,↓ Descendent (menys = millor)
+47,Agenda 2030,Desigualtat de renda,Ràtio entre la renda mitjana del 20% de llars amb majors ingressos i la del 20% amb menors ingressos del municipi.,Índex,↓ Descendent (menys = millor)
+48,Agenda 2030,Renda per habitant,"Renda bruta mitjana per habitant del municipi, calculada a partir de les dades fiscals i de l'enquesta de condicions de vida.",€,↑ Ascendent (més = millor)
+46,Agenda 2030 i AUE,Índex de Gini,Mesura de la desigualtat en la distribució dels ingressos de les llars del municipi. El valor 0 representa igualtat perfecta i 1 la màxima desigualtat.,Índex,↓ Descendent (menys = millor)
+119,Agenda 2030 i AUE,Índex de vulnerabilitat urbana,"Proporció de població resident en seccions censals vulnerables respecte al total de població del territori. Una secció censal es considera vulnerable quan més del 21% de la seva població té ingressos per unitat de consum inferiors al 40% de la mediana nacional i, a més, aquesta proporció és superior al doble de la mitjana de població vulnerable de la ciutat.",%,↓ Descendent (menys = millor)
+257,Agenda 2030,Índex de dependència total,Ràtio entre la població dependent (menors de 16 i majors de 64 anys) i la població en edat activa (16–64 anys).,%,↓ Descendent (menys = millor)
+256,Agenda 2030,Persones estrangeres ocupades,Percentatge de persones estrangeres amb ocupació respecte al total de persones estrangeres en edat activa.,%,↑ Ascendent (més = millor)
+49,Agenda 2030,Percentatge de població amb ingressos inferiors al 50% de la mediana (homes),Proporció d'homes els ingressos dels quals estan per sota del 50% de la renda mediana nacional.,%,↓ Descendent (menys = millor)
+50,Agenda 2030,Percentatge de població amb ingressos inferiors al 50% de la mediana (dones),Proporció de dones els ingressos de les quals estan per sota del 50% de la renda mediana nacional.,%,↓ Descendent (menys = millor)
+51,Agenda 2030,Esforç econòmic del lloguer,Percentatge de la renda bruta de les llars destinat al pagament del lloguer d'habitatge habitual. Es calcula com la relació entre el lloguer anual mitjà i la renda bruta mitjana de les llars a nivell municipal.,%,↓ Descendent (menys = millor)
+264,Agenda 2030,Índex de preus de l'habitatge en lloguer,"Evolució dels preus del lloguer d'habitatge al municipi en relació a un any base, calculat per l'INE.",Índex,↓ Descendent (menys = millor)
+112,AUE,Confort acústic diürn (Sistema Municipal d'Indicadors de Sostenibilitat),Percentatge de població exposada a nivells de soroll diürn inferiors als límits normatius (dB(A)).,%,↑ Ascendent (més = millor)
+113,AUE,Confort acústic nocturn (Sistema Municipal d'Indicadors de Sostenibilitat),Percentatge de població exposada a nivells de soroll nocturn inferiors als límits normatius (dB(A)).,%,↑ Ascendent (més = millor)
+265,Agenda 2030,Infraestructura de transport,"Superfície ocupada per infraestructures viàries, ferroviàries i logístiques respecte del terme municipal.",%,↑ Ascendent (més = millor)
+275,Agenda 2030,Costa i hàbitats naturals marins protegits,Percentatge de la línia de costa del municipi inclosa en alguna figura de protecció ambiental marina o litoral.,%,↑ Ascendent (més = millor)
+114,Agenda 2030 i AUE,Concentració mitjana anual de NO₂,Concentració mitjana anual de diòxid de nitrogen (NO₂) mesurada per les estacions de mesurament del municipi.,µg/m³,↓ Descendent (menys = millor)
+115,Agenda 2030 i AUE,Nombre de dies amb superació del límit OMS de PM10,Nombre de dies a l'any en què la concentració de partícules PM10 supera el límit recomanat per l'OMS (15 µg/m³ en mitjana diària).,Dies,↓ Descendent (menys = millor)
+276,Agenda 2030,Nombre de banderes blaves,Proporció de les platges del municipi que han obtingut la distinció Bandera Blava per la qualitat de les seves aigües i serveis.,%,↑ Ascendent (més = millor)
+58,Agenda 2030 i AUE,Taxa de recollida selectiva,Percentatge de residus municipals recollits de forma selectiva (fraccions separades en origen) sobre el total de residus generats.,%,↑ Ascendent (més = millor)
+59,Agenda 2030 i AUE,Generació de residus domèstics per habitant i any,Quilograms de residus domèstics generats per habitant i any al municipi.,kg/hab*any,↓ Descendent (menys = millor)
+272,Agenda 2030 i AUE,Habitatges d'ús turístic,Nombre d'habitatges d'ús turístic (HUT) registrats per cada 100 habitatges del parc residencial del municipi.,%,↓ Descendent (menys = millor)
+129,Agenda 2030 i AUE,Emissions totals de gasos d'efecte hivernacle per habitant,"Emissions totals de gasos d'efecte hivernacle (GEH) del municipi per habitant, en tones equivalents de CO₂.",t CO2eq/Hab,↓ Descendent (menys = millor)
+278,Agenda 2030,Qualitat de les aigües de bany,Percentatge de zones de bany continentals o marítimes amb classificació excel·lent segons Directiva 2006/7/CE.,%,↑ Ascendent (més = millor)
+294,AUE,Instal·lacions educatives per 10.000 habitants,Nombre de centres educatius per cada 10.000 habitants.,x10.000 hab,↑ Ascendent (més = millor)
+295,AUE,Instal·lacions sanitàries per 10.000 habitants,Nombre de centres de salut o hospitals per cada 10.000 habitants.,x10.000 hab,↑ Ascendent (més = millor)
+296,AUE,Instal·lacions esportives per 10.000 habitants,Nombre d'equipaments esportius per cada 10.000 habitants.,x10.000 hab,↑ Ascendent (més = millor)
+297,AUE,Punts verds per 10.000 habitants,Nombre d'instal·lacions de recollida selectiva per cada 10.000 habitants.,x10.000 hab,↑ Ascendent (més = millor)
+53,Agenda 2030,Percentatge de sòl artificial,"Proporció de la superfície municipal ocupada per sòl urbà o urbanitzable (edificació, infraestructures, zones industrials).",%,↓ Descendent (menys = millor)
+285,Agenda 2030,Taxa de criminalitat,Nombre d'infraccions penals conegudes per les forces de seguretat per cada 1.000 habitants del municipi.,x1.000 hab,↓ Descendent (menys = millor)
+286,Agenda 2030,Taxa d'homicidis i assassinats,Nombre d'homicidis dolosos i assassinats consumats per cada 100.000 habitants del municipi.,x100.000 hab,↓ Descendent (menys = millor)
+284,Agenda 2030,Tràfic de drogues,Nombre de detencions per delictes relacionats amb el tràfic de drogues per cada 100.000 habitants del municipi.,x100.000 hab,↓ Descendent (menys = millor)
+204,Agenda 2030 i AUE,Solidesa i autonomia pressupostària de la institució municipal,"Proporció dels ingressos propis (capítols 1, 2, 3 i 5) sobre els ingressos totals del pressupost municipal liquidat.",%,↑ Ascendent (més = millor)
+70,Agenda 2030,Participació en les eleccions municipals,Percentatge de persones censades que han exercit el dret al vot en les darreres eleccions municipals.,%,↑ Ascendent (més = millor)
+73,Agenda 2030,Deute viu per habitant,"Import del deute financer pendent d'amortització de l'ajuntament per habitant, en euros.",€,↓ Descendent (menys = millor)
+74,Agenda 2030,Ingressos per l'IAE i l'IBI,"Import total recaptat per l'Impost sobre Activitats Econòmiques (IAE) i l'Impost sobre Béns Immobles (IBI) per habitant, en euros.",€,↑ Ascendent (més = millor)
+76,Agenda 2030,Nombre d'entitats ONGD per habitant,Nombre d'organitzacions no governamentals per al desenvolupament (ONGD) inscrites en el Registre de la Generalitat amb seu al municipi per cada 10.000 habitants.,x10.000 hab,↑ Ascendent (més = millor)
+75,Agenda 2030,Pressupost destinat a ajuda oficial al desenvolupament,Import del pressupost municipal destinat a cooperació al desenvolupament i ajuda oficial al desenvolupament (AOD) per habitant.,€/hab,↑ Ascendent (més = millor)
+55,Agenda 2030 i AUE,Equipaments culturals per població,"Nombre d'equipaments culturals (museus, biblioteques, teatres, centres cívics, etc.) per cada 10.000 habitants del municipi.",x10.000 hab,↑ Ascendent (més = millor)
+56,Agenda 2030 i AUE,Superfície de zones verdes per habitant (m²/habitant),Superfície (en m²) de zona verda per habitant en sòl urbà consolidat.,m²/hab,↑ Ascendent (més = millor)
+65,Agenda 2030,Percentatge de superfície forestal,"Proporció de la superfície municipal coberta per masses forestals (bosc dens, bosc clar, matollars).",%,↑ Ascendent (més = millor)
+66,Agenda 2030 i AUE,Superfície municipal amb figura de protecció i òrgan de gestió dels espais oberts,Percentatge de la superfície municipal inclosa en espais naturals protegits amb pla de gestió actiu.,%,↑ Ascendent (més = millor)
+67,Agenda 2030,Superfície del sòl no urbanitzable,Proporció de la superfície municipal classificada com a sòl no urbanitzable sobre la superfície total del terme municipal.,%,↑ Ascendent (més = millor)
+95,AUE,Entitats financeres per 10.000 habitants,"Nombre de bancs, cooperatives de crèdit, sucursals comunitàries de crèdit, asseguradores i establiments financers de crèdit del municipi per cada 1.000 habitants.",x 1.000,↑ Ascendent (més = millor)
+79,Agenda 2030 i AUE,Quocient entre la taxa de consum de sòl i la taxa de creixement de la població,Ràtio entre la taxa de creixement del sòl artificialitzat i la taxa de creixement de la població en el mateix període.,Índex,↓ Descendent (menys = millor)
+90,AUE,Índex de connectivitat terrestre dels ecosistemes de Catalunya,"Indicador basado en el índice de conectividad ecológica de los ecosistemas tal y como lo describe la Junta de Andalucía en el documento “Plan Director para la Mejora de la Conectividad Ecológica en Andalucía. Una Estrategia de Infraestructura Verde” (Mayo 2018). Para su cálculo se tienen en cuenta las distancias entre espacios naturales terrestres del mismo tipo (bosques, praderas, etc) y las infraestructuras artificiales que los fraccionan. Se considera que dos espacios naturales están conectados cuando se encuentran a menos de 2500 m de distancia y no están divididos por ninguna infraestructura artificial. Para el cálculo del indicador se pondera el porcentaje de conectancia de cada ecosistema con la proporción de la superficie natural total estudiada que representa dentro del municipio.",Índex,↑ Ascendent (més = millor)
+123,AUE,Proporció d'edificis construïts a partir de 2010,Percentatge del parc edificatori construït des de 2010 respecte al total d'edificis.,%,↑ Ascendent (més = millor)
+171,AUE,Taxa d'atur juvenil,Percentatge de menors de 25 anys en atur respecte al total d'aturats. A partir de les dades de l'atur registrat per municipis desglossades per trams d'edat.,%,↓ Descendent (menys = millor)
+287,Agenda 2030,Percentatge de pacients amb reingrés a 30 dies per patologies seleccionades,"Proporció de pacients que reingressen en un hospital del SISCAT en els 30 dies posteriors a l'alta, per a un conjunt de patologies seleccionades: MPOC, pneumònia, asma, insuficiència cardíaca congestiva, angina de pit, IAM, infeccions del tracte urinari, complicacions de la diabetis mellitus i fractura de coll de fèmur.",%,↓ Descendent (menys = millor)
+288,Agenda 2030,Prevalença atesa per qualsevol diagnòstic de salut mental i addiccions,"Nombre de persones ateses en un Centre de Salut Mental Ambulatori (CSMA) per qualsevol trastorn de salut mental o addicció, per cada 100.000 habitants. Inclou diagnòstics d'ansietat, trastorns per estrès, ideació suïcida, trastorns de l'estat d'ànim, addiccions i trastorns del neurodesenvolupament.",x100.000 hab,↓ Descendent (menys = millor)
+289,Agenda 2030,Prevalença d'obesitat,Percentatge de la població amb un diagnòstic d'obesitat (IMC ≥ 30) registrat per un professional sanitari en la història clínica del sistema públic de salut.,%,↓ Descendent (menys = millor)
+290,Agenda 2030,Taxa d'hospitalitzacions potencialment evitables,"Nombre d'altes d'hospitalització convencional amb diagnòstic principal classificat com a potencialment evitable per a la població de 19 anys o més, per 100.000 habitants. Patologies: complicacions de la diabetis mellitus, insuficiència cardíaca congestiva, MPOC, asma, angina de pit, infeccions del tracte urinari, pneumònia bacteriana, deshidratació i hipertensió.",x100.000 hab,↓ Descendent (menys = millor)
+291,Agenda 2030,Accessibilitat a 10 dies,Percentatge de persones que obtenen visita amb el seu professional de referència d'atenció primària i comunitària (metge de família o infermera) en un termini màxim de 10 dies des de la sol·licitud.,%,↑ Ascendent (més = millor)
+292,Agenda 2030,Taxa de cobertura de vacunació preventiva,"Indicador compost que promitja dues cobertures vacunals: el percentatge de persones de 60 anys o més vacunades contra la grip estacional, i el percentatge d'infants de 5 anys que han rebut dues dosis de la vacuna triple vírica (xarampió, galteres i rubèola).",%,↑ Ascendent (més = millor)

@@ -15,6 +15,7 @@ export const CREATE_METADATA = `
 CREATE TABLE IF NOT EXISTS METADATA (
   id_indicador TEXT PRIMARY KEY NOT NULL,
   tipo TEXT NOT NULL,
+  direction TEXT,
   unidad TEXT,
   tipo_dato TEXT,
   formula TEXT,
@@ -40,6 +41,7 @@ CREATE TABLE IF NOT EXISTS METADATA_CAT (
   id_indicador TEXT PRIMARY KEY NOT NULL,
   nombre TEXT,
   descripcion TEXT,
+  unidad TEXT,
   FOREIGN KEY (id_indicador) REFERENCES METADATA(id_indicador)
 );`;
 

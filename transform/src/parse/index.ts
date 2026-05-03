@@ -1,5 +1,7 @@
 import { parseMetadata, type MetadataRecord } from './metadata.js';
 import { parseDiccionario, type DiccionarioRecord } from './diccionario.js';
+import { parseDiccionarioCat } from './diccionario-cat.js';
+import { parseMetadataCat, type MetadataCatRecord } from './metadata-cat.js';
 import { parseIndicadoresAgendas, type IndicadorAgendaRecord } from './indicadores.js';
 import { parseDescriptivos, type DescriptivoRecord } from './descriptivos.js';
 import { parseRegiones, type RegionRecord } from './regiones.js';
@@ -16,7 +18,9 @@ import { parseRangosDescriptivos, type RangoDescriptivoRecord } from './rangos.j
 
 export interface ParsedData {
   metadata: MetadataRecord[];
+  metadataCat: MetadataCatRecord[];
   diccionario: DiccionarioRecord[];
+  diccionarioCat: DiccionarioRecord[];
   indicadoresAgendas: IndicadorAgendaRecord[];
   descriptivos: DescriptivoRecord[];
   regiones: RegionRecord[];
@@ -33,8 +37,14 @@ export function parseAll(inputDir: string): ParsedData {
   const metadata = parseMetadata(inputDir);
   console.log(`  metadatos_agendas.csv: ${metadata.length} records`);
 
+  const metadataCat = parseMetadataCat(inputDir);
+  console.log(`  metadatos_agendas_cat.csv: ${metadataCat.length} records`);
+
   const diccionario = parseDiccionario(inputDir);
   console.log(`  diccionario.csv: ${diccionario.length} records`);
+
+  const diccionarioCat = parseDiccionarioCat(inputDir);
+  console.log(`  diccionario_cat.csv: ${diccionarioCat.length} records`);
 
   const indicadoresAgendas = parseIndicadoresAgendas(inputDir);
   console.log(`  indicadores_agendas.csv: ${indicadoresAgendas.length} records`);
@@ -60,11 +70,13 @@ export function parseAll(inputDir: string): ParsedData {
   const rangosDescriptivos = parseRangosDescriptivos(inputDir);
   console.log(`  rangos_descriptivos.csv: ${rangosDescriptivos.length} records`);
 
-  console.log(`Parsing complete: 10 files processed\n`);
+  console.log(`Parsing complete: 12 files processed\n`);
 
   return {
     metadata,
+    metadataCat,
     diccionario,
+    diccionarioCat,
     indicadoresAgendas,
     descriptivos,
     regiones,
@@ -78,6 +90,7 @@ export function parseAll(inputDir: string): ParsedData {
 
 export type {
   MetadataRecord,
+  MetadataCatRecord,
   DiccionarioRecord,
   IndicadorAgendaRecord,
   DescriptivoRecord,

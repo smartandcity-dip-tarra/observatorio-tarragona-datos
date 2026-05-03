@@ -64,6 +64,7 @@ function writeHtmlReport(reportDir: string, data: ReturnType<typeof runIntegrity
     .status-pass { background: #dcfce7; color: #166534; }
     .status-fail { background: #fee2e2; color: #991b1b; }
     .status-error { background: #fef3c7; color: #92400e; }
+    .status-warn { background: #e0e7ff; color: #3730a3; }
     .details { white-space: pre-wrap; color: #4b5563; }
     footer { margin-top: 1.5rem; font-size: 0.75rem; color: #6b7280; text-align: right; }
   </style>
@@ -90,6 +91,10 @@ function writeHtmlReport(reportDir: string, data: ReturnType<typeof runIntegrity
         <div class="summary-label">Errored</div>
         <div class="summary-value error">${summary.errored}</div>
       </div>
+      <div class="summary-item">
+        <div class="summary-label">Warned</div>
+        <div class="summary-value">${summary.warned}</div>
+      </div>
     </div>
   </section>
 
@@ -110,7 +115,9 @@ function writeHtmlReport(reportDir: string, data: ReturnType<typeof runIntegrity
               ? 'status-pass'
               : result.status === 'fail'
                 ? 'status-fail'
-                : 'status-error';
+                : result.status === 'warn'
+                  ? 'status-warn'
+                  : 'status-error';
           const statusLabel = result.status.toUpperCase();
           const safeDetails = result.details ? result.details.replace(/</g, '&lt;').replace(/>/g, '&gt;') : '';
           return `<tr>
@@ -150,6 +157,7 @@ function main(): void {
   console.log(`Passed:      ${result.summary.passed}`);
   console.log(`Failed:      ${result.summary.failed}`);
   console.log(`Errored:     ${result.summary.errored}`);
+  console.log(`Warned:      ${result.summary.warned}`);
 
   if (result.summary.failed > 0 || result.summary.errored > 0) {
     console.error('\nSome integrity checks failed or errored. See report for details.');

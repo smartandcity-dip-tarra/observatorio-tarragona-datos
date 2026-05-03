@@ -33,13 +33,17 @@ SPREADSHEET_ID = "1WmCDT509dAG4YAIeAnLH9GYiEWB2KnSac3mg-XEcEn8"
 # Clave: nombre exacto de la pestaña en Google Sheets
 # Valor: nombre del archivo CSV que se guardará en dataset/
 SHEETS = {
-    "regiones":            "regiones.csv",
-    "indicadores_agendas": "indicadores_agendas.csv",
-    "descriptivos":        "descriptivos.csv",
-    "diccionario":         "diccionario.csv",
-    "metadatos_agendas":   "metadatos_agendas.csv",
-    "rangos_descriptivos": "rangos_descriptivos.csv",
-    "umbrales":            "umbrales.csv",
+    # regiones_cat is downloaded for upcoming frontend i18n (id_especial2); not ingested by transform.
+    "regiones":             "regiones.csv",
+    "indicadores_agendas":  "indicadores_agendas.csv",
+    "descriptivos":         "descriptivos.csv",
+    "diccionario":          "diccionario.csv",
+    "metadatos_agendas":    "metadatos_agendas.csv",
+    "rangos_descriptivos":  "rangos_descriptivos.csv",
+    "umbrales":             "umbrales.csv",
+    "regiones_cat":         "regiones_cat.csv",
+    "diccionario_cat":      "diccionario_cat.csv",
+    "metadatos_agendas_cat": "metadatos_agendas_cat.csv",
 }
 
 DATASET_DIR   = Path(__file__).parent.parent / "dataset"

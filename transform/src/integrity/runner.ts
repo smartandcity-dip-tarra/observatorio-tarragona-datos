@@ -3,8 +3,9 @@ import { existsSync } from 'node:fs';
 import { runFormatChecks } from './checks/format.js';
 import { runDataChecks } from './checks/data.js';
 import { runHeaderParityChecks } from './checks/header-parity.js';
+import { runCatalanChecks } from './checks/catalan.js';
 
-export type TestStatus = 'pass' | 'fail' | 'error';
+export type TestStatus = 'pass' | 'fail' | 'error' | 'warn';
 
 export interface TestResult {
   id: string;
@@ -18,6 +19,7 @@ export interface IntegritySummary {
   passed: number;
   failed: number;
   errored: number;
+  warned: number;
 }
 
 export interface IntegrityRunResult {
@@ -47,6 +49,7 @@ export function runIntegrityChecks(options: IntegrityRunnerOptions): IntegrityRu
     ...runFormatChecks(inputDir),
     ...runHeaderParityChecks(inputDir),
     ...runDataChecks(inputDir),
+    ...runCatalanChecks(inputDir),
   ];
 
   return summarize(results);
@@ -62,10 +65,12 @@ function summarize(results: TestResult[]): IntegrityRunResult {
         acc.failed += 1;
       } else if (result.status === 'error') {
         acc.errored += 1;
+      } else if (result.status === 'warn') {
+        acc.warned += 1;
       }
       return acc;
     },
-    { total: 0, passed: 0, failed: 0, errored: 0 }
+    { total: 0, passed: 0, failed: 0, errored: 0, warned: 0 },
   );
 
   return { summary, results };
