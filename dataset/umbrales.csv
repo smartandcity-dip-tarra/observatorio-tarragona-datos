@@ -6,7 +6,7 @@ indicador,nombre,unidad,municipios,conteo,minimo,maximo,desv_tipica,percentil25,
 5,Renta Garantizada de Ciudadanía por 10.000 habitantes,x10.000 hab,136,724,13.70,1250.00,124.93,76.61,190.85,47.15,273.35,MIN-MAX Tarragona*,13.70,220.00
 7,Proporción de personas con discapacidad que perciben una pensión,%,90,702,1.03,66.37,6.45,4.07,7.23,2.98,9.37,MIN-MAX Tarragona*,1.00,10.00
 8,Número de refugios climáticos gratuitos,x10.000 hab,95,95,0.68,285.71,52.45,6.00,34.07,2.74,83.02,MIN-MAX Tarragona*,84.01,2.72
-9,Superficie agrícola ecológica (porcentaje sobre el total agrícola),ha,185,554,0.00,49.53,8.73,0.00,8.11,0.00,17.34,REDS,26.59,0.19
+9,Superficie agrícola ecológica (porcentaje sobre el total agrícola),ha,185,369,0.00,49.53,9.45,1.82,12.54,0.00,22.07,REDS,26.59,0.19
 10,Tierras agrícolas por 100 habitantes,ha x100 hab,185,554,0.13,1921.29,236.49,6.99,66.86,1.31,129.89,MIN-MAX Tarragona*,67.03,1.30
 12,Porcentaje de hectáreas de explotaciones de pequeña escala,%,185,554,0.00,57.98,11.61,3.88,19.28,1.83,31.56,MIN-MAX Tarragona*,31.71,1.82
 13,Porcentaje de explotaciones de pequeña escala,%,185,554,0.00,75.95,18.82,22.23,51.73,10.83,63.75,MIN-MAX Tarragona*,63.83,10.81
