@@ -97,7 +97,7 @@ When the visualization store is in Agenda Urbana mode, the homepage explore cont
 
 - **WHEN** the user is on `/` in AU mode with a selected municipio
 - **AND** they activate the explore control
-- **THEN** the app SHALL navigate to `/municipios/au/<ine>`
+- **THEN** the app SHALL navigate to `/muni/au/<ine>`
 
 ### Requirement: Home visualization data source follows store mode
 
@@ -115,3 +115,52 @@ The homepage map and beeswarm primary metric layer SHALL use ODS promedios when 
 - **WHEN** the store mode is ODS
 - **THEN** the homepage SHALL continue to load `/api/ods/promedios` for the selected ODS objective
 - **AND** existing scenarios for unified selection and explore SHALL remain valid
+
+### Requirement: Homepage ODS mode excludes INE 43 from unified selection
+
+On the homepage only, when the visualization store is in ODS mode, the unified municipio selection (combobox, map region clicks in emit mode, beeswarm dot clicks that update selection) SHALL NOT set the selected INE to `43`. The dedicated metropolitan-area entry on the home page SHALL remain the intended way to open the aggregate experience.
+
+#### Scenario: Home map click on aggregate region in ODS mode does not select 43
+
+- **WHEN** the user is on `/` in ODS mode
+- **AND** they click the map region corresponding to INE `43` in selection emit mode
+- **THEN** the homepage selection SHALL NOT become `43`
+- **AND** the previous selection state (including “none selected”) SHALL be preserved or updated per implementation without selecting `43`
+
+#### Scenario: Home beeswarm cannot select 43 in ODS mode
+
+- **WHEN** the user is on `/` in ODS mode
+- **AND** they interact with a beeswarm that would otherwise set the selected municipio to INE `43`
+- **THEN** the selected INE SHALL NOT become `43`
+
+#### Scenario: Combobox cannot choose 43 in ODS mode on home
+
+- **WHEN** the user is on `/` in ODS mode
+- **AND** they open the municipio combobox used for unified selection
+- **THEN** INE `43` SHALL NOT be offered as a selectable option
+- **OR** if it appears in an underlying list, choosing it SHALL NOT leave `43` as the active selection
+
+#### Scenario: Switching from AU to ODS clears disallowed metropolitan selection
+
+- **WHEN** the user is on `/` in AU mode with INE `43` selected
+- **AND** they switch the header toggle to ODS
+- **THEN** the homepage SHALL NOT keep `43` as the selected municipio for ODS unified selection
+- **AND** selection SHALL be cleared or moved to a valid ODS municipio per existing rules, without selecting `43`
+
+---
+
+### Requirement: AU home beeswarm treats INE 43 as non-selectable reference
+
+When the visualization store is AU and the homepage renders the unified-selection beeswarm, INE `43` SHALL NOT appear as an interactive dot. Any aggregate value for INE `43` SHALL be communicated only via `referenceLines` on `BeeswarmChart`. Dot clicks SHALL therefore not select `43` via the beeswarm in AU mode.
+
+#### Scenario: Beeswarm dot click does not select 43 in AU mode
+
+- **WHEN** the user is on `/` in AU mode
+- **AND** the beeswarm shows a metropolitan aggregate reference line for INE `43`
+- **THEN** clicking that reference line SHALL NOT set the homepage `selectedIne` to `43` through the beeswarm component
+
+#### Scenario: No dot click target for 43 in AU mode
+
+- **WHEN** the user is on `/` in AU mode
+- **AND** AU promedios include a value for INE `43`
+- **THEN** the beeswarm SHALL not render a dot whose `codigoIne` is `43`

@@ -255,6 +255,58 @@ function checkCodigoIneConsistency(
   }
 }
 
+function checkProyectosCsv(inputDir: string, results: TestResult[]): void {
+  const checkId = 'data-proyectos-unique-codigo';
+  const description = 'proyectos.csv has unique non-empty codigo values';
+  try {
+    const proyectosPath = join(inputDir, 'proyectos.csv');
+    const rows = parseCsv<{
+      linea?: string;
+      objetivo?: string;
+      codigo?: string;
+      nombre?: string;
+    }>(proyectosPath);
+    const counts = new Map<string, number>();
+    let emptyCodigoRows = 0;
+    for (const row of rows) {
+      const c = row.codigo?.trim() ?? '';
+      if (c === '') {
+        emptyCodigoRows += 1;
+        continue;
+      }
+      counts.set(c, (counts.get(c) ?? 0) + 1);
+    }
+    const dups = [...counts.entries()]
+      .filter(([, n]) => n > 1)
+      .map(([c]) => c)
+      .sort();
+    const problems: string[] = [];
+    if (dups.length > 0) {
+      problems.push(`duplicate codigo: ${dups.join(', ')}`);
+    }
+    if (emptyCodigoRows > 0) {
+      problems.push(`empty codigo on ${emptyCodigoRows} row(s)`);
+    }
+    if (problems.length > 0) {
+      results.push({
+        id: checkId,
+        description,
+        status: 'fail',
+        details: problems.join('; '),
+      });
+    } else {
+      results.push({ id: checkId, description, status: 'pass' });
+    }
+  } catch (error) {
+    results.push({
+      id: checkId,
+      description,
+      status: 'error',
+      details: error instanceof Error ? error.message : String(error),
+    });
+  }
+}
+
 export function runDataChecks(inputDir: string): TestResult[] {
   const results: TestResult[] = [];
   const regionesPath = join(inputDir, 'regiones.csv');
@@ -451,6 +503,8 @@ export function runDataChecks(inputDir: string): TestResult[] {
     'data-promedios-ods-objetivo-codigo-ine',
     'All codigo_ine in promedios_municipio_ods_objetivo.csv exist in regiones.csv',
   );
+
+  checkProyectosCsv(inputDir, results);
 
   checkTarragonaOrphanReferences(inputDir, results);
   checkPromediosObjetivoIsTarragonaLe(inputDir, results);

@@ -1,6 +1,6 @@
 /**
- * Only `regiones.csv` is loaded. `regiones_cat.csv` exists in dataset/ but is intentionally ignored here —
- * translate `id_especial2` via frontend i18n (planned change `catalan-frontend-i18n-keys`).
+ * Only `regiones.csv` is loaded. `regiones_cat.csv` exists in dataset/ but is intentionally ignored —
+ * `id_especial2` is slugified at transform time for stable i18n keys (see `slugifyTypologyLabel`).
  */
 import { readCsv, toNullable } from './csv-utils.js';
 

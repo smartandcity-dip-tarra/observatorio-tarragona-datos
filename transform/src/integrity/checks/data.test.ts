@@ -18,6 +18,7 @@ import { runDataChecks } from './data.js';
 
 const REQUIRED_FILES: Record<string, string> = {
   'regiones.csv': 'codigo_ine,nombre,poblacion,id_poblacion,id_especial,id_especial2,id_especial3\n43001,Alpha,100,s,,,aue\n',
+  'proyectos.csv': 'linea,objetivo,codigo,nombre,descripcion\n1,1.1,1.1.1,Test project,Description\n',
   'promedios_municipio_meta_ods.csv': 'codigo_ine,meta_ods,promedio_indice,n_indicadores,periodo_max\n43001,1.1,0.5,1,2024\n',
   'promedios_municipio_objetivo_aue.csv': 'codigo_ine,objetivo_aue,promedio_indice,n_indicadores,periodo_max\n43001,1,0.5,1,2024\n',
   'promedios_municipio_ods_objetivo.csv': 'codigo_ine,ods_objetivo,promedio_metas,n_metas\n43001,1,0.5,1\n',

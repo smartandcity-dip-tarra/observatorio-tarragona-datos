@@ -42,10 +42,14 @@ export function runCatalanChecks(inputDir: string): TestResult[] {
   const lines: string[] = [];
 
   try {
-    const metaEs = parseCsv<{ indicador: string; clase: string; formula?: string }>(metaEsPath);
-    const metaCat = parseCsv<{ indicador: string; clase: string; formula?: string }>(metaCatPath);
-    const esIds = new Set(metaEs.map(r => r.indicador.trim()).filter(Boolean));
-    const catById = new Map(metaCat.map(r => [r.indicador.trim(), r]));
+    const metaEs = parseCsv<{ indicador: string; clase?: string; formula?: string }>(metaEsPath);
+    const metaCat = parseCsv<{ indicador: string; clase?: string; formula?: string }>(metaCatPath);
+    const esIds = new Set(metaEs.map(r => r.indicador?.trim()).filter(Boolean));
+    const catById = new Map(metaCat.map(r => [r.indicador?.trim(), r]).filter(([id]) => !!id));
+
+    // Detect whether the CAT file includes the `clase` column. It is intentionally
+    // omitted because `clase` values are language-neutral and don't need translation.
+    const catHasClase = metaCat.length > 0 && 'clase' in metaCat[0];
 
     for (const row of metaCat) {
       const id = row.indicador?.trim();
@@ -60,7 +64,7 @@ export function runCatalanChecks(inputDir: string): TestResult[] {
       if (!id) continue;
       if (!catById.has(id)) {
         lines.push(`ES indicator "${id}" has no row in metadatos_agendas_cat.csv`);
-      } else {
+      } else if (catHasClase) {
         const cat = catById.get(id)!;
         if (semanticClaseKey(cat.clase) !== semanticClaseKey(row.clase)) {
           lines.push(

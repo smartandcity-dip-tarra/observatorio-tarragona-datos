@@ -1,11 +1,25 @@
-## ADDED Requirements
+# schema-creation
 
+## Purpose
+
+Define the SQLite table DDL produced by the transform pipeline so the static database matches what the Nuxt server and integrity checks expect.
+## Requirements
 ### Requirement: Create METADATA table
-The system SHALL create a `METADATA` table with columns: `id_indicador` (TEXT, PRIMARY KEY), `tipo` (TEXT, one of 'agenda', 'ods', 'descriptivo'), and all extra data columns from the source metadata (unidad, tipo_dato, formula, umbral_optimo, umbral_malo, fuente, actualizacion, corte_muestra, muestra_ods, muestra_aue).
+
+The system SHALL create a `METADATA` table with columns: `id_indicador` (TEXT, PRIMARY KEY), `tipo` (TEXT, one of 'agenda', 'ods', 'descriptivo'), `direction` (TEXT, nullable, one of 'asc', 'desc', 'neutral'), and all extra data columns from the source metadata (unidad, tipo_dato, formula, umbral_optimo, umbral_malo, fuente, actualizacion, corte_muestra, muestra_ods, muestra_aue).
 
 #### Scenario: Table created with correct schema
 - **WHEN** the schema creation runs
 - **THEN** the `METADATA` table exists with `id_indicador` as PRIMARY KEY and `tipo` as a NOT NULL TEXT column
+
+#### Scenario: Direction column present and nullable
+- **WHEN** the `METADATA` table is created
+- **THEN** it SHALL include a `direction TEXT` column that is nullable
+- **AND** that column SHALL accept the values `'asc'`, `'desc'`, `'neutral'`, and `NULL`
+
+#### Scenario: Original formula column retained
+- **WHEN** the `METADATA` table is created
+- **THEN** it SHALL still include the original `formula TEXT` column for the deprecation window
 
 ### Requirement: Create METADATA_ES table
 The system SHALL create a `METADATA_ES` table with columns: `id_indicador` (TEXT, FOREIGN KEY to METADATA), `nombre` (TEXT), `descripcion` (TEXT).
@@ -15,14 +29,53 @@ The system SHALL create a `METADATA_ES` table with columns: `id_indicador` (TEXT
 - **THEN** `id_indicador` SHALL reference `METADATA(id_indicador)`
 
 ### Requirement: Create METADATA_CAT table
-The system SHALL create a `METADATA_CAT` table with the same structure as `METADATA_ES`: `id_indicador` (TEXT, FK), `nombre` (TEXT), `descripcion` (TEXT).
 
-#### Scenario: Empty table for future translations
-- **WHEN** the schema is created
-- **THEN** the `METADATA_CAT` table exists with the correct schema but contains no rows
+The system SHALL create a `METADATA_CAT` table with columns: `id_indicador` (TEXT, PRIMARY KEY, FOREIGN KEY to METADATA), `nombre` (TEXT), `descripcion` (TEXT), `unidad` (TEXT, nullable).
+
+#### Scenario: Foreign key to METADATA
+- **WHEN** the `METADATA_CAT` table is created
+- **THEN** `id_indicador` SHALL reference `METADATA(id_indicador)`
+
+#### Scenario: Unidad column present and nullable
+- **WHEN** the `METADATA_CAT` table is created
+- **THEN** it SHALL include a `unidad TEXT` column that is nullable
+- **AND** rows where the Catalan unidad equals the Spanish unidad SHALL store `unidad = NULL`
+
+#### Scenario: Populated from CAT csv
+- **WHEN** the schema is created and the data load runs against a `metadatos_agendas_cat.csv` with 161 rows
+- **THEN** `METADATA_CAT` SHALL contain up to 161 rows (less any dropped due to unknown id), each with at least one of `nombre`, `descripcion`, or `unidad` populated
+
+### Requirement: Create METADATA_EN table
+
+The system SHALL create a `METADATA_EN` table with columns: `id_indicador` (TEXT, PRIMARY KEY, FOREIGN KEY to `METADATA`), `nombre` (TEXT), `descripcion` (TEXT), `unidad` (TEXT, nullable).
+
+#### Scenario: Foreign key to METADATA
+- **WHEN** the `METADATA_EN` table is created
+- **THEN** `id_indicador` SHALL reference `METADATA(id_indicador)`
+
+#### Scenario: Unidad column present and nullable
+- **WHEN** the `METADATA_EN` table is created
+- **THEN** it SHALL include a `unidad TEXT` column that is nullable
+- **AND** rows where the English `unidad` equals the Spanish `unidad` SHALL store `unidad = NULL` after transform rules are applied
+
+### Requirement: Create DICCIONARIO_EN table
+
+The system SHALL create a `DICCIONARIO_EN` table with columns: `id_dict` (TEXT, PRIMARY KEY, FOREIGN KEY to `DICCIONARIO`), `nombre` (TEXT), `descripcion` (TEXT).
+
+#### Scenario: Foreign key to DICCIONARIO
+- **WHEN** the `DICCIONARIO_EN` table is created
+- **THEN** `id_dict` SHALL reference `DICCIONARIO(id_dict)`
+
+### Requirement: Create PROYECTOS table
+
+The system SHALL create a `PROYECTOS` table with columns: `codigo` (TEXT PRIMARY KEY NOT NULL), `linea` (TEXT NOT NULL), `objetivo` (TEXT NOT NULL), `nombre` (TEXT NOT NULL), `descripcion` (TEXT).
+
+#### Scenario: Table exists after schema migration
+- **WHEN** schema creation runs
+- **THEN** a `PROYECTOS` table exists with `codigo` as PRIMARY KEY
 
 ### Requirement: Create REGIONES table
-The system SHALL create a `REGIONES` table with columns: `codigo_ine` (TEXT, PRIMARY KEY), `nombre` (TEXT), and additional columns for `poblacion`, `id_poblacion`, `id_especial`, `id_especial2`, `id_especial3`.
+The system SHALL create a `REGIONES` table with columns: `codigo_ine` (TEXT, PRIMARY KEY), `nombre` (TEXT), and additional columns for `poblacion`, `id_poblacion`, `id_especial`, `id_especial2`, `id_especial3`. The `id_especial2` column SHALL store a **deterministic slug** derived from the typology label present in `regiones.csv` using the canonical slug function defined in the data-transformation capability; it SHALL NOT store the raw label text from the CSV.
 
 #### Scenario: Table with unique municipality codes
 - **WHEN** the `REGIONES` table is created
@@ -31,6 +84,10 @@ The system SHALL create a `REGIONES` table with columns: `codigo_ine` (TEXT, PRI
 #### Scenario: Extended classification columns
 - **WHEN** the schema creation runs
 - **THEN** the `REGIONES` table SHALL include nullable `TEXT` columns `id_especial2` and `id_especial3`
+
+#### Scenario: id_especial2 stores slug not display text
+- **WHEN** the slug function maps the source label `"Municipios industriales"` to `municipios-industriales`
+- **THEN** a `REGIONES` row whose source CSV had that label SHALL have `id_especial2 = 'municipios-industriales'`
 
 ### Requirement: Create INDICADORES table
 The system SHALL create a single `INDICADORES` table with columns: `id_indicador` (TEXT, FK to METADATA), `codigo_ine` (TEXT, FK to REGIONES), `periodo` (INTEGER, NOT NULL), `valor` (REAL), `indice` (REAL), `categoria` (TEXT), `no_agregar` (TEXT), `texto` (TEXT). This table stores all non-descriptive indicator values regardless of their metadata `tipo`.
@@ -103,3 +160,4 @@ The system SHALL enable SQLite foreign key enforcement (`PRAGMA foreign_keys = O
 #### Scenario: Foreign key pragma
 - **WHEN** the database connection is opened
 - **THEN** the system executes `PRAGMA foreign_keys = ON` before creating tables or inserting data
+

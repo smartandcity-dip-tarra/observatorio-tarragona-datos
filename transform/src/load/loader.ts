@@ -40,6 +40,11 @@ export function loadAll(db: Database.Database, data: TransformedData): void {
     data.regiones,
   );
 
+  counts['PROYECTOS'] = insertMany(db, 'PROYECTOS',
+    ['codigo', 'linea', 'objetivo', 'nombre', 'descripcion'],
+    data.proyectos,
+  );
+
   counts['METADATA'] = insertMany(db, 'METADATA',
     ['id_indicador', 'tipo', 'direction', 'unidad', 'tipo_dato', 'formula', 'umbral_optimo', 'umbral_malo', 'fuente', 'actualizacion', 'corte_muestra', 'muestra_ods', 'muestra_aue'],
     data.metadata,
@@ -55,6 +60,11 @@ export function loadAll(db: Database.Database, data: TransformedData): void {
     data.metadataCat,
   );
 
+  counts['METADATA_EN'] = insertMany(db, 'METADATA_EN',
+    ['id_indicador', 'nombre', 'descripcion', 'unidad'],
+    data.metadataEn,
+  );
+
   counts['DICCIONARIO'] = insertMany(db, 'DICCIONARIO',
     ['id_dict', 'nivel', 'agenda', 'logo'],
     data.diccionario,
@@ -68,6 +78,11 @@ export function loadAll(db: Database.Database, data: TransformedData): void {
   counts['DICCIONARIO_CAT'] = insertMany(db, 'DICCIONARIO_CAT',
     ['id_dict', 'nombre', 'descripcion'],
     data.diccionarioCat,
+  );
+
+  counts['DICCIONARIO_EN'] = insertMany(db, 'DICCIONARIO_EN',
+    ['id_dict', 'nombre', 'descripcion'],
+    data.diccionarioEn,
   );
 
   counts['ARQUITECTURA_L2'] = insertMany(db, 'ARQUITECTURA_L2',

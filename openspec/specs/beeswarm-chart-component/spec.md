@@ -85,7 +85,8 @@ The component SHALL accept an optional `domain` prop of type `[number, number]` 
 
 #### Scenario: No domain provided (auto-scale)
 - **WHEN** `domain` is not provided
-- **THEN** the X axis domain SHALL be computed from the minimum to maximum `valor` in the datapoints
+- **THEN** the X axis domain SHALL be derived by pooling every finite `valor` in `datapoints` **and** every finite `referenceLines[].value` before applying symmetric padding per `beeswarm-auto-domain-padding`
+- **AND** when there are no datapoints but at least one reference line, the domain SHALL still be numerically stable and SHALL include those reference values in the pooled min/max
 
 ---
 

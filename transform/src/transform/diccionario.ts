@@ -16,6 +16,9 @@ export interface DiccionarioEsRow {
 /** Same columns as `DICCIONARIO_ES`; populated from `diccionario_cat.csv`. */
 export type DiccionarioCatRow = DiccionarioEsRow;
 
+/** Same columns as `DICCIONARIO_ES`; populated from `diccionario_en.csv`. */
+export type DiccionarioEnRow = DiccionarioEsRow;
+
 const SUPPORTED_AGENDAS: ReadonlySet<string> = new Set(['2030', 'TARRAGONA']);
 
 export function transformDiccionario(records: DiccionarioRecord[]): {
@@ -91,4 +94,11 @@ export function transformDiccionarioCat(
   }
 
   return { rows: Array.from(rowMap.values()), warnings: { droppedUnknownIds } };
+}
+
+export function transformDiccionarioEn(
+  records: DiccionarioRecord[],
+  esIds: Set<string>,
+): { rows: DiccionarioEnRow[]; warnings: { droppedUnknownIds: string[] } } {
+  return transformDiccionarioCat(records, esIds);
 }

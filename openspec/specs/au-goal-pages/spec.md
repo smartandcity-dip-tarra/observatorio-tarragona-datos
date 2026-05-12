@@ -56,9 +56,9 @@ Static generation SHALL include prerendered output for `/au/1` … `/au/6` (and 
 - **AND** no prerendered HTML SHALL be produced for `/au/{n}` with `n` in `7..10`
 
 ### Requirement: Explore municipio respects visualization mode
-The Tarragona goal page SHALL offer navigation to the municipio detail path that matches the current visualization mode (`/municipios/au/{ine}` when mode is Tarragona), consistent with the existing ODS goal page behaviour.
+The Tarragona goal page SHALL offer navigation to the municipio detail path that matches the current visualization mode (`/muni/au/{ine}` when mode is Tarragona), consistent with the existing ODS goal page behaviour.
 
 #### Scenario: User opens municipio from Tarragona goal page
 - **WHEN** the user chooses to explore a selected metropolitan-Tarragona municipio from a Tarragona goal page in Tarragona mode
-- **THEN** the application SHALL navigate to `/municipios/au/{ine}`
+- **THEN** the application SHALL navigate to `/muni/au/{ine}`
 

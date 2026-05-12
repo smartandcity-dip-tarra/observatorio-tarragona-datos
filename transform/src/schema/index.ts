@@ -8,5 +8,5 @@ export function createSchema(db: Database.Database): void {
     db.exec(ddl);
   }
 
-  console.log('  13 tables created\n');
+  console.log('  15 tables created\n');
 }

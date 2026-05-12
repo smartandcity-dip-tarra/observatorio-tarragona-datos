@@ -20,6 +20,12 @@ export const DIRECTION_MAP_CAT: Record<string, Direction> = {
   '↓ Descendent (menys = millor)': 'desc',
 };
 
+/** English sentinels from `metadatos_agendas_en.csv` (integrity validation only) */
+export const DIRECTION_MAP_EN: Record<string, Direction> = {
+  '↑ Ascending (higher = better)': 'asc',
+  '↓ Descending (lower = better)': 'desc',
+};
+
 export function mapDirectionEs(formula: string | null): Direction | null {
   if (formula == null || formula.trim() === '') return null;
   const mapped = DIRECTION_MAP_ES[formula.trim()];
@@ -29,6 +35,12 @@ export function mapDirectionEs(formula: string | null): Direction | null {
 export function mapDirectionCat(formula: string | null): Direction | null {
   if (formula == null || formula.trim() === '') return null;
   const mapped = DIRECTION_MAP_CAT[formula.trim()];
+  return mapped ?? null;
+}
+
+export function mapDirectionEn(formula: string | null): Direction | null {
+  if (formula == null || formula.trim() === '') return null;
+  const mapped = DIRECTION_MAP_EN[formula.trim()];
   return mapped ?? null;
 }
 
@@ -42,4 +54,10 @@ export function isKnownFormulaEs(formula: string | null | undefined): boolean {
 export function isKnownFormulaCat(formula: string | null | undefined): boolean {
   if (formula == null || formula.trim() === '') return true;
   return formula.trim() in DIRECTION_MAP_CAT;
+}
+
+/** True if empty or recognized in EN map */
+export function isKnownFormulaEn(formula: string | null | undefined): boolean {
+  if (formula == null || formula.trim() === '') return true;
+  return formula.trim() in DIRECTION_MAP_EN;
 }

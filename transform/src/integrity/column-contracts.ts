@@ -12,4 +12,5 @@ export const CSV_HEADER_CONTRACTS: Record<string, readonly string[]> = {
     'id_especial2',
     'id_especial3',
   ],
+  'proyectos.csv': ['linea', 'objetivo', 'codigo', 'nombre', 'descripcion'],
 } as const;

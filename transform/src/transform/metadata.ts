@@ -1,5 +1,7 @@
-import type { MetadataRecord, MetadataCatRecord } from '../parse/index.js';
-import { mapDirectionEs, mapDirectionCat } from './direction.js';
+import type { MetadataRecord } from '../parse/metadata.js';
+import type { MetadataCatRecord } from '../parse/metadata-cat.js';
+import type { MetadataEnRecord } from '../parse/metadata-en.js';
+import { mapDirectionEs, mapDirectionCat, mapDirectionEn } from './direction.js';
 
 export interface MetadataRow {
   id_indicador: string;
@@ -30,6 +32,9 @@ export interface MetadataCatRow {
   unidad: string | null;
 }
 
+/** Same columns as `METADATA_CAT`; populated from `metadatos_agendas_en.csv`. */
+export type MetadataEnRow = MetadataCatRow;
+
 export function normalizeTipo(clase: string): string {
   if (clase === 'agendas') return 'agenda';
   return clase;
@@ -39,13 +44,16 @@ export function normalizeTipo(clase: string): string {
 const CLASE_SEMANTIC: Record<string, string> = {
   'Descriptivo AUE': 'descriptivo_aue',
   'Descriptiu AUE': 'descriptivo_aue',
+  'Descriptive AUE': 'descriptivo_aue',
   AUE: 'aue',
   'Agenda 2030': 'agenda_2030',
   'Agenda 2030 y AUE': 'agenda_2030_y_aue',
   'Agenda 2030 i AUE': 'agenda_2030_y_aue',
+  '2030 Agenda and AUE': 'agenda_2030_y_aue',
 };
 
-export function semanticClaseKey(clase: string): string {
+export function semanticClaseKey(clase: string | undefined): string {
+  if (!clase) return '';
   const k = clase.trim();
   return CLASE_SEMANTIC[k] ?? k;
 }
@@ -116,9 +124,12 @@ export function transformMetadataCat(
     }
 
     const tipoEs = semanticClaseKey(es.clase);
-    const tipoCat = semanticClaseKey(r.clase);
-    if (tipoCat !== tipoEs) {
-      claseMismatch.push({ id: r.indicador, claseCat: r.clase, claseEs: es.clase });
+    const claseCatTrim = r.clase?.trim() ?? '';
+    if (claseCatTrim !== '') {
+      const tipoCat = semanticClaseKey(r.clase);
+      if (tipoCat !== tipoEs) {
+        claseMismatch.push({ id: r.indicador, claseCat: r.clase, claseEs: es.clase });
+      }
     }
 
     if (r.formula != null && r.formula.trim() !== '' && mapDirectionCat(r.formula) == null) {
@@ -168,6 +179,86 @@ export function transformMetadataCat(
       droppedUnknownIds,
       missingTranslations: [...missingSet],
       unknownCatFormulas,
+      claseMismatch,
+    },
+  };
+}
+
+export function transformMetadataEn(
+  enRecords: MetadataEnRecord[],
+  esByIndicador: Map<string, MetadataRecord>,
+): {
+  rows: MetadataEnRow[];
+  warnings: {
+    droppedUnknownIds: string[];
+    missingTranslations: string[];
+    unknownEnFormulas: { id: string; text: string }[];
+    claseMismatch: { id: string; claseEn: string; claseEs: string }[];
+  };
+} {
+  const rowMap = new Map<string, MetadataEnRow>();
+  const droppedUnknownIds: string[] = [];
+  const unknownEnFormulas: { id: string; text: string }[] = [];
+  const claseMismatch: { id: string; claseEn: string; claseEs: string }[] = [];
+
+  for (const r of enRecords) {
+    const es = esByIndicador.get(r.indicador);
+    if (!es) {
+      droppedUnknownIds.push(r.indicador);
+      continue;
+    }
+
+    const claseEnTrim = r.clase?.trim() ?? '';
+    if (claseEnTrim !== '') {
+      const tipoEs = semanticClaseKey(es.clase);
+      const tipoEn = semanticClaseKey(r.clase);
+      if (tipoEn !== tipoEs) {
+        claseMismatch.push({ id: r.indicador, claseEn: r.clase, claseEs: es.clase });
+      }
+    }
+
+    if (r.formula != null && r.formula.trim() !== '' && mapDirectionEn(r.formula) == null) {
+      unknownEnFormulas.push({ id: r.indicador, text: r.formula.trim() });
+    }
+
+    let unidadEn: string | null = null;
+    if (r.unidad != null && r.unidad.trim() !== '') {
+      const esU = es.unidad ?? '';
+      if (r.unidad.trim() !== esU.trim()) {
+        unidadEn = r.unidad.trim();
+      }
+    }
+
+    rowMap.set(r.indicador, {
+      id_indicador: r.indicador,
+      nombre: r.nombre,
+      descripcion: r.detalle,
+      unidad: unidadEn,
+    });
+  }
+
+  const rows = Array.from(rowMap.values());
+  const loadedIds = new Set(rowMap.keys());
+  const missingSet = new Set<string>();
+
+  for (const id of esByIndicador.keys()) {
+    if (!loadedIds.has(id)) {
+      missingSet.add(id);
+      continue;
+    }
+    const es = esByIndicador.get(id)!;
+    const enRow = rowMap.get(id);
+    if (enRow && es.nombre != null && es.nombre.trim() !== '' && !enRow.nombre?.trim()) {
+      missingSet.add(id);
+    }
+  }
+
+  return {
+    rows,
+    warnings: {
+      droppedUnknownIds,
+      missingTranslations: [...missingSet],
+      unknownEnFormulas,
       claseMismatch,
     },
   };

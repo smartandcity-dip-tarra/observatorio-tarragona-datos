@@ -1,39 +1,65 @@
-import type { ParsedData, RegionRecord } from '../parse/index.js';
+import type { ParsedData, ProyectoRecord, RegionRecord } from '../parse/index.js';
 import {
   transformMetadata,
   transformMetadataCat,
+  transformMetadataEn,
   type MetadataRow,
   type MetadataEsRow,
   type MetadataCatRow,
+  type MetadataEnRow,
 } from './metadata.js';
 import { extractArquitecturaL2, type ArquitecturaL2Row } from './arquitectura.js';
 import {
   transformDiccionario,
   transformDiccionarioCat,
+  transformDiccionarioEn,
   type DiccionarioRow,
   type DiccionarioEsRow,
   type DiccionarioCatRow,
+  type DiccionarioEnRow,
 } from './diccionario.js';
 import { mapIndicadores, transformDescriptivos, type IndicadorRow, type DescriptivoRow } from './indicadores.js';
 import { transformPromedios, type PromedioOdsRow, type PromedioAgendaRow } from './promedios.js';
+import { transformRegionesIdEspecial2Slugs } from './regionesSlug.js';
+
+function assertUniqueProyectoCodigos(rows: ProyectoRecord[]): void {
+  const counts = new Map<string, number>();
+  for (const r of rows) {
+    const c = r.codigo.trim();
+    if (c === '') continue;
+    counts.set(c, (counts.get(c) ?? 0) + 1);
+  }
+  const dups = [...counts.entries()]
+    .filter(([, n]) => n > 1)
+    .map(([c]) => c)
+    .sort();
+  if (dups.length > 0) {
+    throw new Error(`proyectos.csv: duplicate codigo values: ${dups.join(', ')}`);
+  }
+}
 
 export interface TransformedData {
   regiones: RegionRecord[];
   metadata: MetadataRow[];
   metadataEs: MetadataEsRow[];
   metadataCat: MetadataCatRow[];
+  metadataEn: MetadataEnRow[];
   diccionario: DiccionarioRow[];
   diccionarioEs: DiccionarioEsRow[];
   diccionarioCat: DiccionarioCatRow[];
+  diccionarioEn: DiccionarioEnRow[];
   arquitecturaL2: ArquitecturaL2Row[];
   indicadores: IndicadorRow[];
   indicadoresDescriptivos: DescriptivoRow[];
   promediosOds: PromedioOdsRow[];
   promediosAgendas: PromedioAgendaRow[];
+  proyectos: ProyectoRecord[];
 }
 
 export function transformAll(data: ParsedData): TransformedData {
   console.log('Transforming data...');
+
+  assertUniqueProyectoCodigos(data.proyectos);
 
   const esByIndicador = new Map(data.metadata.map(r => [r.indicador, r]));
 
@@ -90,6 +116,40 @@ export function transformAll(data: ParsedData): TransformedData {
     `[catalan] METADATA_CAT: ${metadataCat.length} loaded, ${droppedMetaUnique.length} dropped, ${metaCatWarn.missingTranslations.length} missing — DICCIONARIO_CAT: ${diccionarioCat.length} loaded, ${droppedDicUnique.length} dropped — direction: ${directionMapped} mapped, ${directionUnknown} unknown (NULL)`,
   );
 
+  const { rows: diccionarioEn, warnings: dicEnWarn } = transformDiccionarioEn(
+    data.diccionarioEn,
+    dictIds,
+  );
+  const droppedDicEnUnique = [...new Set(dicEnWarn.droppedUnknownIds)];
+  for (const id of droppedDicEnUnique) {
+    console.warn(`[english] WARN: dropping EN diccionario translation for unknown id_dict ${id}`);
+  }
+
+  const {
+    rows: metadataEn,
+    warnings: metaEnWarn,
+  } = transformMetadataEn(data.metadataEn, esByIndicador);
+
+  const droppedMetaEnUnique = [...new Set(metaEnWarn.droppedUnknownIds)];
+  for (const id of droppedMetaEnUnique) {
+    console.warn(`[english] WARN: dropping EN translation for unknown id ${id}`);
+  }
+  for (const id of metaEnWarn.missingTranslations) {
+    console.warn(`[english] WARN: missing EN translation for ${id}`);
+  }
+  for (const { id, text } of metaEnWarn.unknownEnFormulas) {
+    console.warn(`[english] WARN: unknown EN formula sentinel "${text}" for indicator ${id}`);
+  }
+  for (const { id, claseEn, claseEs } of metaEnWarn.claseMismatch) {
+    console.warn(
+      `[english] WARN: EN clase introduces unknown tipo mismatch for indicator ${id} (EN: ${claseEn}, ES: ${claseEs})`,
+    );
+  }
+
+  console.log(
+    `[english] METADATA_EN: ${metadataEn.length} loaded, ${droppedMetaEnUnique.length} dropped, ${metaEnWarn.missingTranslations.length} missing — DICCIONARIO_EN: ${diccionarioEn.length} loaded, ${droppedDicEnUnique.length} dropped`,
+  );
+
   const metaIds = new Set(metadata.map(m => m.id_indicador));
   const rawArquitectura = extractArquitecturaL2(data.metadata);
   const arquitecturaL2 = rawArquitectura.filter(row => {
@@ -144,23 +204,31 @@ export function transformAll(data: ParsedData): TransformedData {
     console.log(`  PROMEDIOS_AGENDAS: ${promediosAgendas.length} rows`);
   }
 
+  const regiones = transformRegionesIdEspecial2Slugs(data.regiones);
+
   console.log(`  METADATA_CAT: ${metadataCat.length} rows`);
   console.log(`  DICCIONARIO_CAT: ${diccionarioCat.length} rows`);
+  console.log(`  METADATA_EN: ${metadataEn.length} rows`);
+  console.log(`  DICCIONARIO_EN: ${diccionarioEn.length} rows`);
+  console.log(`  PROYECTOS: ${data.proyectos.length} rows`);
 
   console.log('Transformation complete\n');
 
   return {
-    regiones: data.regiones,
+    regiones,
     metadata,
     metadataEs,
     metadataCat,
+    metadataEn,
     diccionario,
     diccionarioEs,
     diccionarioCat,
+    diccionarioEn,
     arquitecturaL2,
     indicadores,
     indicadoresDescriptivos: descriptivos,
     promediosOds,
     promediosAgendas,
+    proyectos: data.proyectos,
   };
 }

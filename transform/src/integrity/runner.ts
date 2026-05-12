@@ -4,6 +4,7 @@ import { runFormatChecks } from './checks/format.js';
 import { runDataChecks } from './checks/data.js';
 import { runHeaderParityChecks } from './checks/header-parity.js';
 import { runCatalanChecks } from './checks/catalan.js';
+import { runEnglishChecks } from './checks/english.js';
 
 export type TestStatus = 'pass' | 'fail' | 'error' | 'warn';
 
@@ -50,6 +51,7 @@ export function runIntegrityChecks(options: IntegrityRunnerOptions): IntegrityRu
     ...runHeaderParityChecks(inputDir),
     ...runDataChecks(inputDir),
     ...runCatalanChecks(inputDir),
+    ...runEnglishChecks(inputDir),
   ];
 
   return summarize(results);

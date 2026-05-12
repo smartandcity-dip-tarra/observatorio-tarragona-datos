@@ -120,15 +120,15 @@ Until the source file `promedios_municipio_objetivo_aue.csv` is renamed by the c
 - **THEN** no row SHALL be inserted into `PROMEDIOS_AGENDAS` with an `id_dict` starting with `'AUE-'`
 
 ### Requirement: Load regiones directly
-The system SHALL load parsed `regiones.csv` records directly into the `REGIONES` table without transformation, mapping `codigo_ine` → `codigo_ine`, `nombre` → `nombre`, `poblacion` → `poblacion`, `id_poblacion` → `id_poblacion`, `id_especial` → `id_especial`, `id_especial2` → `id_especial2`, `id_especial3` → `id_especial3`.
+The system SHALL load parsed `regiones.csv` records into the `REGIONES` table, mapping `codigo_ine` → `codigo_ine`, `nombre` → `nombre`, `poblacion` → `poblacion`, `id_poblacion` → `id_poblacion`, `id_especial` → `id_especial`, `id_especial3` → `id_especial3`, and mapping `id_especial2` through the slug function defined in the **Slug function for municipality typology labels** requirement before insert.
 
 #### Scenario: Direct region loading
 - **WHEN** `regiones.csv` contains 7 rows
-- **THEN** the `REGIONES` table SHALL contain exactly 7 rows with matching data
+- **THEN** the `REGIONES` table SHALL contain exactly 7 rows with matching data for all columns except `id_especial2` which SHALL contain slugs
 
-#### Scenario: id_especial2 and id_especial3 persisted
-- **WHEN** a parsed region row has non-empty `id_especial2` or `id_especial3`
-- **THEN** the corresponding `REGIONES` row SHALL store those values in the same-named columns
+#### Scenario: id_especial3 persisted unchanged
+- **WHEN** a parsed region row has non-empty `id_especial3`
+- **THEN** the corresponding `REGIONES` row SHALL store that value in `id_especial3` unchanged
 
 ### Requirement: Wrap insertions in transactions
 The system SHALL execute all data insertions within a single SQLite transaction per table group to ensure atomicity and performance.
@@ -171,4 +171,127 @@ The build SHALL include an integrity check that verifies every distinct value of
 #### Scenario: All references known passes the check
 - **WHEN** every `le` and `le2` value has a corresponding `TARRAGONA` row in the dictionary at the matching level
 - **THEN** the integrity check SHALL pass without output to stderr
+
+### Requirement: Populate METADATA_CAT from metadata_cat records
+
+The system SHALL transform parsed `metadatos_agendas_cat` records into `METADATA_CAT` rows, mapping `indicador` → `id_indicador`, `nombre` → `nombre`, `detalle` → `descripcion`, and applying the sparse-override rule for `unidad` (see catalan-translations capability). The CAT `clase` and CAT `formula` columns SHALL NOT be written to `METADATA_CAT`.
+
+#### Scenario: Catalan name and description populated
+- **WHEN** a CAT metadata record has `indicador = "1"`, `nombre = "Proporció de persones..."`, `detalle = "Valor central de la distribució..."`
+- **THEN** `METADATA_CAT` contains a row with `id_indicador = "1"`, `nombre = "Proporció de persones..."`, `descripcion = "Valor central de la distribució..."`
+
+#### Scenario: Sparse unidad override
+- **WHEN** the CAT `unidad` for an indicator equals the ES `unidad`
+- **THEN** the `METADATA_CAT.unidad` for that indicator SHALL be `NULL`
+
+#### Scenario: Differing unidad stored
+- **WHEN** the CAT `unidad` for an indicator differs from the ES `unidad` and is non-empty
+- **THEN** the `METADATA_CAT.unidad` for that indicator SHALL contain the CAT value
+
+#### Scenario: Unknown id dropped with warning
+- **WHEN** a CAT metadata record has an `indicador` not present in the ES `metadatos_agendas` records
+- **THEN** the row SHALL NOT be inserted into `METADATA_CAT`
+- **AND** the transform SHALL emit `[catalan] WARN: dropping CAT translation for unknown id <indicador>`
+
+#### Scenario: ES indicator without CAT row logged once
+- **WHEN** an ES indicator has no corresponding CAT row (or its CAT `nombre` is empty)
+- **THEN** the transform SHALL emit `[catalan] WARN: missing CAT translation for <indicador>` exactly once for that indicator
+
+### Requirement: Populate DICCIONARIO_CAT from diccionario_cat records
+
+The system SHALL transform parsed `diccionario_cat` records into `DICCIONARIO_CAT` rows, mapping the composite key `(agenda, dimension)` to `id_dict = "<agenda>-<dimension>"`, `nombre` → `nombre`, `detalle` → `descripcion`. Only records whose `agenda` is in the supported set (`'2030'`, `'TARRAGONA'`) SHALL be inserted, mirroring the existing ES rule.
+
+#### Scenario: Catalan dictionary entry inserted
+- **WHEN** a CAT diccionario record has `agenda = "TARRAGONA"`, `dimension = "1"`, `nombre = "ORDENAR EL TERRITORI..."`
+- **THEN** `DICCIONARIO_CAT` contains a row with `id_dict = "TARRAGONA-1"`, `nombre = "ORDENAR EL TERRITORI..."`, and `descripcion` from the CAT `detalle`
+
+#### Scenario: Unsupported agenda skipped silently
+- **WHEN** a CAT diccionario record has `agenda = "AUE"`
+- **THEN** the row SHALL NOT be inserted into `DICCIONARIO_CAT` (the AUE agenda is also skipped on the ES side)
+
+#### Scenario: Unknown id_dict dropped with warning
+- **WHEN** a CAT diccionario record's computed `id_dict` does not exist in the ES `DICCIONARIO`
+- **THEN** the row SHALL NOT be inserted into `DICCIONARIO_CAT`
+- **AND** the transform SHALL emit `[catalan] WARN: dropping CAT diccionario translation for unknown id_dict <id_dict>`
+
+### Requirement: Populate METADATA_EN from metadata_en records
+
+The system SHALL transform parsed `metadatos_agendas_en` records into `METADATA_EN` rows using the same field and sparse-`unidad` rules as `METADATA_CAT`, with log prefix `[english]` instead of `[catalan]`. The EN `clase` and EN `formula` columns SHALL NOT be written to `METADATA_EN`.
+
+#### Scenario: English name populated
+- **WHEN** an EN metadata record has `indicador = "1"` and a non-empty English `nombre`
+- **THEN** `METADATA_EN` contains a row with `id_indicador = "1"` and that `nombre`
+
+#### Scenario: Unknown id dropped with warning
+- **WHEN** an EN metadata record has an `indicador` not present in the ES `metadatos_agendas` records
+- **THEN** the row SHALL NOT be inserted into `METADATA_EN`
+- **AND** the transform SHALL emit `[english] WARN: dropping EN translation for unknown id <indicador>`
+
+### Requirement: Populate DICCIONARIO_EN from diccionario_en records
+
+The system SHALL transform parsed `diccionario_en` records into `DICCIONARIO_EN` rows, mapping the composite key `(agenda, dimension)` to `id_dict = "<agenda>-<dimension>"`, `nombre` → `nombre`, `detalle` → `descripcion`, using the same supported-agenda filter as `DICCIONARIO_CAT`.
+
+#### Scenario: Unknown id_dict dropped with warning
+- **WHEN** an EN diccionario record's computed `id_dict` does not exist in the ES `DICCIONARIO`
+- **THEN** the row SHALL NOT be inserted into `DICCIONARIO_EN`
+- **AND** the transform SHALL emit `[english] WARN: dropping EN diccionario translation for unknown id_dict <id_dict>`
+
+### Requirement: Load PROYECTOS from parsed proyectos records
+
+The system SHALL insert every parsed `proyectos.csv` record into `PROYECTOS` with a one-to-one column mapping. Duplicate `codigo` values SHALL fail the build before insert completes.
+
+#### Scenario: All proyectos loaded
+- **WHEN** `proyectos.csv` contains N valid data rows with unique `codigo`
+- **THEN** `PROYECTOS` contains exactly N rows after load
+
+### Requirement: Slug function for municipality typology labels
+
+Before loading `REGIONES`, the system SHALL replace each non-null `id_especial2` value from `regiones.csv` with `slugifyTypologyLabel(value)` where that function: NFKD-normalizes Unicode, strips combining marks, lowercases ASCII letters, replaces each maximal run of characters that are not `[a-z0-9]` with a single hyphen, trims hyphens from both ends, and returns `NULL` if the result is empty. If two distinct non-empty source labels produce the same slug, the build SHALL exit with non-zero status and print the slug and both source labels.
+
+#### Scenario: Accented Spanish label becomes ASCII slug
+- **WHEN** a region row has `id_especial2 = "Municipios de servicios generales"`
+- **THEN** the value inserted into `REGIONES.id_especial2` SHALL be `municipios-de-servicios-generales`
+
+#### Scenario: Empty id_especial2 stays null
+- **WHEN** a region row has an empty `id_especial2` in the CSV
+- **THEN** the loaded `REGIONES.id_especial2` SHALL be `NULL`
+
+### Requirement: Derive METADATA.direction from Spanish formula
+
+The system SHALL derive a `direction` value for every `METADATA` row from the Spanish `formula` column using the curated mapping defined in the catalan-translations capability. The original `formula` text SHALL remain in `METADATA.formula` unchanged.
+
+#### Scenario: Direction populated for recognized sentinel
+- **WHEN** the ES `formula` for an indicator is `"↑ Ascendente (más = mejor)"`
+- **THEN** `METADATA.direction` for that indicator SHALL be `"asc"`
+- **AND** `METADATA.formula` for that indicator SHALL retain `"↑ Ascendente (más = mejor)"`
+
+#### Scenario: Direction NULL for empty formula
+- **WHEN** the ES `formula` for an indicator is empty or missing
+- **THEN** `METADATA.direction` for that indicator SHALL be `NULL`
+
+#### Scenario: Direction NULL for unrecognized sentinel
+- **WHEN** the ES `formula` for an indicator is non-empty but not in the recognized mapping
+- **THEN** `METADATA.direction` for that indicator SHALL be `NULL`
+- **AND** the transform SHALL emit `[catalan] WARN: unknown formula sentinel "<text>" for indicator <id> — direction = NULL`
+
+### Requirement: regiones_cat is not ingested
+
+The transform pipeline SHALL NOT read `dataset/regiones_cat.csv`. `REGIONES` SHALL be populated solely from `regiones.csv`. Human-readable typology strings for `id_especial2` SHALL not be stored in SQLite; consumers SHALL resolve display labels using the slug in `REGIONES.id_especial2` with locale-specific resources outside this table.
+
+#### Scenario: regiones_cat present but ignored
+- **WHEN** `dataset/regiones_cat.csv` exists on disk
+- **THEN** no parser or transform module SHALL read it
+- **AND** `REGIONES.id_especial2` SHALL contain only slug values derived from `regiones.csv` as defined in this specification
+
+### Requirement: Per-build Catalan summary is emitted
+
+After all transform steps complete, the pipeline SHALL emit a single summary line to stdout reporting Catalan ingestion health.
+
+#### Scenario: Summary line printed at end of transform
+- **WHEN** the transform completes successfully (zero or more `[catalan] WARN` lines emitted)
+- **THEN** stdout SHALL contain a line of the form `[catalan] METADATA_CAT: <n> loaded, <d> dropped, <m> missing — DICCIONARIO_CAT: <n> loaded, <d> dropped — direction: <ok> mapped, <unk> unknown (NULL)`
+
+#### Scenario: Summary present even when CAT files are absent
+- **WHEN** the transform completes with `metadatos_agendas_cat.csv` and `diccionario_cat.csv` both missing
+- **THEN** the summary line SHALL still be emitted with `0 loaded, 0 dropped, <m> missing` for both tables, where `<m>` equals the count of ES rows that lack a CAT translation
 

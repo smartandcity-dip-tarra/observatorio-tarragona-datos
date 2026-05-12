@@ -9,6 +9,7 @@
     "transform": "tsx src/index.ts",
     "check:csv": "tsx src/check-csv.ts",
     "check:tarragona": "tsx src/integrity/checks/data.test.ts",
+    "test:slug": "tsx src/slugifyTypology.test.ts",
     "build:static-viewer": "tsx src/build-static-viewer.ts",
     "add-id-presupuestos": "tsx src/add-id-presupuestos.ts"
   },

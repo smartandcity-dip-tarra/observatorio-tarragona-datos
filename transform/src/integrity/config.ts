@@ -15,6 +15,10 @@ export const REQUIRED_CSV_FILES: CsvFileConfig[] = [
   {
     filename: 'metadatos_agendas.csv',
     requiredColumns: ['indicador', 'clase', 'nombre']
+  },
+  {
+    filename: 'proyectos.csv',
+    requiredColumns: ['linea', 'objetivo', 'codigo', 'nombre', 'descripcion']
   }
 ];
 

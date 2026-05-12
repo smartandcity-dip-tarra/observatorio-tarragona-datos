@@ -43,7 +43,10 @@ SHEETS = {
     "umbrales":             "umbrales.csv",
     "regiones_cat":         "regiones_cat.csv",
     "diccionario_cat":      "diccionario_cat.csv",
+    "diccionario_en":      "diccionario_en.csv",
     "metadatos_agendas_cat": "metadatos_agendas_cat.csv",
+    "metadatos_agendas_en": "metadatos_agendas_en.csv",
+    "proyectos":            "proyectos.csv",
 }
 
 DATASET_DIR   = Path(__file__).parent.parent / "dataset"
