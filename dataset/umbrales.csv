@@ -5,7 +5,7 @@ indicador,nombre,unidad,municipios,conteo,minimo,maximo,desv_tipica,percentil25,
 210,Tasa de pobreza infantil,%,57,507,2.80,30.90,5.26,11.25,18.95,8.40,22.24,REDS,0.00,49.41
 5,Renta Garantizada de Ciudadanía por 10.000 habitantes,x10.000 hab,136,724,13.70,1250.00,124.93,76.61,190.85,47.15,273.35,Catalunya Máx. Winsorizado 1; Media Catalunya,117.60,594.06
 7,Proporción de personas con discapacidad que perciben una pensión,%,90,702,1.03,66.37,6.45,4.07,7.23,2.98,9.37,Catalunya Máx. Winsorizado 1; Mínimo Catalunya,12.90,0.00
-8,Número de refugios climáticos gratuitos,x10.000 hab,95,95,0.68,285.71,52.45,6.00,34.07,2.74,83.02,Media Catalunya; Mínimo Catalunya,24.35,0.14
+8,Número de refugios climáticos gratuitos,x10.000 hab,185,185,0.00,285.71,41.18,0.00,16.33,0.00,46.87,Media Catalunya; Mínimo Catalunya,24.35,0.14
 9,Superficie agrícola ecológica (porcentaje sobre el total agrícola),ha,185,369,0.00,49.53,9.45,1.82,12.54,0.00,22.07,REDS,26.59,0.19
 10,Tierras agrícolas por 100 habitantes,ha x100 hab,185,554,0.13,1921.29,236.49,6.99,66.86,1.31,129.89,Media Catalunya; Mínimo Catalunya,127.00,0.00
 12,Porcentaje de hectáreas de explotaciones de pequeña escala,%,185,554,0.00,57.98,11.61,3.88,19.28,1.83,31.56,Percentil 90 Catalunya; Mínimo Catalunya,16.14,0.00
@@ -35,7 +35,7 @@ indicador,nombre,unidad,municipios,conteo,minimo,maximo,desv_tipica,percentil25,
 27,Porcentaje de cargos electos ocupados por mujeres,%,185,185,0.00,100.00,14.12,36.36,54.55,28.57,60.00,REDS,50.00,20.00
 28,Tasa de paro en mujeres,%,185,2035,0.00,28.57,3.55,6.40,10.71,4.67,13.16,REDS,5.00,28.20
 29,Tasa de ocupación en mujeres,%,185,2031,17.36,92.59,7.39,52.97,62.70,49.10,66.87,Media UE; Media España,66.60,48.19
-30,Precio del agua (€/m³),€/m³,33,363,1.03,2.69,0.33,1.56,1.96,1.28,2.11,Mínimo Tarragona; Máximo Tarragona,1.03,2.69
+30,Precio del agua (€/m³),€/m³,185,1804,0.63,3.65,0.50,1.14,1.83,1.00,2.16,Mínimo Tarragona; Máximo Tarragona,1.03,2.69
 31,Consumo de agua por habitante,l/hab*día,185,1850,56.18,10926.65,932.82,128.76,231.65,105.50,334.81,REDS,176.92,533.23
 32,Porcentaje de renta de los hogares destinado a energía,%,185,1440,2.11,6.48,0.61,3.68,4.51,3.36,4.90,Mínimo Tarragona; Boardman,2.11,10.00
 34,Consumo de energía en los hogares,kwh/hab,185,1850,869.54,4266.81,393.22,1345.29,1753.46,1204.92,2015.16,Percentil 10 Tarragona; Media España,1200.00,3500.00
@@ -62,8 +62,8 @@ indicador,nombre,unidad,municipios,conteo,minimo,maximo,desv_tipica,percentil25,
 50,Porcentaje de población con ingresos inferiores al 50% de la mediana (mujeres),%,129,1111,2.70,26.60,4.25,10.40,16.80,8.30,19.10,Percentil 10 Tarragona; Percentil 90 Tarragona,8.30,19.10
 51,Esfuerzo económico del alquiler,%,132,1067,5.33,30.19,3.07,11.69,15.39,10.42,17.90,Percentil 10 Tarragona; Máximo Tarragona,10.41,30.19
 264,Índice de precios de la vivienda en alquiler,Índice,16,144,99.88,120.87,5.57,102.60,111.67,100.00,115.06,REDS,100,129.659
-112,Confort acústico diurno (Sistema Municipal de Indicadores de Sostenibilidad),%,1,1,11.60,11.60,0.00,11.60,11.60,11.60,11.60,SMIS,60,0
-113,Confort acústico nocturno (Sistema Municipal de Indicadores de Sostenibilidad),%,1,1,15.90,15.90,0.00,15.90,15.90,15.90,15.90,SMIS,80,0
+112,Confort acústico diurno (Sistema Municipal de Indicadores de Sostenibilidad),%,1,1,11.60,11.60,0.00,11.60,11.60,11.60,11.60,Máximo Áreas Catalunya; Mínimo,0,19.6
+113,Confort acústico nocturno (Sistema Municipal de Indicadores de Sostenibilidad),%,1,1,15.90,15.90,0.00,15.90,15.90,15.90,15.90,Máximo Áreas Catalunya; Mínimo,0,31
 265,Infraestructura de transporte,%,185,185,0.00,11.36,1.95,1.53,3.30,1.05,5.18,REDS,18.20,0.39
 275,Costa y hábitats naturales marinos protegidos,%,22,22,0.00,100.00,35.41,0.00,31.26,0.00,96.54,REDS,100,0
 114,Concentración media anual de NO₂,µg/m³,9,81,3.00,23.20,5.66,8.00,18.00,5.00,19.00,OMS,0,25
