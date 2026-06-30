@@ -3,20 +3,19 @@
 ## Purpose
 
 Catalan CSV ingestion, sparse `METADATA_CAT.unidad` overrides, `formula`→`direction` mapping, and warn-and-fall-back integrity rules for the SQLite build and API `lang=ca` behaviour.
-
 ## Requirements
 ### Requirement: Catalan translation source files
 
-The data ingestion pipeline SHALL recognize three Google Sheets tabs as the canonical sources of Catalan translations: `regiones_cat`, `diccionario_cat`, and `metadatos_agendas_cat`. The download step SHALL fetch all three into `dataset/regiones_cat.csv`, `dataset/diccionario_cat.csv`, and `dataset/metadatos_agendas_cat.csv`. Of these, only `diccionario_cat.csv` and `metadatos_agendas_cat.csv` SHALL be ingested into the database; `regiones_cat.csv` SHALL be retained on disk but ignored by the transform step. English translation sheets (`metadatos_agendas_en`, `diccionario_en`) SHALL be specified and tested under the `english-translations` capability, not under this specification.
+The data ingestion pipeline SHALL recognize two Google Sheets tabs as the canonical sources of Catalan translations: `diccionario_cat` and `metadatos_agendas_cat`. The download step SHALL fetch both into `dataset/diccionario_cat.csv` and `dataset/metadatos_agendas_cat.csv`, and both SHALL be ingested into the database. Catalan labels for `REGIONES.id_especial2` typology slugs SHALL NOT come from a `regiones_cat` sheet or CSV; they are resolved by consumers via locale-specific i18n. English translation sheets (`metadatos_agendas_en`, `diccionario_en`) SHALL be specified and tested under the `english-translations` capability, not under this specification.
 
-#### Scenario: All three CAT csvs downloaded
+#### Scenario: CAT translation csvs downloaded
 - **WHEN** `pullAndBuild/download_and_build.py` runs successfully
-- **THEN** `dataset/regiones_cat.csv`, `dataset/diccionario_cat.csv`, and `dataset/metadatos_agendas_cat.csv` SHALL exist on disk
+- **THEN** `dataset/diccionario_cat.csv` and `dataset/metadatos_agendas_cat.csv` SHALL exist on disk
 
-#### Scenario: regiones_cat is intentionally not ingested
+#### Scenario: REGIONES not sourced from Catalan CSV
 - **WHEN** the transform pipeline runs
 - **THEN** `REGIONES` SHALL be populated solely from `regiones.csv`
-- **AND** no parser SHALL read `regiones_cat.csv`
+- **AND** no parser SHALL read any `regiones_cat.csv` file
 
 ### Requirement: Warn-and-fall-back integrity policy for Catalan data
 

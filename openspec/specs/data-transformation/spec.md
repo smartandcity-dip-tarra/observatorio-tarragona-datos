@@ -274,15 +274,6 @@ The system SHALL derive a `direction` value for every `METADATA` row from the Sp
 - **THEN** `METADATA.direction` for that indicator SHALL be `NULL`
 - **AND** the transform SHALL emit `[catalan] WARN: unknown formula sentinel "<text>" for indicator <id> — direction = NULL`
 
-### Requirement: regiones_cat is not ingested
-
-The transform pipeline SHALL NOT read `dataset/regiones_cat.csv`. `REGIONES` SHALL be populated solely from `regiones.csv`. Human-readable typology strings for `id_especial2` SHALL not be stored in SQLite; consumers SHALL resolve display labels using the slug in `REGIONES.id_especial2` with locale-specific resources outside this table.
-
-#### Scenario: regiones_cat present but ignored
-- **WHEN** `dataset/regiones_cat.csv` exists on disk
-- **THEN** no parser or transform module SHALL read it
-- **AND** `REGIONES.id_especial2` SHALL contain only slug values derived from `regiones.csv` as defined in this specification
-
 ### Requirement: Per-build Catalan summary is emitted
 
 After all transform steps complete, the pipeline SHALL emit a single summary line to stdout reporting Catalan ingestion health.
@@ -294,4 +285,14 @@ After all transform steps complete, the pipeline SHALL emit a single summary lin
 #### Scenario: Summary present even when CAT files are absent
 - **WHEN** the transform completes with `metadatos_agendas_cat.csv` and `diccionario_cat.csv` both missing
 - **THEN** the summary line SHALL still be emitted with `0 loaded, 0 dropped, <m> missing` for both tables, where `<m>` equals the count of ES rows that lack a CAT translation
+
+### Requirement: REGIONES id_especial2 labels via consumer i18n
+
+`REGIONES` SHALL be populated solely from `regiones.csv`. The `id_especial2` column SHALL store deterministic slugs derived from the Spanish typology label in `regiones.csv`. Human-readable typology strings SHALL NOT be stored in SQLite; consumers SHALL resolve display labels using the slug with locale-specific i18n resources. No `regiones_cat.csv` file SHALL be expected in the dataset.
+
+#### Scenario: REGIONES built from regiones.csv only
+- **WHEN** the transform pipeline runs
+- **THEN** `REGIONES` SHALL be populated solely from `regiones.csv`
+- **AND** `REGIONES.id_especial2` SHALL contain only slug values derived from `regiones.csv`
+- **AND** no parser or transform module SHALL read `regiones_cat.csv`
 
