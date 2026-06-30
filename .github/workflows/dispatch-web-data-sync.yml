@@ -1,8 +1,9 @@
 name: Dispatch web data sync
 
 on:
-  release:
-    types: [published]
+  # release trigger temporarily disabled — automatic web sync after latest-data publish is paused.
+  # release:
+  #   types: [published]
   workflow_dispatch:
     inputs:
       release_tag:
@@ -19,8 +20,6 @@ permissions:
 
 jobs:
   dispatch:
-    # Only dispatch for the rolling data tag unless manually invoked.
-    if: github.event_name == 'workflow_dispatch' || github.event.release.tag_name == 'latest-data'
     runs-on: ubuntu-latest
     steps:
       - name: Validate dispatch token availability
@@ -35,9 +34,9 @@ jobs:
       - name: Trigger repository_dispatch in web repository
         env:
           WEB_REPO_DISPATCH_TOKEN: ${{ secrets.WEB_REPO_DISPATCH_TOKEN }}
-          RELEASE_TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.release_tag || github.event.release.tag_name }}
-          RELEASE_ID: ${{ github.event.release.id || '' }}
-          TARGET_ENV: ${{ github.event_name == 'workflow_dispatch' && inputs.target_env || 'dev' }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          RELEASE_ID: ''
+          TARGET_ENV: ${{ inputs.target_env }}
         run: |
           set -euo pipefail
           curl --fail-with-body --silent --show-error \

@@ -75,12 +75,12 @@ jobs:
           pnpm run transform 2>&1 | tee "$GITHUB_WORKSPACE/pipeline-logs/step3-transform.log"
         working-directory: transform
 
-      # --- Paso 5: Build release source bundle aligned with DB ---
-      - name: Build release source bundle
+      # --- Paso 5: Build release dataset bundle aligned with DB ---
+      - name: Build release dataset bundle
         run: |
           set -euo pipefail
           rm -f output/latest-data-source.zip
-          zip -rq output/latest-data-source.zip dataset transform config openspec README.md
+          zip -rq output/latest-data-source.zip dataset
 
       # --- Paso 6: Release output/ (tag latest-data) ---
       - name: Create/update release (tag latest-data)
