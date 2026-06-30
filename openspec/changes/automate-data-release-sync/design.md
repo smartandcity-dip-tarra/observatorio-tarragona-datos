@@ -1,6 +1,6 @@
 ## Context
 
-The web repository (`observatorio-tarragona-web`) must stay aligned with releases produced by the data repository (`observatorio-tarragona-datos`). Today this update is manual: developers download release assets, replace files in the web repo, run tests, and trigger deployment. This process is slow and error-prone.
+The web repository (`smartandcity-dip-tarra/observatorio-tarragona-web`) must stay aligned with releases produced by the data repository (`smartandcity-dip-tarra/observatorio-tarragona-datos`). Today this update is manual: developers download release assets, replace files in the web repo, run tests, and trigger deployment. This process is slow and error-prone.
 
 The data repository publishes two stable release endpoints:
 - Database binary: `https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/releases/download/latest-data/diputacion_tarragona.db`
@@ -27,7 +27,7 @@ The target automation must run in the web repository, update `assets/dbfile` and
 ## Decisions
 
 1. **Cross-repository event trigger via `repository_dispatch`**
-   - The data repository will call GitHub API `repository_dispatch` on `observatorio-tarragona-web` after release publication.
+   - The data repository will call GitHub API `repository_dispatch` on `smartandcity-dip-tarra/observatorio-tarragona-web` after release publication.
    - The web repository workflow listens to `repository_dispatch` with a custom event type (for example `data_release_published`).
    - Rationale: GitHub Actions cannot natively subscribe to release events from another repository. `repository_dispatch` is explicit, auditable, and easy to secure with a scoped token.
    - Alternatives considered:

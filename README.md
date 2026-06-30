@@ -14,7 +14,7 @@ Update dataset  ──►  GitHub Release (latest-data)
       │
       └─ commit dataset/
 
-Dispatch web data sync  ──►  observatorio-tarragona-web  (manual only, for now)
+Dispatch web data sync  ──►  smartandcity-dip-tarra/observatorio-tarragona-web  (manual only, for now)
 ```
 
 ### `Update dataset` (`.github/workflows/update-dataset.yml`)
@@ -50,7 +50,7 @@ Dispatch web data sync  ──►  observatorio-tarragona-web  (manual only, for
 
 **Triggers:** manual only via **Actions → Dispatch web data sync → Run workflow**. Automatic dispatch on `latest-data` release publish is temporarily disabled.
 
-Sends a `repository_dispatch` event (`data_release_published`) to `sdgviz/observatorio-tarragona-web`. The web repository then downloads the release assets, runs tests, commits the DB and dataset into `dev`, and triggers Netlify.
+Sends a `repository_dispatch` event (`data_release_published`) to `smartandcity-dip-tarra/observatorio-tarragona-web`. The web repository then downloads the release assets, runs tests, commits the DB and dataset into `dev`, and triggers Netlify.
 
 **Required secret:** `WEB_REPO_DISPATCH_TOKEN` — fine-grained token with permission to dispatch events in the web repository.
 
