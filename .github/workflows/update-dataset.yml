@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -25,7 +25,7 @@ jobs:
 
       # --- Paso 1: Python — download_and_build.py ---
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
@@ -49,12 +49,12 @@ jobs:
 
       # --- Paso 3: check:csv ---
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "22"
 
       - name: Set up pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v5
         with:
           version: 10.29.3
 
@@ -84,7 +84,7 @@ jobs:
 
       # --- Paso 6: Release output/ (tag latest-data) ---
       - name: Create/update release (tag latest-data)
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: latest-data
           name: "Latest dataset"
@@ -98,7 +98,7 @@ jobs:
       # --- Paso 7: Subir reporte y logs como artifact descargable ---
       - name: Upload report and logs artifact
         if: always() && !cancelled()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: csv-integrity-report
           path: |
