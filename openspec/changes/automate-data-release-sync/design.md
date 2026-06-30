@@ -6,14 +6,14 @@ The data repository publishes two stable release endpoints:
 - Database binary: `https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/releases/download/latest-data/diputacion_tarragona.db`
 - Source archive: `https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/archive/refs/tags/latest-data.zip`
 
-The target automation must run in the web repository, update `assets/dbfile` and `test/dataset`, validate with tests, and call a Netlify build hook only after success.
+The target automation must run in the web repository, update `server/assets/dbfile` and `test/dataset`, validate with tests, and call a Netlify build hook only after success.
 
 ## Goals / Non-Goals
 
 **Goals:**
 - Trigger a workflow in the web repo when a new data release is published.
 - Download and validate release artifacts before replacing local files.
-- Keep repository paths deterministic: database in `assets/dbfile`, dataset in `test/dataset`.
+- Keep repository paths deterministic: database in `server/assets/dbfile`, dataset in `test/dataset`.
 - Run project tests as a release gate.
 - Trigger Netlify deploy hook only when sync and tests succeed.
 - Keep failures observable through GitHub Actions logs and explicit step failures.
@@ -42,7 +42,7 @@ The target automation must run in the web repository, update `assets/dbfile` and
 
 3. **Two-step staging before copy to tracked directories**
    - Download into a temporary workspace (`mktemp`), unzip, validate expected dataset directory structure, then copy to target paths.
-   - `assets/dbfile/diputacion_tarragona.db` gets replaced atomically.
+   - `server/assets/dbfile/diputacion_tarragona.db` gets replaced atomically.
    - `test/dataset` is refreshed from archive dataset contents.
    - Rationale: avoids partial updates in case of corrupt downloads.
 

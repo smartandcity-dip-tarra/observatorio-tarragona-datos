@@ -23,11 +23,11 @@ The synchronization workflow SHALL download `diputacion_tarragona.db` and `lates
 - **THEN** the workflow fails and no target repository paths are updated
 
 ### Requirement: Repository paths are synchronized deterministically
-The workflow SHALL copy the downloaded database into `assets/dbfile` and SHALL copy the dataset extracted from the source archive into `test/dataset`.
+The workflow SHALL copy the downloaded database into `server/assets/dbfile` and SHALL copy the dataset extracted from the source archive into `test/dataset`.
 
 #### Scenario: Successful copy updates both targets
 - **WHEN** artifact validation succeeds
-- **THEN** `assets/dbfile` contains the latest database and `test/dataset` contains the extracted dataset files
+- **THEN** `server/assets/dbfile` contains the latest database and `test/dataset` contains the extracted dataset files
 
 #### Scenario: Dataset structure is unexpected
 - **WHEN** the archive does not contain the expected dataset source path

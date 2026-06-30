@@ -9,7 +9,7 @@
 - [x] 2.1 Add a workflow in `observatorio-tarragona-web/.github/workflows` that listens to the dispatch event and runs on GitHub-hosted runners.
 - [x] 2.2 Implement download steps for `diputacion_tarragona.db` and `latest-data.zip` using the stable release URLs.
 - [x] 2.3 Add artifact validation checks (HTTP status, file existence, expected archive structure) and fail fast on invalid inputs.
-- [x] 2.4 Implement copy/update steps to place the database in `assets/dbfile` and extracted dataset files in `test/dataset`.
+- [x] 2.4 Implement copy/update steps to place the database in `server/assets/dbfile` and extracted dataset files in `test/dataset`.
 
 ## 3. Test gate and deployment hook
 

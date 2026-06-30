@@ -6,7 +6,7 @@ The application currently depends on manual synchronization with the data reposi
 
 - Add a GitHub Actions workflow in the web repository that can be triggered by new releases from the data repository.
 - Download the latest release artifacts from `observatorio-tarragona-datos`: SQLite database (`diputacion_tarragona.db`) and source archive (`latest-data.zip`).
-- Copy the downloaded database to `assets/dbfile`.
+- Copy the downloaded database to `server/assets/dbfile`.
 - Extract and copy the dataset from the source archive into `test/dataset`.
 - Run the project test suite after syncing artifacts.
 - Trigger a Netlify build hook only when synchronization and tests complete successfully.
