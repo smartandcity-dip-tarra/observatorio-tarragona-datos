@@ -2,6 +2,7 @@
   "name": "diputacion-tarragona-transform",
   "version": "1.0.0",
   "type": "module",
+  "packageManager": "pnpm@10.29.3",
   "pnpm": {
     "onlyBuiltDependencies": ["better-sqlite3"]
   },

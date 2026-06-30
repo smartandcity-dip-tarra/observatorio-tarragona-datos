@@ -1,9 +1,10 @@
 {
   "summary": {
-    "total": 20,
-    "passed": 20,
+    "total": 27,
+    "passed": 27,
     "failed": 0,
-    "errored": 0
+    "errored": 0,
+    "warned": 0
   },
   "results": [
     {
@@ -52,8 +53,28 @@
       "status": "pass"
     },
     {
+      "id": "format-proyectos.csv-exists",
+      "description": "Required CSV file exists: proyectos.csv",
+      "status": "pass"
+    },
+    {
+      "id": "format-proyectos.csv-parse",
+      "description": "CSV file is non-empty and parseable: proyectos.csv",
+      "status": "pass"
+    },
+    {
+      "id": "format-proyectos.csv-required-columns",
+      "description": "CSV file contains required columns: proyectos.csv",
+      "status": "pass"
+    },
+    {
       "id": "header-parity-regiones.csv",
       "description": "CSV header parity (regiones.csv): columns match contract",
+      "status": "pass"
+    },
+    {
+      "id": "header-parity-proyectos.csv",
+      "description": "CSV header parity (proyectos.csv): columns match contract",
       "status": "pass"
     },
     {
@@ -97,6 +118,11 @@
       "status": "pass"
     },
     {
+      "id": "data-proyectos-unique-codigo",
+      "description": "proyectos.csv has unique non-empty codigo values",
+      "status": "pass"
+    },
+    {
       "id": "data-tarragona-le-orphans",
       "description": "Every le / le2 value in metadatos_agendas.csv exists in diccionario.csv (agenda=TARRAGONA)",
       "status": "pass"
@@ -105,6 +131,18 @@
       "id": "data-promedios-objetivo-aue-is-tarragona-le",
       "description": "promedios_municipio_objetivo_aue.csv `objetivo_aue` values are Tarragona LE ids (1..6) present in diccionario.csv (agenda=TARRAGONA, nivel=1)",
       "status": "pass"
+    },
+    {
+      "id": "catalan-csv-alignment",
+      "description": "Catalan CSV alignment (metadatos_agendas_cat / diccionario_cat vs Spanish sources)",
+      "status": "pass",
+      "details": "All alignment checks passed."
+    },
+    {
+      "id": "english-csv-alignment",
+      "description": "English CSV alignment (metadatos_agendas_en / diccionario_en vs Spanish sources)",
+      "status": "pass",
+      "details": "All alignment checks passed."
     }
   ]
 }

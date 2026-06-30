@@ -23,6 +23,7 @@
     .status-pass { background: #dcfce7; color: #166534; }
     .status-fail { background: #fee2e2; color: #991b1b; }
     .status-error { background: #fef3c7; color: #92400e; }
+    .status-warn { background: #e0e7ff; color: #3730a3; }
     .details { white-space: pre-wrap; color: #4b5563; }
     footer { margin-top: 1.5rem; font-size: 0.75rem; color: #6b7280; text-align: right; }
   </style>
@@ -35,11 +36,11 @@
     <div class="summary-grid">
       <div class="summary-item">
         <div class="summary-label">Total tests</div>
-        <div class="summary-value">20</div>
+        <div class="summary-value">27</div>
       </div>
       <div class="summary-item">
         <div class="summary-label">Passed</div>
-        <div class="summary-value pass">20</div>
+        <div class="summary-value pass">27</div>
       </div>
       <div class="summary-item">
         <div class="summary-label">Failed</div>
@@ -48,6 +49,10 @@
       <div class="summary-item">
         <div class="summary-label">Errored</div>
         <div class="summary-value error">0</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-label">Warned</div>
+        <div class="summary-value">0</div>
       </div>
     </div>
   </section>
@@ -117,8 +122,32 @@
         <td class="details"></td>
       </tr>
 <tr>
+        <td><code>format-proyectos.csv-exists</code></td>
+        <td>Required CSV file exists: proyectos.csv</td>
+        <td><span class="status-badge status-pass">PASS</span></td>
+        <td class="details"></td>
+      </tr>
+<tr>
+        <td><code>format-proyectos.csv-parse</code></td>
+        <td>CSV file is non-empty and parseable: proyectos.csv</td>
+        <td><span class="status-badge status-pass">PASS</span></td>
+        <td class="details"></td>
+      </tr>
+<tr>
+        <td><code>format-proyectos.csv-required-columns</code></td>
+        <td>CSV file contains required columns: proyectos.csv</td>
+        <td><span class="status-badge status-pass">PASS</span></td>
+        <td class="details"></td>
+      </tr>
+<tr>
         <td><code>header-parity-regiones.csv</code></td>
         <td>CSV header parity (regiones.csv): columns match contract</td>
+        <td><span class="status-badge status-pass">PASS</span></td>
+        <td class="details"></td>
+      </tr>
+<tr>
+        <td><code>header-parity-proyectos.csv</code></td>
+        <td>CSV header parity (proyectos.csv): columns match contract</td>
         <td><span class="status-badge status-pass">PASS</span></td>
         <td class="details"></td>
       </tr>
@@ -171,6 +200,12 @@
         <td class="details"></td>
       </tr>
 <tr>
+        <td><code>data-proyectos-unique-codigo</code></td>
+        <td>proyectos.csv has unique non-empty codigo values</td>
+        <td><span class="status-badge status-pass">PASS</span></td>
+        <td class="details"></td>
+      </tr>
+<tr>
         <td><code>data-tarragona-le-orphans</code></td>
         <td>Every le / le2 value in metadatos_agendas.csv exists in diccionario.csv (agenda=TARRAGONA)</td>
         <td><span class="status-badge status-pass">PASS</span></td>
@@ -181,6 +216,18 @@
         <td>promedios_municipio_objetivo_aue.csv `objetivo_aue` values are Tarragona LE ids (1..6) present in diccionario.csv (agenda=TARRAGONA, nivel=1)</td>
         <td><span class="status-badge status-pass">PASS</span></td>
         <td class="details"></td>
+      </tr>
+<tr>
+        <td><code>catalan-csv-alignment</code></td>
+        <td>Catalan CSV alignment (metadatos_agendas_cat / diccionario_cat vs Spanish sources)</td>
+        <td><span class="status-badge status-pass">PASS</span></td>
+        <td class="details">All alignment checks passed.</td>
+      </tr>
+<tr>
+        <td><code>english-csv-alignment</code></td>
+        <td>English CSV alignment (metadatos_agendas_en / diccionario_en vs Spanish sources)</td>
+        <td><span class="status-badge status-pass">PASS</span></td>
+        <td class="details">All alignment checks passed.</td>
       </tr>
     </tbody>
   </table>

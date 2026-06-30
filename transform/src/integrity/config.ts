@@ -18,7 +18,7 @@ export const REQUIRED_CSV_FILES: CsvFileConfig[] = [
   },
   {
     filename: 'proyectos.csv',
-    requiredColumns: ['linea', 'objetivo', 'codigo', 'nombre', 'descripcion']
+    requiredColumns: ['linea', 'objetivo', 'codigo', 'nombre', 'descripcion', 'logro']
   }
 ];
 

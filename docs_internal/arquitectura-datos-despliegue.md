@@ -49,7 +49,7 @@ Workflow a crear: `.github/workflows/update-dataset.yml`
 **Pasos:**
 1. Setup Python 3.11 → `pip install -r pullAndBuild/requirements.txt`
 2. Ejecutar `python pullAndBuild/download_and_build.py` (descarga Sheets + agrega CSVs)
-3. Setup Node 20 + pnpm → `pnpm install` en `transform/`
+3. Setup Node 22 + pnpm 10.29.3 → `pnpm install --frozen-lockfile` en `transform/`
 4. Ejecutar `pnpm run transform` en `transform/` (genera el `.db`)
 5. Crear/actualizar GitHub Release con tag `latest-data` subiendo el `.db`
 6. (Opcional) Commit de `dataset/` si se quiere versionar los CSVs en git
@@ -88,14 +88,14 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - uses: pnpm/action-setup@v4
         with:
-          version: latest
+          version: 10.29.3
 
       - name: Install Node dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
         working-directory: transform
 
       - name: Transform CSVs → SQLite

@@ -1,6 +1,6 @@
 /**
- * Only `regiones.csv` is loaded. `regiones_cat.csv` exists in dataset/ but is intentionally ignored —
- * `id_especial2` is slugified at transform time for stable i18n keys (see `slugifyTypologyLabel`).
+ * Only `regiones.csv` is loaded. `id_especial2` is slugified at transform time for stable i18n keys
+ * (see `slugifyTypologyLabel`); display labels are resolved by consumers via locale-specific i18n.
  */
 import { readCsv, toNullable } from './csv-utils.js';
 

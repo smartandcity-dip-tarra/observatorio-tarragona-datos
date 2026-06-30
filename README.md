@@ -27,7 +27,7 @@ Optional sheets `diccionario_cat.csv` and `metadatos_agendas_cat.csv` are valida
 
 **Direction labels:** spreadsheet `formula` cells that contain direction sentinels (e.g. ↑ / ↓ Ascendente…) are normalized to `METADATA.direction` (`asc` / `desc`). Add new sentinels in `transform/src/transform/direction.ts` (`DIRECTION_MAP_ES` / `DIRECTION_MAP_CAT`) when the client introduces new strings.
 
-**Region grouping (`id_especial2`):** `regiones_cat.csv` is downloaded but not loaded into SQLite; Catalan labels for the closed enum will be handled by frontend i18n (separate change).
+**Region grouping (`id_especial2`):** typology slugs are stored in SQLite; display labels per locale are resolved by frontend i18n (`regionFilter.idEspecial2Typology`).
 
 ### Reports for GitHub Pages
 

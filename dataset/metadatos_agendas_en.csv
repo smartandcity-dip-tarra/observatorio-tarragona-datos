@@ -1,0 +1,162 @@
+indicador,nombre,detalle,unidad,formula
+D-1,Population change over the last ten available years,,%,
+D-2-a,Artificial land cover by municipality,,%,
+D-2-b,Cropland area by municipality,,%,
+D-2-d,Forest and woodland area by municipality,,%,
+D-3-a,Municipal area devoted to agricultural and forestry holdings,,%,
+D-3-b,Agricultural and forestry land relative to urban and developable land,,%,
+D-4,Municipal non-developable land area,,%,
+D-5,"Green space per 1,000 inhabitants",,sq m/inhab.,
+D-6,Urban Density,Inhabitants per hectare of urban land,inhab./ha,
+D-7,Discontinuous mixed urban land as a share of total mixed urban land,,%,
+D-8,Housing density per urban land area,,Dwell./inhab.,
+D-9,Urban compactness,Total built-up area relative to land area,%,
+D-10-a,Residential built-up area relative to land area,,%,
+D-10-b,Residential built-up area as a share of total built-up area,,%,
+D-ST-1,Planned housing density in development land areas,,Dwell./inhab.,
+D-ST-2,Development land areas as a share of total urban land,,%,
+D-ST-3,Designated developable land relative to total urban land,,%,
+D-ST-4,Residential development land as a share of total urban land,,%,
+D-ST-5,Economic activity (industrial or tertiary) development land as a share of total urban land,,%,
+D-14,Share of building stock built before 2000,,%,
+D-17-a,Transport infrastructure area,,ha,
+D-17-b,Transport infrastructure area as a share of municipal territory,,%,
+D-18-a,"Registered vehicles per 1,000 inhabitants",,"per 1,000",
+D-18-b,Share of passenger cars,,%,
+D-18-c,Share of motorcycles,,%,
+D-18-d,Vehicle fleet age,,%,
+D-22-a,Population ageing index,,%,
+D-22-b,Population senescence index,,%,
+D-23,Share of foreign population,,%,
+D-24-a,Total dependency ratio,,%,
+D-24-b,Child dependency ratio,,%,
+D-24-c,Old-age dependency ratio,,%,
+D-26-a,Workers in the agricultural sector,,%,
+D-26-b,Workers in the industrial sector,,%,
+D-26-c,Workers in the construction sector,,%,
+D-26-d,Workers in the services sector,,%,
+D-27-a,Establishments in the agricultural sector,,%,
+D-27-b,Establishments in the industrial sector,,%,
+D-27-c,Establishments in the construction sector,,%,
+D-27-d,Establishments in the services sector,,%,
+D-28-a,Total unemployment rate,,%,
+D-28-b,Unemployment rate among 25–44 year-olds,,%,
+D-28-c,Female unemployment share,,%,
+D-29,"Dwellings per 1,000 inhabitants",,"per 1,000",
+D-32,Change in number of households over the last ten years,,%,
+D-33,Housing stock growth over the last ten years,,%,
+D-34-a,Share of secondary housing,,%,
+D-35,Share of vacant housing,,%,
+D-ST-6,Planned dwellings in development areas as a share of existing housing stock,,%,
+D-ST-7,"Planned dwellings in development areas per 1,000 inhabitants",,"per 1,000",
+D-37,CURRENT MUNICIPAL URBAN PLANNING INSTRUMENT,,,
+D-38,DATE OF THE CURRENT MUNICIPAL URBAN PLANNING INSTRUMENT,,,
+D-30-a,Single-dwelling buildings,,%,
+D-30-b,Buildings with 2 or more dwellings,,%,
+D-34-b,Share of tourist housing,,%,
+D-36,Housing affordability,Average housing price relative to average household income,%,
+1,Population with income below 40% of the median,Share of the population whose income falls below 40% of the national median income. A severe poverty indicator measuring the fraction of the population in serious economic exclusion.,%,↓ Descending (lower = better)
+3,Median income,Central value of the equivalised household income distribution: 50% of the population earns more and 50% earns less. Used as the reference for relative poverty thresholds.,€,↑ Ascending (higher = better)
+2,Poverty rate,Share of the population with equivalised income below 60% of the national median (modified OECD scale). Standard European relative poverty indicator (AROPE).,%,↓ Descending (lower = better)
+210,Child poverty rate,Percentage of children under 18 living in households with income below the relative poverty threshold (60% of the national median).,%,↓ Descending (lower = better)
+5,"Guaranteed Citizenship Income per 10,000 inhabitants","Number of beneficiaries of the Guaranteed Citizenship Income (Renda Garantida de Ciutadania) per 10,000 municipal inhabitants.","per 10,000 inhab.",↓ Descending (lower = better)
+7,Share of persons with disabilities receiving a pension,Percentage of persons with a recognised degree of disability who receive a non-contributory or contributory disability pension.,%,↑ Ascending (higher = better)
+8,Climate shelters,"Number of municipal facilities designated as freely accessible climate shelters for the public, per 10,000 inhabitants.","per 10,000 inhab.",↑ Ascending (higher = better)
+9,Organic agricultural area (share of total agricultural area),Percentage of the municipality's utilised agricultural area devoted to certified organic production.,ha,↑ Ascending (higher = better)
+10,Agricultural land per 100 inhabitants,"Agricultural land area available per 100 municipal inhabitants, as an indicator of local agricultural production capacity.",ha per 100 inhab.,↑ Ascending (higher = better)
+12,Share of small-scale farm area,Proportion of total agricultural area occupied by small-scale holdings. A small-scale holding is defined as one below the 40th percentile of net area per holding calculated at the Catalonia level per year.,%,↑ Ascending (higher = better)
+13,Share of small-scale holdings,Proportion of the total number of agricultural holdings in the municipality classified as small-scale (below the 40th percentile of net area per holding at the Catalonia level).,%,↑ Ascending (higher = better)
+212,Employment rate in the agricultural sector,Percentage of workers registered with Social Security in the agricultural sector (NACE 01–03) relative to the municipality's active population.,%,↑ Ascending (higher = better)
+81,Organic production operators,"Number of operators registered with the Catalan Council for Organic Agricultural Production (CCPAE) per 10,000 municipal inhabitants.","per 10,000 inhab.",↑ Ascending (higher = better)
+219,Infant mortality,"Number of deaths of children under one year of age per 1,000 live births in the municipality.","per 1,000 live births",↓ Descending (lower = better)
+218,Deaths from viral hepatitis,"Mortality rate from viral hepatitis (ICD-10: B15–B19) per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+224,Deaths from tuberculosis,"Mortality rate from tuberculosis (ICD-10: A15–A19 and B90) per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+226,Deaths from AIDS and HIV,"Mortality rate from AIDS and HIV-related diseases (ICD-10: B20–B24 and R75) per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+217,Deaths from infectious respiratory diseases,"Mortality rate from infectious diseases of the respiratory tract (ICD-10: J09–J18) per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+220,Deaths from non-communicable diseases,"Mortality rate from non-communicable diseases (cardiovascular, cancers, diabetes, chronic respiratory diseases) per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+221,Premature deaths (under 65),"All-cause mortality rate for persons under 65 per 100,000 inhabitants in the same age group.","per 100,000 inhab.",↓ Descending (lower = better)
+222,Deaths from suicide,"Mortality rate from intentional self-harm (ICD-10: X60–X84) per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+225,Deaths from respiratory system tumours,"Mortality rate from malignant neoplasms of the respiratory system (ICD-10: C33–C34) per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+216,Deaths from alcohol and drug abuse,"Mortality rate from mental and behavioural disorders due to psychoactive substance use (ICD-10: F10–F19) per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+16,Road traffic accident mortality rate,"Mortality rate from motor vehicle accidents recorded in the municipality, per 100,000 inhabitants.","per 100,000 inhab.",↓ Descending (lower = better)
+227,Adolescent fertility,"Number of live births to mothers aged 15–19 per 1,000 women in the same age group.","per 1,000 women",↓ Descending (lower = better)
+231,Population with lower secondary education at most,Percentage of the population aged 25–64 whose highest educational attainment is compulsory secondary education.,%,↓ Descending (lower = better)
+229,Access to pre-school education,"Number of early childhood education places (first cycle, ages 0–3) available per 100 children in the municipality.",%,↑ Ascending (higher = better)
+232,Population with upper secondary education at most,Percentage of the population aged 25–64 whose highest educational attainment is upper secondary or intermediate vocational training.,%,↑ Ascending (higher = better)
+230,Population enrolled in higher education,Percentage of the population aged 18–24 enrolled in university or higher-level studies.,"per 1,000 inhab.",↑ Ascending (higher = better)
+233,Population with tertiary education or higher,Percentage of the population aged 25–64 holding a university degree or equivalent.,%,↑ Ascending (higher = better)
+24,Gender parity index in education,Ratio of women's to men's tertiary education access rate in the municipality.,Ratio,↑ Ascending (higher = better)
+25,Pupil-to-teacher ratio,Average number of pupils per teacher in publicly-owned educational establishments in the municipality.,Ratio,↓ Descending (lower = better)
+26,Unemployment rate gap between women and men,Difference in percentage points between the female and male unemployment rates in the municipality.,p.p.,↓ Descending (lower = better)
+27,Share of elected positions held by women,Proportion of female council members in the municipal government.,%,↑ Ascending (higher = better)
+28,Female unemployment rate,Percentage of working-age women (16–64) registered as unemployed relative to the total female active population in the municipality.,%,↓ Descending (lower = better)
+29,Female employment rate,Percentage of women aged 16–64 registered with Social Security relative to the total working-age female population in the municipality.,%,↑ Ascending (higher = better)
+30,Water price (€/m³),"Water price (in €/m³) including supply charge, water levy and sewerage.",€/m³,↓ Descending (lower = better)
+31,Water consumption per inhabitant,Total volume of water consumed per inhabitant per year in the municipality.,l/inhab.*day,↓ Descending (lower = better)
+32,Household income share spent on energy,"Expenditure on electricity, gas and other fuels as a share of household disposable income at the municipal level. An energy vulnerability indicator reflecting the proportion of income that households devote to covering basic energy needs.",%,↓ Descending (lower = better)
+34,Household energy consumption,Total final electricity consumption per inhabitant in the municipality.,kWh/inhab.,↓ Descending (lower = better)
+35,Gross domestic product per inhabitant,"Total value of goods and services produced in the municipality per inhabitant, in current euros.",€,↑ Ascending (higher = better)
+245,Sectoral employment dependency index,"Synthetic index measuring the degree to which a municipality depends on one or few employment sectors, combining the deviation of its productive structure from the regional pattern and the intensity of concentration in the dominant sector.",Index,↓ Descending (lower = better)
+36,Employment rate,Percentage of the population aged 16–64 registered with Social Security relative to the total working-age population in the municipality.,%,↑ Ascending (higher = better)
+38,Unemployment rate,Percentage of the municipality's active population that is registered as unemployed.,%,↓ Descending (lower = better)
+39,Share of public procurement awarded to SMEs,Proportion of the total value of public contracts awarded to small and medium-sized enterprises in the municipality.,%,↑ Ascending (higher = better)
+40,Share of unemployed persons over 45,Percentage of unemployed persons over 45 relative to total registered unemployed in the municipality.,%,↓ Descending (lower = better)
+41,Share of unemployed persons under 25,Percentage of unemployed persons under 25 relative to total registered unemployed in the municipality.,%,↓ Descending (lower = better)
+246,Temporary employment,Percentage of registered employment contracts that are temporary relative to total registered contracts in the municipality.,%,↓ Descending (lower = better)
+42,Tourism pressure,"Number of tourist accommodation places (hotels, campsites, apartments, tourist dwellings, rural houses) per inhabitant of the municipality.",Beds/inhab.,↑ Ascending (higher = better)
+43,Industrial sector employment share,Proportion of workers registered with Social Security in the industrial sector (NACE 10–33) relative to the working-age population of the municipality.,%,↑ Ascending (higher = better)
+44,"Knowledge-intensive enterprises per 10,000 inhabitants","Number of enterprises in knowledge-intensive sectors (NACE: 62, 63, 69, 70, 71, 72, 73, 74) per 10,000 municipal inhabitants.","per 10,000 inhab.",↑ Ascending (higher = better)
+186,Patents per capita,"Number of national patent applications with inventors domiciled in the municipality per 10,000 inhabitants.","patents/100,000 inhab.",↑ Ascending (higher = better)
+45,Internet coverage,Percentage of dwellings in the municipality with access to broadband (≥ 30 Mbps) or ultra-fast broadband (≥ 100 Mbps).,%,↓ Descending (lower = better)
+47,Income inequality,Ratio between the average income of the top 20% of households and that of the bottom 20% in the municipality.,Index,↓ Descending (lower = better)
+48,Income per inhabitant,"Average gross income per inhabitant of the municipality, calculated from tax data and the living conditions survey.",€,↑ Ascending (higher = better)
+46,Gini Index,Measure of inequality in household income distribution in the municipality. A value of 0 represents perfect equality and 1 represents maximum inequality.,Index,↓ Descending (lower = better)
+119,Urban vulnerability index,Share of the population residing in vulnerable census tracts relative to the territory's total population. A census tract is considered vulnerable when more than 21% of its population has equivalised income below 40% of the national median or this proportion is more than double the city's average share of vulnerable population.,%,↓ Descending (lower = better)
+257,Total dependency ratio,Ratio of the dependent population (under 16 and over 64) to the working-age population (16–64).,%,↓ Descending (lower = better)
+256,Employed foreign nationals,Percentage of employed foreign nationals relative to the total working-age foreign population.,%,↑ Ascending (higher = better)
+49,Population with income below 50% of the median (men),Proportion of men whose income falls below 50% of the national median income.,%,↓ Descending (lower = better)
+50,Population with income below 50% of the median (women),Proportion of women whose income falls below 50% of the national median income.,%,↓ Descending (lower = better)
+51,Rental cost burden,Percentage of gross household income spent on primary residence rent. Calculated as the ratio of average annual rent to average gross household income at the municipal level.,%,↓ Descending (lower = better)
+264,Rental housing price index,"Evolution of rental housing prices in the municipality relative to a base year, as calculated by INE.",Index,↓ Descending (lower = better)
+112,Daytime noise comfort (Municipal Sustainability Indicator System),Percentage of the population exposed to daytime noise levels below regulatory limits (dB(A)).,%,↓ Descending (lower = better)
+113,Night-time noise comfort (Municipal Sustainability Indicator System),Percentage of the population exposed to night-time noise levels below regulatory limits (dB(A)).,%,↓ Descending (lower = better)
+265,Transport infrastructure,"Area occupied by road, rail and logistics infrastructure relative to the municipal territory.",%,↑ Ascending (higher = better)
+275,Protected coastline and marine habitats,Percentage of the municipality's coastline included in a marine or coastal environmental protection designation.,%,↑ Ascending (higher = better)
+114,Annual mean NO₂ concentration,Annual mean concentration of nitrogen dioxide (NO₂) measured by the municipality's monitoring stations.,µg/m³,↓ Descending (lower = better)
+115,Days exceeding the WHO PM10 limit,Number of days per year on which PM10 particle concentration exceeds the WHO recommended limit (15 µg/m³ daily average).,Days,↓ Descending (lower = better)
+276,Blue Flag beaches,Proportion of the municipality's beaches that have been awarded the Blue Flag distinction for water quality and services.,%,↑ Ascending (higher = better)
+58,Selective waste collection rate,Percentage of municipal waste collected through selective collection (source-separated fractions) relative to total waste generated.,%,↑ Ascending (higher = better)
+59,Household waste generation per inhabitant per year,Kilograms of household waste generated per inhabitant per year in the municipality.,kg/inhab.*year,↓ Descending (lower = better)
+272,Tourist dwellings,Number of registered tourist dwellings (HUT) per 100 dwellings in the municipality's residential stock.,%,↓ Descending (lower = better)
+129,Total greenhouse gas emissions per inhabitant,"Total greenhouse gas (GHG) emissions of the municipality per inhabitant, in tonnes of CO₂ equivalent.",t CO₂eq/inhab.,↓ Descending (lower = better)
+278,Bathing water quality,Percentage of inland or coastal bathing zones classified as excellent under Directive 2006/7/EC.,%,↑ Ascending (higher = better)
+294,"Educational facilities per 10,000 inhabitants","Number of educational centres per 10,000 inhabitants.","per 10,000 inhab.",↑ Ascending (higher = better)
+295,"Healthcare facilities per 10,000 inhabitants","Number of health centres or hospitals per 10,000 inhabitants.","per 10,000 inhab.",↑ Ascending (higher = better)
+296,"Sports facilities per 10,000 inhabitants","Number of sports facilities per 10,000 inhabitants.","per 10,000 inhab.",↑ Ascending (higher = better)
+297,"Recycling points per 10,000 inhabitants","Number of selective collection facilities per 10,000 inhabitants.","per 10,000 inhab.",↑ Ascending (higher = better)
+53,Share of artificial land,"Proportion of the municipal area occupied by urban or developable land (buildings, infrastructure, industrial zones).",%,↓ Descending (lower = better)
+285,Crime rate,"Number of criminal offences known to law enforcement per 1,000 inhabitants of the municipality.","per 1,000 inhab.",↓ Descending (lower = better)
+286,Homicide and murder rate,"Number of intentional homicides and murders per 100,000 inhabitants of the municipality.","per 100,000 inhab.",↓ Descending (lower = better)
+284,Drug trafficking,"Number of arrests for drug-trafficking-related offences per 100,000 inhabitants of the municipality.","per 100,000 inhab.",↓ Descending (lower = better)
+204,Municipal budgetary soundness and autonomy,"Proportion of own revenue (chapters 1, 2, 3 and 5) relative to total revenue in the municipality's settled budget.",%,↑ Ascending (higher = better)
+70,Municipal election turnout,Percentage of registered voters who exercised their right to vote in the most recent municipal elections.,%,↑ Ascending (higher = better)
+73,Outstanding debt per inhabitant,"Amount of the municipality's outstanding financial debt per inhabitant, in euros.",€,↓ Descending (lower = better)
+74,Revenue from business tax and property tax,"Total revenue collected from the Business Activities Tax (IAE) and the Property Tax (IBI) per inhabitant, in euros.",€,↑ Ascending (higher = better)
+76,Development NGOs per inhabitant,"Number of non-governmental development organisations (NGDOs) registered with the regional government and headquartered in the municipality per 10,000 inhabitants.","per 10,000 inhab.",↑ Ascending (higher = better)
+75,Budget allocated to official development assistance,Amount of the municipal budget allocated to development cooperation and official development assistance (ODA) per inhabitant.,€/inhab.,↑ Ascending (higher = better)
+55,Cultural facilities per population,"Number of cultural facilities (museums, libraries, theatres, civic centres, etc.) per 10,000 inhabitants of the municipality.","per 10,000 inhab.",↑ Ascending (higher = better)
+56,Green space per inhabitant (sq m/inhab.),Green area (in sq m) per inhabitant in consolidated urban land.,sq m/inhab.,↑ Ascending (higher = better)
+65,Share of forest area,"Proportion of the municipal area covered by forest masses (dense forest, open woodland, scrubland).",%,↑ Ascending (higher = better)
+66,Municipal area under a protection designation with an open-space management body,Percentage of the municipal area included in protected natural spaces with an active management plan.,%,↑ Ascending (higher = better)
+67,Non-developable land area,Proportion of the municipal area classified as non-developable land relative to the total municipal territory.,%,↑ Ascending (higher = better)
+95,"Financial institutions per 10,000 inhabitants","Number of banks, credit cooperatives, community credit branches and credit financial establishments in the municipality per 1,000 inhabitants.","per 10,000",↑ Ascending (higher = better)
+79,Ratio of land consumption rate to population growth rate,Ratio between the rate of growth of artificialised land and the rate of population growth over the same period.,Index,↓ Descending (lower = better)
+90,Terrestrial ecosystem connectivity index of Catalonia,"Indicator based on the ecological connectivity index of ecosystems as described by the Junta de Andalucía in ""Plan Director para la Mejora de la Conectividad Ecológica en Andalucía. Una Estrategia de Infraestructura Verde"" (May 2018). The calculation takes into account the distances between terrestrial natural spaces of the same type (forests, grasslands, etc.) and the artificial infrastructure that fragments them. Two natural spaces are considered connected when they are less than 2,500 m apart and are not divided by any artificial infrastructure. The indicator weights the connectance percentage of each ecosystem by the proportion of total studied natural area it represents within the municipality.",Index,↑ Ascending (higher = better)
+123,Share of buildings built from 2010 onwards,Percentage of the building stock built since 2010 relative to total buildings.,%,↑ Ascending (higher = better)
+171,Youth unemployment rate,Percentage of unemployed persons under 25 relative to total unemployed. Based on registered unemployment data by municipality disaggregated by age group.,%,↓ Descending (lower = better)
+287,Percentage of patients readmitted within 30 days for selected conditions,"Proportion of patients readmitted to a SISCAT hospital within 30 days of discharge, for a set of selected conditions: COPD, pneumonia, asthma, congestive heart failure, angina pectoris, AMI, urinary tract infections, diabetes mellitus complications and femoral neck fracture.",%,↓ Descending (lower = better)
+288,Treated prevalence of any mental health or addiction diagnosis,"Number of persons treated at an Outpatient Mental Health Centre (CSMA) for any mental health or addiction disorder, per 100,000 inhabitants. Includes diagnoses of anxiety, stress disorders, suicidal ideation, mood disorders, addictions and neurodevelopmental disorders.","per 100,000 inhab.",↓ Descending (lower = better)
+289,Obesity prevalence,Percentage of the population with an obesity diagnosis (BMI ≥ 30) recorded by a healthcare professional in the public health system's medical records.,%,↓ Descending (lower = better)
+290,Potentially avoidable hospitalisation rate,"Number of conventional hospitalisation discharges with a main diagnosis classified as potentially avoidable for the population aged 19 and over, per 100,000 inhabitants. Conditions: diabetes mellitus complications, congestive heart failure, COPD, asthma, angina pectoris, urinary tract infections, bacterial pneumonia, dehydration and hypertension.","per 100,000 inhab.",↓ Descending (lower = better)
+291,Access within 10 days,Percentage of persons who obtain an appointment with their primary and community care reference professional (family doctor or nurse) within a maximum of 10 days from the request.,%,↑ Ascending (higher = better)
+292,Preventive vaccination coverage rate,"Composite indicator averaging two vaccination coverages: the percentage of persons aged 60 and over vaccinated against seasonal influenza, and the percentage of children aged 5 who have received two doses of the MMR vaccine (measles, mumps and rubella).",%,↑ Ascending (higher = better)
