@@ -3,8 +3,8 @@
 The web repository (`observatorio-tarragona-web`) must stay aligned with releases produced by the data repository (`observatorio-tarragona-datos`). Today this update is manual: developers download release assets, replace files in the web repo, run tests, and trigger deployment. This process is slow and error-prone.
 
 The data repository publishes two stable release endpoints:
-- Database binary: `https://github.com/sdgviz/observatorio-tarragona-datos/releases/download/latest-data/diputacion_tarragona.db`
-- Source archive: `https://github.com/sdgviz/observatorio-tarragona-datos/archive/refs/tags/latest-data.zip`
+- Database binary: `https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/releases/download/latest-data/diputacion_tarragona.db`
+- Source archive: `https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/archive/refs/tags/latest-data.zip`
 
 The target automation must run in the web repository, update `assets/dbfile` and `test/dataset`, validate with tests, and call a Netlify build hook only after success.
 

@@ -43,8 +43,8 @@ Dispatch web data sync  ──►  observatorio-tarragona-web  (manual only, for
 
 **Release download URLs (stable):**
 
-- `https://github.com/sdgviz/observatorio-tarragona-datos/releases/download/latest-data/diputacion_tarragona.db`
-- `https://github.com/sdgviz/observatorio-tarragona-datos/releases/download/latest-data/latest-data-source.zip`
+- `https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/releases/download/latest-data/diputacion_tarragona.db`
+- `https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/releases/download/latest-data/latest-data-source.zip`
 
 ### `Dispatch web data sync` (`.github/workflows/dispatch-web-data-sync.yml`)
 
@@ -56,7 +56,7 @@ Sends a `repository_dispatch` event (`data_release_published`) to `sdgviz/observ
 
 **Payload fields:**
 
-- `source_repository`: `sdgviz/observatorio-tarragona-datos`
+- `source_repository`: `smartandcity-dip-tarra/observatorio-tarragona-datos`
 - `release_tag`: `latest-data` (default)
 - `release_id`: GitHub release ID when available
 - `target_env`: `dev` (default)

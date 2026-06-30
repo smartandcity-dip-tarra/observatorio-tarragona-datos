@@ -33,7 +33,7 @@ dataset/*.csv  (7 archivos originales + 3 agregados)
   ↓ transform/ (Node/TypeScript, pnpm run transform)
 output/diputacion_tarragona.db  (SQLite)
   ↓ subir como GitHub Release asset (tag: latest-data)
-https://github.com/ORG/diputacion_tarragona_data/releases/download/latest-data/diputacion_tarragona.db
+https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/releases/download/latest-data/diputacion_tarragona.db
   ↓ scripts/download-db.mjs (pre-build en Netlify)
 nuxt generate  (prerenderiza todo consumiendo el .db)
   ↓ Netlify
@@ -136,7 +136,7 @@ jobs:
 import { createWriteStream } from 'fs'
 import { pipeline } from 'stream/promises'
 
-const DB_URL = 'https://github.com/ORG/diputacion_tarragona_data/releases/download/latest-data/diputacion_tarragona.db'
+const DB_URL = 'https://github.com/smartandcity-dip-tarra/observatorio-tarragona-datos/releases/download/latest-data/diputacion_tarragona.db'
 
 const response = await fetch(DB_URL, {
   headers: process.env.GH_TOKEN

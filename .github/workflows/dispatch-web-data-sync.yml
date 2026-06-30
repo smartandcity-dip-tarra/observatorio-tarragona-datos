@@ -49,7 +49,7 @@ jobs:
           {
             "event_type": "data_release_published",
             "client_payload": {
-              "source_repository": "sdgviz/observatorio-tarragona-datos",
+              "source_repository": "smartandcity-dip-tarra/observatorio-tarragona-datos",
               "release_tag": "${RELEASE_TAG}",
               "release_id": "${RELEASE_ID}",
               "target_env": "${TARGET_ENV}"
